@@ -1,0 +1,39 @@
+{
+  "script": "cultural_Gc.py",
+  "date": "2026-04-18",
+  "gc_formula": "G^c_i = z(PDI_i) + z(LTOWVS_i) - z(IDV_i)",
+  "gc_alpha_weight": 0.5,
+  "theoretical_basis": {
+    "PDI": "+z: high power distance amplifies M3 trans-generational norm lock-in (Hofstede 2010 Ch.3; House et al. 2004 GLOBE)",
+    "IDV": "-z: high individualism weakens M2 peer-norm feedback loop (Triandis 1995; Heine et al. 2002)",
+    "LTOWVS": "+z: high long-term orientation legitimates cost-deferral (F4 T_cost>>T_reward; Hofstede 2010 Ch.7; Schwartz 2006 embeddedness)",
+    "IVR_excluded": "IVR conflates with F2 endorsement condition; excluded to avoid circularity"
+  },
+  "n_countries_gc": 59,
+  "sensitivity": {
+    "spearman_rho_raw_vs_gc_weighted": 0.9813518409319373,
+    "spearman_rho_p": 1.7219412345301015e-144,
+    "n_complete": 201,
+    "decision_threshold": 0.8,
+    "decision": "RETAIN",
+    "beta_raw": 0.02610329327024674,
+    "p_raw": 0.5936284891138567,
+    "r_raw": 0.037858824604924665,
+    "r2_raw": 0.0014332906004664492,
+    "beta_gc": 0.033185732743056966,
+    "p_gc": 0.49954201869985904,
+    "r_gc": 0.04789705773790057,
+    "r2_gc": 0.0022941281399477807,
+    "delta_r2": 0.0008608375394813315,
+    "issp_n": 25,
+    "issp_spearman_rho": 0.94,
+    "issp_spearman_p": 3.1581073138116154e-12,
+    "issp_beta_raw": -0.40480960185537473,
+    "issp_p_raw": 0.16224593535024232,
+    "issp_r2_raw": 0.08311398247365893,
+    "issp_beta_gc_weighted": -0.15062804408345928,
+    "issp_p_gc": 0.16474483297042394,
+    "issp_r2_gc": 0.0821750179379612,
+    "issp_decision": "RETAIN"
+  }
+}

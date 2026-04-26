@@ -1,0 +1,19 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+XP_062528340.1       -          Gr_sweet             -              2e-80  271.1  14.0   7.1e-80  269.2  14.0   1.6   1   1   0   1   1   1   1 candidate olfactory receptor isoform X1 [Bombyx mori]
+XP_062528712.1       -          Gr_sweet             -            1.3e-72  245.3  19.2     4e-72  243.7  19.1   1.6   1   1   0   1   1   1   1 gustatory receptor for sugar taste 64e-like [Bombyx mori]
+XP_062528797.1       -          Gr_sweet             -            1.1e-61  209.3  31.8   1.4e-61  209.0  31.8   1.0   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64f [Bombyx mori]
+XP_062528713.1       -          Gr_sweet             -            2.4e-57  195.0  10.8   4.3e-57  194.2  10.8   1.4   1   1   0   1   1   1   1 gustatory receptor for sugar taste 64a [Bombyx mori]
+NP_001091788.1       -          Gr_sweet             -            6.6e-53  180.4   6.0     3e-52  178.2   6.0   1.8   1   1   0   1   1   1   1 candidate olfactory receptor [Bombyx mori]
+NP_001124344.1       -          Gr_sweet             -            9.2e-35  120.6  22.5   1.3e-34  120.1  22.5   1.2   1   0   0   1   1   1   1 gustatory receptor 8 [Bombyx mori]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm
+# Target file:     /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/bmori.fa
+# Option settings: hmmsearch --tblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_bmori.tbl --domtblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_bmori.domtbl -E 1e-5 --cpu 2 /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/bmori.fa 
+# Current dir:     /Users/andy/Desktop/Research/sweet-trap-multidomain/00-design
+# Date:            Fri Apr 24 13:35:32 2026
+# [ok]

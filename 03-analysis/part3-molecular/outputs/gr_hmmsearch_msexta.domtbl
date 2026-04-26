@@ -1,0 +1,22 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+XP_030022956.2       -            446 Gr_sweet             -            414   2.1e-86  290.6  12.7   1   1   1.1e-89     4e-86  289.6  12.7     8   402    27   428    16   435 0.94 gustatory receptor for sugar taste 64f [Manduca sexta]
+XP_037300641.1       -            446 Gr_sweet             -            414   9.6e-80  268.6  12.8   1   1   8.2e-83   2.9e-79  267.0  12.8    11   398    35   431    13   439 0.93 gustatory receptor for sugar taste 64f-like, partial [Manduca sexta]
+XP_030022933.1       -            411 Gr_sweet             -            414   1.7e-60  205.2  23.2   1   1   5.7e-64     2e-60  205.0  23.2     1   400     1   393     1   406 0.93 gustatory receptor for sugar taste 64f-like [Manduca sexta]
+XP_037300715.1       -            328 Gr_sweet             -            414   6.5e-53  180.2  17.5   1   2   2.5e-18     9e-15   54.6   1.1    19   121     1   103     1   126 0.91 gustatory receptor for sugar taste 64f [Manduca sexta]
+XP_037300715.1       -            328 Gr_sweet             -            414   6.5e-53  180.2  17.5   2   2   1.5e-40   5.3e-37  127.8  10.1   220   397   128   326   115   328 0.94 gustatory receptor for sugar taste 64f [Manduca sexta]
+XP_037300642.1       -            384 Gr_sweet             -            414   1.1e-51  176.1  18.8   1   2   6.5e-43   2.3e-39  135.6  12.4    14   301    32   306    17   316 0.90 gustatory receptor for sugar taste 64f [Manduca sexta]
+XP_037300642.1       -            384 Gr_sweet             -            414   1.1e-51  176.1  18.8   2   2   2.9e-15     1e-11   44.5   0.4   351   398   336   383   322   384 0.92 gustatory receptor for sugar taste 64f [Manduca sexta]
+XP_030022957.1       -            373 Gr_sweet             -            414   3.6e-42  144.9  11.6   1   1   1.5e-45   5.4e-42  144.3  11.6    68   385    48   367    22   370 0.85 gustatory receptor 5a for trehalose-like [Manduca sexta]
+XP_037300714.1       -            417 Gr_sweet             -            414   3.2e-35  121.9  30.9   1   1   2.5e-38   8.8e-35  120.5  30.9    10   396    18   416    10   417 0.87 gustatory receptor for sugar taste 64f [Manduca sexta]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm
+# Target file:     /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/msexta.fa
+# Option settings: hmmsearch --tblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_msexta.tbl --domtblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_msexta.domtbl -E 1e-5 --cpu 2 /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/msexta.fa 
+# Current dir:     /Users/andy/Desktop/Research/sweet-trap-multidomain/00-design
+# Date:            Fri Apr 24 13:35:32 2026
+# [ok]

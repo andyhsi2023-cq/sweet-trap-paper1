@@ -1,0 +1,198 @@
+
+=== TAS1R (Chordata sweet/umami Class-C) (n=13) ===
+  PF00001 7tm_1_ClassA                0/13   ( 0.0%)
+  PF00003 7tm_3_ClassC               13/13   (100.0%)
+  PF01094 ANF_VenusFlytrap           13/13   (100.0%)
+  PF07562 NCD3G                      13/13   (100.0%)
+  PF06151 Insect7TM6_Gr               0/13   ( 0.0%)
+  dominant architecture: PF00003+PF01094+PF07562 (13/13)
+    TAS1R1   Danio rerio                     PF00003+PF01094+PF07562
+    TAS1R1   Gallus gallus                   PF00003+PF01094+PF07562
+    TAS1R1   Homo sapiens                    PF00003+PF01094+PF07562
+    TAS1R1   Mus musculus                    PF00003+PF01094+PF07562
+    TAS1R1   Rattus norvegicus               PF00003+PF01094+PF07562
+    TAS1R2   Homo sapiens                    PF00003+PF01094+PF07562
+    TAS1R2   Mus musculus                    PF00003+PF01094+PF07562
+    TAS1R2   Rattus norvegicus               PF00003+PF01094+PF07562
+    TAS1R3   Danio rerio                     PF00003+PF01094+PF07562
+    TAS1R3   Gallus gallus                   PF00003+PF01094+PF07562
+    TAS1R3   Homo sapiens                    PF00003+PF01094+PF07562
+    TAS1R3   Mus musculus                    PF00003+PF01094+PF07562
+    TAS1R3   Rattus norvegicus               PF00003+PF01094+PF07562
+
+=== DRD (Chordata dopamine Class-A) (n=10) ===
+  PF00001 7tm_1_ClassA               10/10   (100.0%)
+  PF00003 7tm_3_ClassC                0/10   ( 0.0%)
+  PF01094 ANF_VenusFlytrap            0/10   ( 0.0%)
+  PF07562 NCD3G                       0/10   ( 0.0%)
+  PF06151 Insect7TM6_Gr               0/10   ( 0.0%)
+  dominant architecture: PF00001 (10/10)
+    DRD1     Gallus gallus                   PF00001
+    DRD1     Homo sapiens                    PF00001
+    DRD1     Mus musculus                    PF00001
+    DRD1     Rattus norvegicus               PF00001
+    DRD1     Xenopus tropicalis              PF00001
+    DRD2     Gallus gallus                   PF00001
+    DRD2     Homo sapiens                    PF00001
+    DRD2     Mus musculus                    PF00001
+    DRD2     Rattus norvegicus               PF00001
+    DRD2     Xenopus tropicalis              PF00001
+
+=== Gr (Arthropoda gustatory 7TM_6) (n=38) ===
+  PF00001 7tm_1_ClassA                0/38   ( 0.0%)
+  PF00003 7tm_3_ClassC                0/38   ( 0.0%)
+  PF01094 ANF_VenusFlytrap            0/38   ( 0.0%)
+  PF07562 NCD3G                       0/38   ( 0.0%)
+  PF06151 Insect7TM6_Gr              37/38   (97.4%)
+  dominant architecture: PF06151 (36/38)
+  other architectures: 2
+    Gr5a     Drosophila melanogaster         PF00151
+    Gr64a    Drosophila melanogaster         PF06151
+    Gr64b    Drosophila melanogaster         PF06151
+    Gr64c    Drosophila melanogaster         PF06151
+    Gr64d    Drosophila melanogaster         PF06151
+    Gr64e    Drosophila melanogaster         PF06151
+    Gr64f    Drosophila melanogaster         PF06151
+    Gr_sweet_hit1 Aedes aegypti                   PF06151
+    Gr_sweet_hit1 Apis mellifera                  PF06151
+    Gr_sweet_hit1 Bombyx mori                     PF06151
+    Gr_sweet_hit1 Manduca sexta                   PF06151
+    Gr_sweet_hit1 Tribolium castaneum             PF06151
+    Gr_sweet_hit2 Aedes aegypti                   PF06151
+    Gr_sweet_hit2 Apis mellifera                  PF06151
+    Gr_sweet_hit2 Bombyx mori                     PF06151
+    Gr_sweet_hit2 Manduca sexta                   PF06151
+    Gr_sweet_hit2 Tribolium castaneum             PF06151
+    Gr_sweet_hit3 Aedes aegypti                   PF06151
+    Gr_sweet_hit3 Apis mellifera                  PF06151
+    Gr_sweet_hit3 Bombyx mori                     PF06151
+    Gr_sweet_hit3 Manduca sexta                   PF06151
+    Gr_sweet_hit3 Tribolium castaneum             PF06151
+    Gr_sweet_hit4 Aedes aegypti                   PF06151
+    Gr_sweet_hit4 Apis mellifera                  PF06151
+    Gr_sweet_hit4 Bombyx mori                     PF06151
+    Gr_sweet_hit4 Manduca sexta                   PF06151
+    Gr_sweet_hit4 Tribolium castaneum             PF06151
+    Gr_sweet_hit5 Aedes aegypti                   PF06151
+    Gr_sweet_hit5 Bombyx mori                     PF06151
+    Gr_sweet_hit5 Manduca sexta                   PF06151+PF08395
+    Gr_sweet_hit5 Tribolium castaneum             PF06151
+    Gr_sweet_hit6 Aedes aegypti                   PF06151
+    Gr_sweet_hit6 Bombyx mori                     PF06151
+    Gr_sweet_hit6 Manduca sexta                   PF06151
+    Gr_sweet_hit6 Tribolium castaneum             PF06151
+    Gr_sweet_hit7 Aedes aegypti                   PF06151
+    Gr_sweet_hit7 Manduca sexta                   PF06151
+    Gr_sweet_hit7 Tribolium castaneum             PF06151
+
+=== DopR (Arthropoda dopamine Class-A) (n=12) ===
+  PF00001 7tm_1_ClassA               12/12   (100.0%)
+  PF00003 7tm_3_ClassC                0/12   ( 0.0%)
+  PF01094 ANF_VenusFlytrap            0/12   ( 0.0%)
+  PF07562 NCD3G                       0/12   ( 0.0%)
+  PF06151 Insect7TM6_Gr               0/12   ( 0.0%)
+  dominant architecture: PF00001 (12/12)
+    DopR1    Aedes aegypti                   PF00001
+    DopR1    Apis mellifera                  PF00001
+    DopR1    Bombyx mori                     PF00001
+    DopR1    Drosophila melanogaster         PF00001
+    DopR1    Manduca sexta                   PF00001
+    DopR1    Tribolium castaneum             PF00001
+    DopR2    Aedes aegypti                   PF00001
+    DopR2    Apis mellifera                  PF00001
+    DopR2    Bombyx mori                     PF00001
+    DopR2    Drosophila melanogaster         PF00001
+    DopR2    Manduca sexta                   PF00001
+    DopR2    Tribolium castaneum             PF00001
+
+=== H4b Convergence Signature ===
+  TAS1R Pfam set: ['PF00003', 'PF01094', 'PF07562']
+  Gr    Pfam set: ['PF00151', 'PF06151', 'PF08395']
+  Pfam Jaccard TAS1R vs Gr: 0.00
+  => Pfam-level paraphyly CONFIRMED (non-orthologous).
+  Shared functional architecture test: both have 7TM + LBD
+    TAS1R has 7TM (PF00003 Class-C): True
+    Gr    has 7TM (PF06151 insect 7TM_6): True
+    TAS1R has LBD (PF01094 VFT): True
+    Gr    has LBD: (not a separate Pfam domain — LBD encoded within 7TM_6 transmembrane topology)
+  Dopamine receptors across 4 phyla: 39/39 carry PF00001 (7tm_1 Class-A GPCR)
+  => Class-A GPCR architecture deeply conserved across Chordata + Arthropoda + Mollusca + Cnidaria.
+  NOTE (Part 3 Risk 1 update, 2026-04-24): the 39/39 count above includes 14
+  Mollusca+Cnidaria sequences that were later reclassified as non-DRD amines
+  (still Class-A PF00001). The true-DRD-orthologue count across phyla is
+  25/25 across 3 phyla (Chordata+Arthropoda+Mollusca); Cnidaria contains 0
+  true DRD orthologues per reciprocal-BLASTP+tree verdict. See appendix below.
+
+=== Dop (Mollusca + Cnidaria) true DRD orthologues (tree-verified) (n=3) ===
+  PF00001 7tm_1_ClassA            3/3 (100.0%)
+  PF00003 7tm_3_ClassC            0/3 (0.0%)
+  PF01094 ANF_VenusFlytrap        0/3 (0.0%)
+  PF07562 NCD3G                   0/3 (0.0%)
+  PF06151 Insect7TM6_Gr           0/3 (0.0%)
+  dominant architecture: 7tm_1(PF00001) (3/3)
+    DopR_2   Aplysia californica          7tm_1(PF00001)
+    DopR_1   Octopus bimaculoides         7tm_1(PF00001)
+    DopR_3   Crassostrea gigas            7tm_1(PF00001)
+
+=== Mollusca + Cnidaria non-DRD Class-A amine receptors (HTR/ADR/OA-like) (n=14) ===
+  PF00001 7tm_1_ClassA            14/14 (100.0%)
+  PF00003 7tm_3_ClassC            0/14 (0.0%)
+  PF01094 ANF_VenusFlytrap        0/14 (0.0%)
+  PF07562 NCD3G                   0/14 (0.0%)
+  PF06151 Insect7TM6_Gr           0/14 (0.0%)
+  dominant architecture: 7tm_1(PF00001) (10/14)
+    DopR_1   Aplysia californica          7tm_1(PF00001)
+    DopR_2   Octopus bimaculoides         7tm_1(PF00001)
+    DopR_3   Octopus bimaculoides         7tm_1(PF00001)
+    DopR_1   Crassostrea gigas            7tm_1(PF00001);7tm_1(PF00001)
+    DopR_2   Crassostrea gigas            7tm_1(PF00001)
+    DopR_1   Nematostella vectensis       7tm_1(PF00001);7tm_1(PF00001)
+    DopR_2   Nematostella vectensis       7tm_1(PF00001);7tm_1(PF00001)
+    DopR_3   Nematostella vectensis       7tm_1(PF00001);7tm_1(PF00001)
+    DopR_1   Hydra vulgaris               7tm_1(PF00001)
+    DopR_2   Hydra vulgaris               7tm_1(PF00001)
+    DopR_3   Hydra vulgaris               7tm_1(PF00001)
+    DopR_1   Acropora digitifera          7tm_1(PF00001)
+    DopR_2   Acropora digitifera          7tm_1(PF00001)
+    DopR_3   Acropora digitifera          7tm_1(PF00001)
+
+## Tree-based reclassification summary
+  17 mollusc/cnidaria candidates  ->  3 TRUE_DRD + 14 other-amine
+  All retained members (true DRD orthologues) carry PF00001 at 100%.
+  Non-DRD reclassified members also carry PF00001 at 100% -- confirms they are
+  Class-A GPCRs, just not true dopamine receptors.
+
+
+========================================================================
+APPENDIX: Part 3 Risk 1 — Cnidarian DRD orthology reciprocal-BLASTP test
+========================================================================
+  Generated: 2026-04-24 16:17
+
+  Task: test whether true DRD orthologues are truly absent from
+        cnidarian proteomes (Hydra vulgaris, Nematostella vectensis,
+        Acropora digitifera) or were merely missed by the original
+        NCBI keyword search.
+
+  Method: reciprocal BLASTP of 7 DRD anchors (5 human DRD + 2 Dmel Dop)
+          against full proteomes (32,703-34,311 proteins per species)
+          plus 51-taxon LG+G4 IQ-TREE with UFBoot 1000.
+
+  Result: ZERO true DRD orthologues detected in any of the three
+          cnidarian proteomes. All 15 weak-RBH candidates form a
+          single monophyletic cnidarian clade OUTSIDE the bilaterian
+          DRD MRCA; their nearest bilaterian reference is HTR4, not DRD.
+
+  Updated H4a cross-phylum DRD claim:
+    BEFORE:  25/25 tree-verified DRD orthologues across 3 phyla
+             (Chordata + Arthropoda + Mollusca; Cnidaria untested)
+    AFTER:   25/25 tree-verified DRD orthologues across 3 phyla
+             (Cnidaria confirmed absent by reciprocal BLASTP).
+
+  Updated H4a broader Class-A GPCR (PF00001) claim:
+    4-phylum conservation SURVIVES: all 15 cnidarian weak-RBH
+    candidates carry PF00001 (they are tyramine/octopamine/HTR-like
+    Class-A GPCRs, not DRD, but same fold family).
+
+  See: outputs/cnidarian_drd_blastp_report.md
+  See: outputs/orthofinder_dop/tree_cnidarian_placement/cnidarian_placement.pdf
+

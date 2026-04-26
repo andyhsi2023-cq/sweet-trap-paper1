@@ -1,0 +1,6 @@
+pair_id,exposure,exp_id,exp_ancestry,n_snp,F_mean,F_min,F_max,chr_range
+alc-mort,alcohol_drinks_per_week,ieu-b-73,EUR,35,76.22,29.8,927,1..9
+bmi-mort,bmi,ieu-b-40,EUR,501,75.23,28.62,2197.27,1..9
+sug-cvdm,sugar_intake_total,ukb-b-5237,EUR,40,72.71,30.1,646.73,1..9
+upf-mort,processed_meat_intake,ukb-b-6324,EUR,23,38.54,29.86,77.09,1..8
+scr-mort,leisure_screen_tv_time,ukb-b-5192,EUR,113,41.03,30.01,151.7,1..9

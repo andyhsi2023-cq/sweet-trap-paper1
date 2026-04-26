@@ -1,0 +1,3 @@
+id.exposure,exposure,id.outcome,outcome,nsnp,b,se,pval,or,or_lo,or_hi
+ieu-b-40,body mass index || id:ieu-b-40,ebi-a-GCST006701,Parental longevity (father's attained age) || id:ebi-a-GCST006701,455,0.11807744192004,0.00989236055134378,7.6622426648983e-33,1.12533125580611,1.10372234291386,1.14736323263232
+ieu-b-73,Alcoholic drinks per week || id:ieu-b-73,ebi-a-GCST006701,Parental longevity (father's attained age) || id:ebi-a-GCST006701,9,0.0850529808742888,0.0383099562173559,0.026410125366088,1.08877474940847,1.01001528730915,1.17367575505483

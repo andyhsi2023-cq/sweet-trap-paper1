@@ -1,0 +1,24 @@
+gene	lineage_key	fg_type	fg_label	notes
+TAS1R1	hummingbird	tip	Calypte_anna	POSITIVE_CONTROL Baldwin2014 Science 10.1126/science.1255097
+TAS1R1	mouse_control	tip	Mus_musculus	NEGATIVE_CONTROL background mammalian lineage, expect LRT p>0.10
+TAS1R1	panda	tip	Ailuropoda_melanoleuca	Zhao2010 giant panda TAS1R1 pseudogenisation - relaxed constraint
+TAS1R2	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	Primate sugar-specialist foreground
+TAS1R3	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	Primate sugar-specialist foreground
+DRD1	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	Primate sugar-specialist foreground
+DRD2	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	Primate sugar-specialist foreground (Johnson-Kenny 2010 Drd2 mouse rationale)
+DRD3	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+DRD4	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	DRD4 VNTR literature; allelic length variation
+DRD5	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+OPRM1	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+OPRK1	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+OPRD1	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+OPRL1	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+HCRTR1	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+HCRTR2	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+NPY1R	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+NPY2R	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+NPY5R	primate_sugar	clade	Homo_sapiens|Pan_troglodytes	
+DRD2	apidae_nectar	clade	Apis_mellifera|Bombus_terrestris	Arthropod DopR1/DopR2 homologs; nectarivore foreground
+TAS1R2	apidae_nectar	clade	Apis_mellifera|Bombus_terrestris	Arthropod Gr5a/Gr64 homologs; sweet-sensing nectarivore foreground
+OPRM1	cetacean	clade	Tursiops_truncatus|Orcinus_orca	Cetacean reward pathway; sensory specialisation lineage
+TAS1R2	cetacean	clade	Tursiops_truncatus|Orcinus_orca	Cetacean sweet-receptor loss documented (Feng 2014); relaxed constraint

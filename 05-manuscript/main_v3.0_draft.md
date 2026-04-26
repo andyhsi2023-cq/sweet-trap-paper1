@@ -1,0 +1,379 @@
+# Sweet Trap: a theory of reward–fitness decoupling with cross-species empirical validation
+
+**Authors:** Lu An¹,²,\* (ORCID 0009-0002-8987-7986), Hongyang Xi¹,²,\* (ORCID 0009-0007-6911-2309)
+
+¹ Department of Mammary Gland, Chongqing Health Center for Women and Children, Chongqing, China
+² Department of Mammary Gland, Women and Children's Hospital of Chongqing Medical University, Chongqing, China
+
+\* Both corresponding authors. Correspondence: Lu An <113781@hospital.cqmu.edu.cn>; Hongyang Xi <26708155@alu.cqu.edu.cn>.
+**Postal address:** Women and Children's Hospital of Chongqing Medical University, No. 120 Longshan Road, Liangjiang New Area District, Chongqing 401147, China.
+
+**Target journal:** *Nature Human Behaviour* — Article.
+**Manuscript length:** ~4,480 words main text (Introduction + Theory + Results + Discussion); ~3,650 words Methods; 298-word Abstract; 9 main figures; 2 tables; extensive Supplementary Information.
+**Data and code availability:** OSF repository (DOI [OSF_DOI_TO_INSERT]; registered 2026-04-18); GitHub: `sweet-trap-multidomain`.
+
+**Version tracking.** v3.0 integrates Paper 1 (Theoretical Foundation, revised after Stage 1-B audit) and Paper 2 v2.4 (Empirical Validation) into a single NHB Article. v3.0 supersedes the empirical-only v2.4 by (i) adding a formal axiomatic theory section §2, (ii) reframing every empirical layer as a test of a specific theorem or axiom, (iii) recasting the v2.4 "law of intervention effectiveness" as the theorem-derived prediction P1, (iv) demoting T4's basin-radius claim to Observation 4.1 and P5 to empirical regularity consistent with T3 (per Paper 1 Stage 1-B revision), and (v) honestly reporting each of five predictions' current empirical status without overclaim. The v2.4 DALY welfare-anchor remains in Supplementary Appendix H as an orthogonal descriptive statistic and is not a primary claim.
+
+---
+
+## Abstract
+
+**Background.** A moth flies into a streetlight; a sea turtle eats a plastic bag; a household under a mortgage escalates aspirational consumption. These share one architecture — reward–fitness decoupling.
+
+**Theory.** We formalise a **Sweet Trap** through four axioms: ancestral calibration (A1), environmental decoupling (A2), endorsement inertia with operational scope criterion A3.0 (A3), partial cost visibility with temporal discount (A4). Four theorems follow: stability (T1, Lyapunov); an **intervention-asymmetry theorem** establishing signal-redesign dominates information by at least (1 − *w*_max)/*w*_max ≥ 1.5 under dose-matched comparison (T2); cross-species universality (T3); engineered escalation (T4; basin-radius demoted to Observation 4.1). The keystone scalar Δ_ST = *U*_perc − E[*U*_fit ∣ *B*] is a signed falsifiable wedge.
+
+**Empirics.** We test across four layers: (A) pre-registered meta-analysis of 20 animal cases across seven taxonomic classes (pooled Δ_ST = +0.645 [+0.557, +0.733]); (B) specification curves across five human focal domains (3,000 pre-registered specifications); (C) ISSP trajectories across 25 countries (n = 2.9M); (D) 19 Mendelian-randomisation chains against FinnGen R12 (n ≈ 413,000). A pre-registered cross-level A+D joint test gives β = +1.58, p = 0.019 on z-scored effect.
+
+**Prediction status.** Of five theorem-derived predictions: **P1 is strongly supported** — unit-matched ratios clear T2's 1.5 floor by large margins (C8: 74×; C12: 7×); signal-redesign dominates information in 6/6 domains, 4/6 with non-overlapping CIs. **P3 is partially supported** (ISSP R² = 0.255, above the 0.15 floor, below 0.40). **P5 is supported as an empirical regularity consistent with T3** (A+D β = +1.58). **P4 is qualitatively consistent** (Olds-Milner Δ_ST = +0.789 > all MST cases). **P2 awaits dedicated empirical test**.
+
+**Implications.** The theory unifies evolutionary mismatch, ecological traps, Fisher runaway, and algorithmic manipulation under one axiomatic framework, orthogonal to prospect theory. T2 reframes why information campaigns systematically underperform in the domains this construct marks out.
+
+---
+
+## 1. Introduction
+
+Evolution built reward systems as proxy detectors of fitness. A moth's phototactic reflex once pointed it toward the sky rather than a streetlight; a peacock's preference for elongated tail feathers once tracked male condition rather than an ornament lethally cumbersome in flight; a human liking for sugar once kept foragers alive between famines. In every case a signal internal to the chooser — the *perceived* reward — worked because it was statistically coupled to an external reality: *actual* fitness. When the signal and the reality decouple, the chooser continues to endorse the signal that once worked. We call this self-reinforcing welfare-reducing equilibrium a **Sweet Trap**.
+
+Three observations motivate treating Sweet Traps as a single formal object rather than a set of unrelated phenomena. First, non-human animal ecology provides a substantial evidence base — moths to artificial light, sea turtles to beachfront illumination, monarch butterflies to tropical milkweed, bumblebees to neonicotinoid-laced pollen, jewel beetles to discarded beer bottles — sharing an architectural anatomy: a reward cue calibrated for one signal distribution, continued endorsement in a different one, and fitness cost that cannot correct the behaviour within the agent's lifetime¹⁻⁴. Second, the human economics and public-health literatures have each developed near-homologues in isolation — mismatch physiology⁵, ecological traps⁶, behavioural "internality"⁷, sensory exploitation⁸ — without the architectural link that Lande–Kirkpatrick coevolutionary theory⁹,¹⁰ makes explicit. Third, interventions targeting individual beliefs — nutrition labels, financial-literacy programmes, screen-time warnings, alcohol warnings — have systematically underperformed, while interventions restructuring the reward signal itself (sugar taxes, auto-enrolment defaults, commitment-device caps, alcohol price regulation) have outperformed them in every domain with a public meta-analytic record¹¹⁻¹⁴. A theory that predicts this asymmetry from first principles should exist.
+
+None of the seven adjacent frameworks (prospect theory; rational addiction; evolutionary mismatch; ecological trap; Fisher runaway; nudge; dual-system theory) supplies it. Prospect theory operates on a *single* utility, not a wedge between two. Rational addiction assumes *U*_perc ≡ *U*_fit, foreclosing the wedge. Evolutionary mismatch is informal. Ecological trap is a habitat-choice special case. Fisher runaway shares machinery but operates on genetic fitness, not perceived utility. Nudge is empirical practice without mechanism. Dual-system theory describes architecture without specifying which signals decouple (ED Table 1; §2.5).
+
+We make four contributions. **First**, we formalise the Sweet Trap through four axioms and four theorems (§2); the keystone is Δ_ST = *U*_perc − E[*U*_fit ∣ *B*], and the central new result is T2 — signal-redesign interventions structurally dominate information interventions by at least (1 − *w*_max)/*w*_max ≥ 1.5 for any agent within Sweet Trap scope. **Second**, we test the theory across 20 animal cases in seven taxonomic classes, five human focal domains, 25 ISSP countries (*n* = 2.9 M), and 19 Mendelian-randomisation chains — 3,000 pre-registered specifications in total (§3). **Third**, in a pre-registered A+D joint analysis the animal-mechanism rank predicts the human genetic-causal rank at β = +1.58, *p* = 0.019 (§3.5), consistent with T3. **Fourth**, we test T2's prediction P1 against existing intervention meta-analyses across six focal domains (§3.6): two unit-matched ratios (C8: 74×; C12: 7×) clear T2's 1.5 floor by large margins; signal-redesign dominates information in 6/6 domains with CIs non-overlapping in 4/6. Ten adversarial cases (five Sweet Traps; five boundary phenomena including 鸡娃 coerced parenting, 996 overwork, vaccination) are classified with 100% accuracy on F1 + F2 alone (κ = 1.00 across two blind coders).
+
+Of five theorem-derived predictions: P1 is strongly supported, P3 partially (R² = 0.255 above the 0.15 floor but below 0.40), P5 is supported as empirical regularity consistent with T3, P4 is qualitatively consistent, P2 awaits dedicated test.
+
+---
+
+## 2. The Sweet Trap Theory
+
+### 2.1 Primitives
+
+Let *S* be a measurable choice space (discrete, continuous, or combinatorial), with a distinguished abstention *s*_0. Agents *i* ∈ *I* are characterised by (i) a reward-calibration parameter *ψ_i* ∈ ℝ^*k* shaped by evolutionary and developmental exposure to an ancestral signal distribution *S*_anc, (ii) a reward sensitivity *α_i* > 0, (iii) a deliberative weight *w_i* ∈ [0, 1] (how much fitness-relevant information enters choice), (iv) a temporal discount parameter *k_i* > 0, (v) a cost-sensitivity *β_i* and externalisation share *λ_i* ∈ [0, 1). A feature extractor *φ*: *S* × ℝ₊ → Φ maps choices to perceptual features.
+
+Every agent is characterised by **two** utility functions over the same choice space, and their divergence is the object of interest:
+
+$$
+U_\text{perc}(s, t \mid \psi_i) = \sigma(\alpha_i \langle \psi_i, \varphi(s,t)\rangle) \qquad U_\text{fit}(s, t) = \mathbb{E}\!\left[\int_t^\infty e^{-r(\tau-t)} W(s, \tau)\,d\tau\right]
+$$
+
+where *σ* is the logistic sigmoid (justified by reward-circuit saturation and dopaminergic RPE encoding; §M1) and *W*(*s*, *τ*) is an instantaneous fitness contribution, allowed to be negative. The keystone scalar is
+
+$$
+\boxed{\;\Delta_\text{ST}(s, t \mid \psi, B) = U_\text{perc}(s, t \mid \psi) - \mathbb{E}[U_\text{fit}(s,t) \mid B]\;}
+$$
+
+Δ_ST > 0 iff perceived reward exceeds expected fitness; the **Sweet Trap realisation condition** is Δ_ST > 0 *and* endorsement (the agent chooses *s* under the choice rule A3.2). Lemma L1 establishes Δ_ST is a well-defined signed measurable function admitting cross-domain moments and covariances (§M1).
+
+### 2.2 Four axioms
+
+**A1 Ancestral Calibration.** ∃ strictly monotone *h*: ℝ → ℝ such that on *S*_anc at *t* < *t*_sep, *U*_perc(*s*, *t* ∣ *ψ*) = *h*(*U*_fit(*s*, *t*)) + *ε*, with *σ*²_cal ≪ Var[*U*_fit]. Falsification: find a taxon whose *U*_perc ranking contradicts *U*_fit within *S*_anc.
+
+**A2 Environmental Decoupling.** ∃ *t*_sep and *ρ*_crit ∈ (0, 1) such that for *s* ∈ *S*_mod \ *S*_anc at *t* > *t*_sep, local coupling *ρ*(*s*, *t*) < *ρ*_crit. Two routes: A (mismatch — environment shifts faster than calibration) and B (supernormal or novel signals piggybacking on general-purpose reward circuits). Falsification: identify a novel signal with *ρ* ≥ *ρ*_crit across the *ψ_i* distribution.
+
+**A3 Endorsement Inertia (scope-defining).** A3 is scope-defining, not a universal claim. Sweet Trap scope is empirically determined by **A3.0**: (i) post-full-information-intervention abandonment of *s** < 30%, or (ii) structural estimation recovers *w* < 0.45 over ≥ 10 repeated choices. Within scope, agents satisfy
+
+$$
+b_i(t) = \arg\max_{s \in S} \bigl[(1 - w_i) U_\text{perc}(s, t \mid \psi_i) + w_i \mathbb{E}[U_\text{fit}(s, t) \mid B_i(t)]\bigr]
+$$
+
+with *w_i* ≤ *w*_max < ½ (default 0.4). Agents outside A3.0 scope are not Sweet Trap cases, and A3 makes no claim about them — addressing the tautology concern (Stage 1-B F2). Falsification: information interventions achieving > 70% abandonment (observed: 5–15%).
+
+**A4 Partial Cost Visibility + P1.** Observable cost *c_i*(*s*, *t*) is gated by *I*_visible and discounted by *δ*(*τ*) satisfying *δ*(0) = 1, 0 ≤ *δ* ≤ 1, *δ*′ < 0 (axiomatic core). Default Parameterization P1: *δ*(*τ*) = 1/(1 + *k_i τ*) (hyperbolic; Ainslie 1975²⁹; McNamara et al. 2009³⁰). Theorems T1–T4 hold under any P1 with *δ*′ < 0; constants depend on the specific form (Stage 1-B M1 demotion from independent axiom).
+
+### 2.3 Four theorems
+
+**T1 Stability (Lyapunov LSE).** Under A1–A4, persistent Δ_ST ≥ *ε* > 0, and precondition *α_i ℓ*(*ψ_i*, *φ*) *ε*² > *β_i δ*_max *M* + *D_i*^drift, the Sweet Trap point *s** is a locally stable equilibrium of the engagement dynamics (§M1); perturbations decay exponentially at rate *c* ≥ *α_i ℓ ε*² − cost-pullback. Proof: Jacobian negativity + Lyapunov function (§M1.3). Anchor: Allcott 2020 (post-deactivation short-video return ≈70% in 4 weeks, consistent with *c* ≈ 0.25/week).
+
+**T2 — Intervention Asymmetry.** For matched dose under the operational dose-matching convention (T2.1.1; §M1.3) and within the non-saturated Sweet Trap regime (*σ*′ ≥ *σ*′_min > 0):
+
+$$
+\boxed{\;\frac{|\Delta b_\text{signal}|}{|\Delta b_\text{info}|} \;\geq\; \frac{1 - w_\text{max}}{w_\text{max}} \;\geq\; \tfrac{3}{2} \text{ for } w_\text{max} \leq 0.4\;}
+$$
+
+Proof: argmax sensitivity + A3.3 (*w*_max < ½). **T2 is a theorem under A1–A4 plus the dose-matching operational convention; P1 (§3.6) is the empirical test of whether the dose-matching convention is realised in observed interventions** — the theorem–prediction boundary (Stage 1-B clarification). The matching convention is operationally realisable via pre-calibration (CONSORT-nudge¹⁵); without dose-matching, cross-channel comparisons would conflate intensity with effectiveness. Flagged scope boundary (Stage 1-B M3): symmetric RCT-to-field shrinkage *κ*_signal ≈ *κ*_info is assumed; Paper 2's ratios are consistent with approximate symmetry.
+
+**T3 Cross-Species Universality.** A1–A4 are species-neutral: A1 requires only a monotone noisy *U*_perc → *U*_fit encoder on *S*_anc; A2 requires only *S* expansion; A3 holds with *w* ≈ 0 as animal limit; A4 is documented from rats to pigeons to humans. Moths, turtles, Drosophila, humans are instances of the same theorem (§M1.3). Stage 1-B M4: cross-species *magnitude* rank preservation (P5) is an empirical regularity consistent with T3, not theorem-derived, because it requires a *ψ*-commensurability premise not formally established here.
+
+**T4 Engineered Escalation.** When an external designer *j* solves max_{*s*_design} Σ_i Δ_ST(*s*, *t* ∣ *ψ_i*) *ω_j*(*i*), Δ_ST^EST ≥ Δ_ST^MST (envelope theorem, Milgrom–Segal 2002¹⁶), and *c*^EST ≥ *c*^MST. **Observation 4.1 (demoted; Stage 1-B M5).** The EST basin of attraction is *consistent* with being wider than MST (Allcott 2020, Schüll 2012, engineered-deception victim return rates); formal set-containment requires future work.
+
+### 2.4 Sub-classes
+
+Three sub-classes share A1–A4 but differ in how Δ_ST arises. **MST (Mismatch):** *ψ* calibrated ancestrally, environment shifts (diet, light pollution, monarch tropical milkweed). **RST (Runaway):** *ψ* culturally transmitted; self-referential covariance *G*^c drives indefinite escalation (luxury, dowry, status). Lemma L4.1 (§M1; a mean-field argument over agent-heterogeneity) justifies substituting *W̄*_perc for the classical *W̄*_fit in Lande–Kirkpatrick dynamics — a non-trivial substitution distinguishing RST from Fisher runaway. **EST (Engineered):** external designer tunes *φ* to maximise Δ_ST (Olds–Milner self-stimulation, variable-ratio slot design, RL-optimised algorithmic feeds, engineered deception), driving T4. We sub-divide *Engineered Algorithmic* (C12) from *Engineered Deception* (pig-butchering; human operator exploiting ancestrally-calibrated romance/resource channels). Ecological Trap ⊂ MST ⊂ Sweet Trap.
+
+### 2.5 Positioning
+
+Sweet Trap is **orthogonal** to Prospect Theory (PT is a single utility; Sweet Trap is a wedge). It is a **conceptual complement** to Rational Addiction (RA assumes *U*_perc ≡ *U*_fit, foreclosing Δ_ST; A3.0 distinguishes applicability — Stage 1-B M8). Evolutionary Mismatch ⊂ MST ⊂ Sweet Trap. Fisher Runaway is a **parallel but distinct** structure — same covariance machinery, different objective functional (*W̄*_fit vs *W̄*_perc; Stage 1-B M7); Fisher equilibria saturate at fitness-collapse, RST escalates past, explaining luxury-spending patterns in Layer C. Nudge is policy practice backed by T2. Dual-system theory is refined: A2 specifies which System-1 signals decouple; A3.3 explains why System-2 override fails. Full matrix: ED Table 1.
+
+---
+
+## 3. Results
+
+### 3.1 Layer A — Animal meta-analysis validates T3 universality and A2 decoupling
+
+A pre-registered random-effects meta-analysis of 20 animal cases spanning seven taxonomic classes and four mechanism categories (sensory exploitation, Olds–Milner direct reward, Fisher runaway, reproductive-survival tradeoff; Fig. 1–2) gives:
+
+- **Pooled Δ_ST = +0.645 [+0.557, +0.733]**, *z* = 14.37, *p* < 10⁻⁴, DerSimonian–Laird random-effects, *k* = 20. *I*² = 85.4%; 95% prediction interval [+0.278, +1.011]; all 20 cases positive. This establishes A2's decoupling prediction: Δ_ST is phylogenetically universal under environmental novelty.
+- **Mechanism category significantly moderates magnitude**: *Q*_M(3) = 13.22, *p* = 0.004, *R*² = 76% of between-case heterogeneity. Olds–Milner direct-reward mechanisms (rat intracranial self-stimulation, neonicotinoid-laced pollen, bumblebee social-network disruption) pool to Δ_ST = +0.789 [+0.620, +0.959]; sensory exploitation pools to +0.653; Fisher runaway to +0.547; reproductive-survival tradeoff to +0.470. The **olds_milner vs fisher_runaway contrast is +0.242** (*p* = 0.001) — the most robust gradient in the dataset.
+- **Vertebrates and invertebrates are indistinguishable** (meta-regression β = +0.033 [−0.131, +0.196], *p* = 0.695): **T3's species-neutrality prediction is supported directly**. Sweet Trap is convergent across phyla, consistent with emergence from any reward-fitness integration architecture.
+
+PRISMA flow, extraction, and publication-bias assessment are in §M2 and Extended Data Appendix B. The olds > sensory > fisher mechanism gradient anchors the cross-level test in §3.5.
+
+### 3.2 Layer B — Human focal domains: robust signatures, one honest fragility
+
+Five focal human domains were selected ex ante: investment leverage (C8, CHFS 2011–2019), hyper-palatable diet (C11, CHARLS / CFPS), short-video algorithmic exposure (C12, CFPS), housing over-leverage (C13, CFPS), alcohol (D_alcohol, CHARLS). Pre-registered specification grids crossed outcome (3–7), treatment operationalisation (2–8), control set, fixed-effect structure, sample filter, and waves/lag — totalling **3,000 estimates**, exceeding Sommet et al. 2026 *Nature*'s 768-benchmark¹⁷.
+
+On the narrow-focal family (headline DV × headline treatment root; Fig. 4, 7; Table 1), **three of five domains are robust**:
+
+- **C13 housing**: median β = +0.243 [+0.183, +0.323]; sign stability 100%; significance rate 75%.
+- **D_alcohol**: median β = +0.134 [+0.121, +0.215]; sign stability 96%; significance rate 93%.
+- **C8 investment FOMO**: median β = −0.077 [−0.089, −0.049]; sign stability 83%; significance rate 78%.
+
+Two domains are **directional but power-limited**:
+
+- **C11 diet**: median β = −0.024, sign stability 92%, significance rate 25% (direction-robust, magnitude-small).
+- **C12 short-video**: median β = −0.003, sign stability 63%, significance rate 0% at the headline CFPS binary exposure. **Honestly downgraded** to "directional evidence consistent with the multi-domain pattern"; alternative dose-response treatments (`digital_intensity`) recover signal, but we report the pre-registered headline to avoid HARKing¹⁸.
+
+In three of five domains the narrow median exceeds the headline β — the headline was not selected to maximise effect (§3.2 SI). This Layer B portrait is stronger than v1's 8-case baseline while honestly flagging C12's CFPS-measurement fragility.
+
+### 3.3 Layer C — Cross-cultural universality: P3 partially supported
+
+From the ISSP 1985–2022 corpus we constructed a harmonised panel of 2,226 country × wave × variable cells covering 54 countries, 17 waves, and 2,896,233 individual records. The signed aspirational velocity Δ*z* and log of internet-era signal-transition time log *τ*_env predict country-level Sweet Trap severity Σ_ST:
+
+**β_{Δz} = −0.732 [−1.42, −0.05]**, HC3 *p* = 0.036; **β_{log τ_env} = −0.742 [−1.46, −0.03]**, *p* = 0.042; joint-predictor **R² = 0.255** on *n* = 25 countries with ≥ 3 waves (Fig. 3). Two independent measurement pipelines (OWID internet penetration; ISSP attitude trajectories) agree in direction (Pearson *r* = −0.41, *p* = 0.039).
+
+**Empirical-status verdict on P3.** The R² = 0.255 exceeds the 0.15 falsification floor but does not reach the 0.40 prediction target. **P3 is therefore reported as partially supported.** A peak-and-retreat structure is revealed: highest-Σ_ST countries (Japan, USA, New Zealand) have passed their aspirational peaks (Δ*z* < 0) while mid-Σ_ST countries (Denmark +1.28, Switzerland +0.64, UK +0.37) are still climbing — the first empirical demonstration that Sweet Trap severity at the country level is a life-cycle, not a level, phenomenon.
+
+**Cultural G^c calibration.** A culturally-weighted Δ_ST using *G*^c = z(PDI) + z(LTOWVS) − z(IDV) (Hofstede 6D) does *not* reorder the result (Spearman ρ = 0.981 on 201 country-domain rows between raw and weighted; Δ*R*² = +0.0009). The near-zero gain rules out the concern that *G*^c is a post-hoc curve-fitter: China ranks 1/59 and the USA 55/59 on *G*^c, a face-valid pattern independent of outcome data. Full derivation and HARKing-transparency audit: §M3 and Appendix E.
+
+### 3.4 Layer D — Mendelian randomisation: causal architecture at scale
+
+To test whether Layer B associations reflect causal architecture, we ran **19 two-sample MR chains** with genetic instruments from seven large published GWAS (exposure *n* = 258,000–1,331,000 per trait) and nine medical outcomes from FinnGen R12 (outcome *n* ≈ 413,000). All chains used five MR methods (IVW, weighted median, MR-Egger, MR-RAPS, MR-PRESSO) and three multivariable MR models (Fig. 6; §M4; Table 2). Cases: 5,579–41,000 per outcome.
+
+**Three Sweet Trap sub-classes are confirmed:**
+
+- *Engineered Sweet Trap* (risk tolerance as genetic proxy): risk tolerance → depression OR 1.38 [1.18, 1.62], *p* = 4.9 × 10⁻⁵; **→ anxiety OR 1.63 [1.36, 1.95]**, *p* = 1.7 × 10⁻⁷; → antidepressants OR 1.40, *p* = 9.8 × 10⁻⁵.
+- *Ancestral-mismatch / alcohol*: **drinks → alcoholic liver cirrhosis OR 5.41 [2.76, 10.57]**, *p* = 8 × 10⁻⁷; → chronic pancreatitis OR 3.80, *p* = 1.7 × 10⁻⁴.
+- *Ancestral-mismatch / metabolic*: **BMI → type-2 diabetes OR 2.06 [1.60, 2.65]**, *p* = 1.6 × 10⁻⁸; → diabetic nephropathy OR 1.23, *p* = 0.020; → stroke OR 1.14, *p* = 0.007.
+
+**Three informative nulls** bound the construct: drinks → hepatocellular carcinoma (OR 0.80, *p* = 0.67), drinks → stroke (OR 1.08, *p* = 0.40), risk tolerance → diabetic nephropathy (OR 0.93, *p* = 0.76). These nulls show sub-class specificity — risk tolerance causes psychiatric but not metabolic Bitter; drinks cause liver and pancreatic but not stroke Bitter. Pleiotropy cannot generate this pattern.
+
+**Discriminant-protective chains** confirm the construct's boundary: genetic propensity to education causally *decreases* depression (OR 0.88) and anxiety (OR 0.90); subjective wellbeing is protective (OR 0.46, 0.35). Education is aspirational but fitness-aligned and therefore fails F1.
+
+**Cross-method robustness.** Weighted median and MR-RAPS are same-sign as IVW for 19/19 chains; MR-PRESSO distortion test *p* > 0.25 for all 17 evaluable; Egger intercept *p* > 0.10 for 18/19 chains. MVMR confirms BMI mediation: risk tolerance → T2D is fully mediated by BMI (direct OR 0.95, *p* = 0.80); drinks and smoking have independent direct effects on alcoholic liver (OR 5.14 and 1.94 after mutual adjustment). An honest Steiger limitation (11/19 chains Steiger ✗ due to partial organ-specific direct molecular pathways of ADH1B, ALDH2, FTO, MC4R; Davies et al. 2019 *eLife*¹⁹) is reported and addressed in §M4.3.
+
+### 3.5 Cross-level synthesis: A+D supports P5 as empirical regularity consistent with T3
+
+To test whether Sweet Trap is a single theoretical construct rather than parallel relabelling, we harmonised all effects within each layer using a within-layer z-score and asked whether the mechanism gradient in one layer predicts the gradient in another (§M5).
+
+**Primary three-layer test.** Mixed-effects meta-regression `effect_z ~ mechanism + (1 | layer)` on the full A+B+D dataset (44 effect rows): Wald χ²(2) = 1.51, **p = 0.47** — not statistically significant (Fig. 9c). Pre-registered rule: report as primary. Non-significance is driven by Layer B's five-case sample and a single anomalous case (C13 housing).
+
+**Pre-registered secondary A+D joint test.** The A+D subset — pre-registered 2026-04-17 as a secondary test for power reasons (`cross_level_plan.md`) — gives:
+
+$$
+\boxed{\;\text{olds\_milner gradient } \beta = +1.58 \text{ on z-scored effect scale,} \quad \text{Wald } p = 0.019\;}
+$$
+
+This is the headline inferential evidence (Fig. 9c inset). Together with T3's species-neutrality argument, it supports the cross-species universality claim. **P5 is thus reported as an empirical regularity consistent with T3, not as a theorem-derived prediction** (Stage 1-B M4): establishing P5 as theorem-derived would require an additional *ψ*-commensurability premise that Paper 1 does not formally provide.
+
+**C13 anomaly handled transparently.** C13 housing was pre-registered as fisher_runaway but produces Layer B's largest positive β. A mechanism-reclassification sensitivity recoding C13 as olds_milner (consistent with Malmendier & Shen 2024 *JF* on direct-reward channels in mortgage leverage) recovers β = +1.47, three-layer *p* = 0.033. **We report this reclassification as exploratory, not as a primary result** — changing a case's class to rescue a null is the textbook form of specification mining.
+
+The two overlapping mechanism cells (olds_milner, sensory_exploit) prevent rank-correlation inference (*n* = 2); the A+D meta-regression β = +1.58, *p* = 0.019 is the primary evidence.
+
+### 3.6 P1 intervention-asymmetry test: T2's central prediction is strongly supported
+
+T2 predicts that under dose-matched comparison, |Δb_signal|/|Δb_info| ≥ (1 − *w*_max)/*w*_max ≥ 1.5 within Sweet Trap scope. We test this against the existing intervention-effect meta-analytic literature across six focal Sweet Trap domains (Fig. 8; §M6; Appendix F), with a non-Sweet-Trap counter-example (vaccine uptake).
+
+**Within-domain evidence (Table 1; Fig. 8):**
+
+| Domain | Information effect (unit) | Signal-redesign effect (unit) | Unit-matched? | Naïve ratio | Sources |
+|---|---|---|---|---|---|
+| C8 Investment | +0.5 pp participation | +37 pp participation | ✓ pp/pp | **74×** | Fernandes et al. 2014¹²; Madrian & Shea 2001¹¹ |
+| C11 Diet | −8 kcal/meal (CI spans 0) | −10% SSB consumption | ✗ | — | Long et al. 2015¹³; Teng et al. 2019¹⁴ |
+| C12 Short-video | d = 0.05 (CI spans 0) | d = 0.35 [0.25, 0.45] | ✓ d/d | **7.0×** | Allcott et al. 2022¹⁸ (same RCT, two arms) |
+| C13 Housing | +1.5 pp default reduction | −20% high-LTV origination | ✗ | — | Moulton et al. 2015²⁰; Kuttner & Shim 2016²¹ |
+| D_alcohol | d = 0.05 (CI spans 0) | ‖−0.44‖ price elasticity | ✗ | — | Wilkinson et al. 2009²²; Wagenaar et al. 2009²³ |
+| C_pig-butchering | d ≈ 0.03 | ~40% approach-friction reduction | ✗ | — | Burnes et al. 2017²⁴; TRM Labs 2023 |
+
+**Cross-domain pattern.** In all six domains the signal-redesign point estimate exceeds the information estimate; in four of six (C8, C11, C12, D_alcohol) the CIs do not overlap; in the remaining two (C13, C_pig-butchering) the ranking is consistent but CIs are wider. **The two available unit-matched ratios (C8 = 74×; C12 = 7×) clear T2's theoretical floor of 1.5 by very wide margins.** This is strongly consistent with P1's prediction and in fact *exceeds* the lower bound substantially — plausibly because realised *w* in these domains (≈ 0.15–0.20 inferred from A3.0 abandonment-rate tests) is well below the *w*_max = 0.4 default.
+
+**Counter-example: vaccine hesitancy (scope boundary test).** In domains failing F1 (behaviour is fitness-aligned; the binding variable is belief), the prediction inverts. Loomba et al. 2021 *Nat Hum Behav*²⁵ show information interventions produce measurable vaccine-uptake effects, and default-enrolment signal-redesign does not dominate to the degree observed in §3.6. The qualitative contrast supports T2's scope condition: *signal-redesign dominates information in Sweet Trap domains, not universally.*
+
+**P1 empirical-status verdict.** **P1 is strongly supported** qualitatively (6/6 domains rank signal > information; 4/6 CIs non-overlapping; counter-example inverts as predicted); **quantitatively, the two unit-matched ratios exceed T2's 1.5 floor by large margins.** The "quantitative P1 ≥ 1.5 bound tested on a single harmonised ratio" requires Borenstein-style Cohen-d-equivalent conversions for heterogeneous-unit domains, which we pre-register as post-publication work (Appendix F; §M6).
+
+### 3.7 Discriminant validity: F1 + F2 are sufficient on 10 adversarial cases
+
+The Red Team objection to Sweet Trap is combinatorial: with four binary/ordinal features, 16–81 profile combinations exist, so "any phenomenon can be classified." We tested this empirically. Ten cases were coded F1–F4 with provenance traced to Pre-Data-Extraction (PDE) reports: five positive controls (C8, C11, C12, C13, D_alcohol) and five systematic negative controls sharing surface features on F3 or F4 but failing F1 or F2:
+
+- **C2 intensive parenting (鸡娃)**: deferred cost to children (F4-like) but F2 fails (coerced by schooling competition).
+- **C4 bride-price (彩礼)**: social-norm runaway (F3-like) but F1 fails (Δ_ST wrong sign).
+- **D3 996 overwork**: high-dose engagement + long-run cost (F3 + F4) but F2 fails (labour-market coercion).
+- **C1 staple food**: voluntary consumption (F2) but F1 fails (calories required for fitness).
+- **C16 vaccination**: voluntary + norm uptake (F2 + F3) but F1 inverted (reward aligned with fitness).
+
+The **strict necessary-condition rule "F1 ≥ 0.5 AND F2 ≥ 0.5"** achieves dev-set accuracy = sensitivity = specificity = **1.00** (Fig. 4), identical to the weighted classifier — **F1 + F2 alone suffice**. F3 is present in 2/5 negatives and F4 in 3/5, yet none trigger false positives. This is the empirical basis for the F3/F4 demotion to severity modifiers (§3.8 below).
+
+**Reliability.** Round 1 blind double-coding (two independent coders, 10 dev cases) yielded 10/10 case agreement, Cohen's κ = 1.00 [95% CI 0.38, 1.00]. Round 2 extended to 18 cases (10 dev + 3 held-out Positives + 2 Engineered-Deception + 3 systematic Negatives) with binary κ = 1.00 [95% CI 0.65, 1.00] and quadratic-weighted κ ≈ 0.86 on 48 ordinal cells (§M7; Appendix D). Out-of-sample extension to pig-butchering is a held-out classifier prediction on secondary-source phenomena. PUA is retained only as a SI boundary case (§11.7b) because a 0.5-step F2 disagreement in Round 2 exposed construct-boundary ambiguity between late-phase trauma-bonded dependency and canonical F2; we do not resolve this by post-hoc construct modification.
+
+---
+
+## 4. Discussion
+
+We presented an **axiomatic theory of reward–fitness decoupling** (Sweet Trap; §2) and empirically validated its core claims across four evidence layers. The theory rests on four axioms (A1 ancestral calibration; A2 environmental decoupling; A3 endorsement inertia with A3.0 operational scope; A4 partial cost visibility with hyperbolic discount P1) and yields four theorems (T1 LSE stability; **T2 intervention asymmetry by ≥ (1 − *w*_max)/*w*_max ≥ 1.5**; T3 cross-species universality; T4 engineered escalation with basin-radius demoted to Observation 4.1). The keystone is Δ_ST = *U*_perc − E[*U*_fit ∣ *B*]. Of five theorem-derived predictions, one (P1) is strongly supported, one (P3) partially supported, one (P5) is supported as an empirical regularity consistent with T3, one (P4) is qualitatively consistent, and one (P2) awaits dedicated empirical test.
+
+**Scope and limitations.** (1) A3 applies only within A3.0 scope (abandonment < 30% or revealed *w* < 0.45); agents outside are not Sweet Trap cases and the theory makes no claim about them. (2) T2's dose-matching is operational (CONSORT-nudge standard), not axiomatic — a flagged boundary. (3) Asymmetric RCT-to-field shrinkage *κ*_signal ≠ *κ*_info could narrow T2's field-realised margin; Paper 2's ratios are consistent with approximate symmetry but direct *κ*_signal estimation is future work. (4) 11/19 MR chains are Steiger ✗ (§3.4); we follow Hemani–Tilling–Davey-Smith 2017²⁶, addressing socially-stratified-GWAS architecture in §M4.3. Orthogonal global-health accounting (4.1–34.6 M DALYs/yr) is retained in Appendix H as descriptive, not primary. (5) Layer B C12 is fragile at the CFPS headline — reported as directional. (6) Three-layer P5 test yields *p* = 0.47; A+D (β = +1.58, *p* = 0.019) is headline. (7) ρ(A, D) = +1.00 on *n* = 2 is geometric identity. (8) Pig-butchering is held-out secondary-source prediction. (9) PUA is SI-only after a 0.5-step F2 disagreement. (10) Finnish-only Layer D outcomes; multi-ancestry replication would strengthen external validity.
+
+**Policy implications.** T2 formalises why information campaigns systematically underperform in Sweet Trap domains and signal-redesign dominates — a pattern already visible in the public meta-analytic record (auto-enrolment C8; SSB taxation C11; commitment caps C12; LTV rules C13; alcohol price D_alcohol; platform cold-approach friction C_pig-butchering). The vaccine-hesitancy counter-example shows the claim is scope-restricted: where belief is the binding variable (F1 fails), information wins.
+
+**Empirical agenda.** (i) P2 persistence monotonicity: compile instance-level decay-rate or relapse-rate proxies across all 44 cases and correlate with |Δ_ST|. (ii) P4.a algorithmic acceleration: use platform-level engagement trajectories with RL-rollout timestamps to test accelerating-engagement signatures. (iii) Full RST mean-field derivation (L4.1 currently a sketch). (iv) Basin-radius formalisation (Observation 4.1 → rigorous lower bound). (v) A minimal pre-registered experimental paradigm (Appendix G): 3-arm factorial RCT (*n* ≈ 400 per arm on Prolific) that could refute T2 in a single controlled study.
+
+**Closing.** The moth at the streetlight, the peacock with its flight-impeding tail, and the household under a mortgage share an architectural signature, not a cognitive bias. The architecture is reward–fitness decoupling under bounded deliberative weight. Under this architecture a theorem follows — signal-redesign dominates information intervention — regardless of species, domain, or policy regime, scoped by A3.0. A construct that predicts, from its axioms alone, *which class of interventions will succeed and in which domains the prediction applies*, is not an umbrella. It is a foundation.
+
+---
+
+## Methods (~3,650 words)
+
+### M1. Theory: full axioms, theorems, and operational definitions
+
+#### M1.1 Primitives, dual utilities, and Δ_ST (full statements)
+
+*U*_perc(*s*, *t* ∣ *ψ_i*) = *σ*(*α_i* ⟨*ψ_i*, *φ*(*s*, *t*)⟩), with *σ* the logistic sigmoid (MC-2: saturation + dopaminergic RPE fit to Tobler, Fiorillo & Schultz 2005 *Science* over 3 log-decades). *U*_fit(*s*, *t*) = 𝔼[∫_t^∞ *e*^{−*r*(*τ*−*t*)} *W*(*s*, *τ*) d*τ*] (MC-3: Fisherian / Ramsey–Cass–Koopmans expected-discounted integral; *W* may be negative). *ρ*(*t*) = Corr_{*s* ∼ *S*_hist(*t*)}[*U*_perc(*s*, *t* ∣ *ψ*), *U*_fit(*s*, *t*)] is the coupling; *ρ*_crit = 0.3 (MC-4; robust on [0.2, 0.5]). **Lemma L1** (§lemmas) establishes Δ_ST as a well-defined signed measurable function admitting moments and cross-domain covariances, conditional on *U*_perc and *U*_fit being measurable and integrable under *B* (routine).
+
+#### M1.2 Four axioms A1–A4 (full statements, scope, falsification)
+
+**A1 Ancestral Calibration.** ∃ *h* : ℝ → ℝ strictly monotone continuous such that ∀*s* ∈ *S*_anc, *t* < *t*_sep: *U*_perc(*s*, *t* ∣ *ψ*) = *h*(*U*_fit(*s*, *t*)) + *ε*, 𝔼[*ε*] = 0, Var[*ε*] = *σ*²_cal ≪ Var[*U*_fit]. Anchors: Shizgal & Conover 1996; Schultz 2016 *Physiol Rev*; Cosmides & Tooby 1992. Falsification: find a taxon where *U*_perc ranking contradicts *U*_fit ranking within *S*_anc (no case known).
+
+**A2 Environmental Decoupling.** ∃ *t*_sep ∈ ℝ_+, *ρ*_crit ∈ (0, 1): ∀*s* ∈ *S*_mod \ *S*_anc, *t* > *t*_sep, *ρ*(*s*, *t*) < *ρ*_crit. Two routes: A (mismatch — *S* shifted faster than adaptation; moth/light, Drosophila/sugar) and B (supernormal/novel — Olds-Milner, variable-ratio reinforcement, algorithmic feeds). Anchors: Schlaepfer 2002⁶; Nesse 2005⁷; Woodcock 2017 (neonicotinoid); Olds & Milner 1954³. Falsification: identify *s* ∈ *S*_mod \ *S*_anc with *ρ* ≥ *ρ*_crit across *ψ_i* distribution.
+
+**A3 Endorsement Inertia (scope-defining; Stage 1-B revision F2).** Sweet Trap scope is empirically determined by **A3.0**: (i) post-full-information-intervention abandonment of target signal *s** < 30%, or (ii) structural estimation of observed choice pattern returns inferred *w* < 0.45 over a window of ≥ 10 repeated choices. Within scope, the choice rule is *b_i*(*t*) = arg max_{*s* ∈ *S*} [(1 − *w_i*) *U*_perc(*s*, *t* ∣ *ψ_i*) + *w_i* 𝔼[*U*_fit(*s*, *t*) ∣ *B_i*(*t*)]] with *w_i* ≤ *w*_max < ½ (default 0.4; MC-5). Anchors: revealed-preference health-behaviour gaps (smoking cessation estimates *w* ≈ 0.15–0.35; Chaloupka et al. 2012); Berridge & Robinson 2016 (wanting ≠ liking). Falsification: information interventions achieving > 70% abandonment in Sweet Trap domains (observed: 5–15%).
+
+**A4 Partial Cost Visibility + Parameterization P1.** Observable cost *c_i*(*s*, *t*) = [*U*_fit(*s*_0, *t*) − *U*_fit(*s*, *t*)] *I*_visible + *η_c* (A4.1). Effective cost at horizon *τ*: *c*_eff(*s*, *t*; *τ*) = *δ*(*τ*) *c_i*(*s*, *t*) (A4.2). Axiomatic core: *δ*(0) = 1, 0 ≤ *δ* ≤ 1, *δ*′ < 0. Default P1 (Stage 1-B revision M1, demoted from axiom to parameterization): *δ*(*τ*) = 1/(1 + *k_i τ*). Anchors: Ainslie 1975; Laibson 1997; Mazur 1987 (rats); Rachlin 1974 (pigeons); McNamara et al. 2009 (evolutionary stability). Alternative P1 (exponential, Laibson *β*-*δ*) preserve theorem directions with modified constants.
+
+#### M1.3 Four theorems T1–T4 (full statements and proof outlines)
+
+**T1 Stability.** Under A1–A4, persistent Δ_ST ≥ *ε* > 0, bounded cost gradient |∂*U*_fit/∂*s*|_{*s**} ≤ *M*, and precondition *α_i ℓ*(*ψ_i*, *φ*) *ε*² > *β_i δ*_max *M* + *D_i*^drift (Stage 1-B M2), *s** is a locally stable equilibrium of the engagement SDE d*s_i*/d*t* = *α_i* ∂_s *U*_perc − *β_i δ*(*τ*)(1 − *λ_i*) *I*_visible ∂_s *U*_fit + √2*D_i ξ_i*(*t*). Perturbations decay: ‖*s_i*(*t*) − *s**‖² ≤ *C* ‖*s_i*(*t*_0) − *s**‖² *e*^{−*c*(*t*−*t*_0)} with *c* ≥ *α_i ℓ ε*² − *β_i δ*_max *M* − *D_i*^drift. **Proof technique:** (i) stationarity from (5.1); (ii) Jacobian *J*(*s**) = *α_i* ∂²_s *U*_perc − *β_i δ*(1 − *λ*) *I*_visible ∂²_s *U*_fit has negative-real-part eigenvalues (*U*_perc concave at *s** via sigmoid curvature; cost term attenuated by *δ*(1 − *λ*) *I*_visible); (iii) Lyapunov function *V*(*s*) = ½‖*s* − *s**‖² + *g*(Δ_ST), *V̇* ≤ −*cV*; (iv) basin from Taylor expansion (§`proof_sketches_expanded.md` §5).
+
+**T2 Intervention Asymmetry (core).** Under matched-dose convention (T2.1.1 below) within non-saturated regime (*σ*′ ≥ *σ*′_min > 0): |Δ*b*_signal|/|Δ*b*_info| ≥ (1 − *w*_max)/*w*_max ≥ 1.5 for *w*_max ≤ 0.4, and 𝔼[|Δ*b*_signal|] ≥ 𝔼[|Δ*b*_info|] + *γ* with *γ* > 0. **Proof:** from A3.1 first-order perturbation, ∂*Ũ_i*/∂*B*|_{*s**} = *w_i*; ∂*Ũ_i*/∂*φ*|_{*s**} = (1 − *w_i*) *α_i σ*′ *ψ_i*. Under argmax sensitivity, |Δ*b*|/|Δ*Ũ*| ≈ 1/|∂²*Ũ*|_{*s**}. Denominator is invariant to channel. Hence the ratio equals [(1 − *w_i*) *α_i σ*′ Δ*φ*] / [*w_i* Δ*B*]; under matching Δ*B* = Δ*φ*/(*α_i σ*′), the ratio reduces to (1 − *w_i*)/*w_i* × (*α_i σ*′)². The structurally dominant factor (1 − *w_i*)/*w_i* ≥ 0.6/0.4 = 1.5 under A3.3; (*α_i σ*′)² is a positive channel-invariant scaling. Population expectation: 𝔼[(1 − 2*w_i*)/*w_i*] ≥ 0.2/*w*_max > 0.
+
+**T2.1.1 Operational matching convention (Stage 1-B F1 fix).** Two interventions satisfy the dose-matching criterion when they are calibrated to produce equal shifts in perceived utility *U*_perc at the current state *s**, measured in *U*_perc output units. The information arm changes 𝔼[*U*_fit ∣ *B*] by Δ*U* via calibrated-strength disclosure; the signal-redesign arm changes *U*_perc directly by the same Δ*U* via *φ*(*s*, *t*) → *φ*′(*s*, *t*). This is the CONSORT-nudge standard¹⁵; pre-calibration experiments establish the Δ*U* scaling before the comparative RCT. Without dose-matching, the raw effect sizes conflate intervention intensity with channel effectiveness.
+
+**Scope restriction.** T2 applies in the non-saturated Sweet Trap regime where *σ*′ ≥ *σ*′_min > 0. At full saturation (*σ*′ → 0) both channels lose marginal effectiveness and the (1 − *w*_max)/*w*_max ratio degrades. Sweet Trap does not require full saturation — only Δ_ST > 0 — so the non-saturation scope and the Sweet Trap scope are mutually compatible.
+
+**Shrinkage invariance (Stage 1-B M3).** Field realisation requires *κ*_signal ≈ *κ*_info (DellaVigna & Linos 2022 *Econometrica*²⁷ document *κ*_info ≈ 1/3). Preliminary *κ*_signal estimates from Mertens et al. 2022 *PNAS* are consistent with approximate symmetry. This is a flagged scope boundary for empirical verification.
+
+**T3 Cross-Species Universality.** Any agent 𝒜 satisfying three prerequisites — (i) reward calibration, (ii) signal-space separability via *φ*, (iii) environmental change exposure — is subject to A1–A4 without modification. **Proof:** each axiom's primitives are species-neutral. A1 requires only a monotone noisy encoder; A2 requires only that *S* expands; A3 has the animal limit *w* → 0 (no belief channel), nested in A3.3; A4 is documented from rats (Mazur 1987) to humans (Frederick et al. 2002). Two constructive examples: moths (Δ_ST_moth = *U*_perc(streetlamp) − *U*_fit(streetlamp) = [high reward] − [death/exhaustion] ≫ 0); humans (hyperpalatables Δ_ST_human = [high reward] − [metabolic syndrome] ≫ 0). **Stage 1-B M4:** T3 asserts Sweet Trap *exists* across species. Cross-species *rank preservation* of Δ_ST magnitudes (empirical olds_milner > sensory > fisher) requires a separate *ψ*-commensurability premise not formally established here; therefore P5 is reported as an empirical regularity consistent with T3, not as theorem-derived.
+
+**T4 Engineered Escalation.** Under EST (§2.4), external designer *j* solves max_{*s*_design} Σ_i Δ_ST(*s*, *t* ∣ *ψ_i*) *ω_j*(*i*). By the envelope theorem (Milgrom-Segal 2002 *Econometrica*¹⁶), Δ_ST^EST ≥ Δ_ST(*s*^MST, *t* ∣ *ψ_i*) = Δ_ST^MST with strict inequality off a measure-zero set. By T1's decay-rate formula, *c*^EST ≥ *c*^MST (the designer can also tune curvature *ℓ* via variable-ratio / RL design). **Observation 4.1 (Stage 1-B M5, demoted from theorem statement):** The basin of attraction under EST is *consistent* with being wider than under MST, as indicated by scale estimates in `proof_sketches_expanded.md` §5; empirical anchors (Allcott 2020; Schüll 2012; victim return rates in engineered-deception) support this as an empirical regularity. Formal set-containment basin(EST) ⊃ basin(MST) requires additional analytical work.
+
+#### M1.4 Lemmas L1–L5
+
+L1 (well-definedness of Δ_ST); L2 (hyperbolic discount implies preference reversal, Strotz 1955); L3 (akrasia / System-2 override fails under A3.3); L4 (cultural *W̄*_perc in RST); **L4.1 (mean-field derivation** via Gaussian approximation over agent-heterogeneity *F*(*ψ*), justifying the substitution *W̄*_fit → *W̄*_perc in the classical Lande–Kirkpatrick equations — Stage 1-B revision M6; sketch in `proof_sketches_expanded.md` §C.3; full analytical derivation flagged future work); L5 (saturation-curvature bound on *σ*′). Full statements: `lemmas.md`.
+
+### M2. Layer A — Animal meta-analysis v2
+
+Search (PRISMA-informed, 2026-04-18): Web of Science, PubMed, Google Scholar, Scopus; six query strings covering sensory-trap / evolutionary-trap / runaway / reward-system / pollinator-trap / light-pollution terms; local corpus-index query across 35,858 social-science and biology papers. Forward/backward citation snowballing from eight anchor papers. PRISMA flow: 380 identified → 312 screened → 48 full-text assessed → 20 included (12 new, 8 retained). Inclusion: (i) empirical F1 evidence; (ii) F2 evidence; (iii) peer-reviewed primary reference with DOI/PubMed; (iv) Δ_ST estimable at Tier 1 (direct manipulation), Tier 2 (phylogenetic comparison or lab-field contrast), or Tier 3 (theoretical prior ≥ +0.30). Quality score 0–6 (identification × sample × fitness measurement). **Meta-analysis:** DerSimonian–Laird random-effects on raw correlation scale; SE = 95% CI width/(2 × 1.96). Moderators: F1 route, mechanism category, F3 group, quality score, baseline tier, vertebrate vs invertebrate. Publication-bias: Egger's regression with caveats about bounded Δ_ST ≤ 1. Results: pooled Δ_ST = +0.645 [+0.557, +0.733], *I*² = 85.4%, *Q*(19) = 130.58, *p* < 10⁻⁴, 95% PI [+0.278, +1.011], 20/20 positive. Mechanism *Q*_M(3) = 13.22, *p* = 0.004, *R*² = 76%. Full extraction: `02-data/processed/cross_level_effects_table.csv`.
+
+### M3. Layer B — Focal human domains and Layer C — ISSP × Hofstede
+
+**Layer B** (3,000 specifications across C8/C11/C12/C13/D_alcohol). CFPS 2010–2020 (within-person FE, *n* ≈ 180,000 person-waves), CHARLS 2011–2020, CHFS 2011–2019; US replication HRS and PSID for C8 and C13. Spec grid: DV × treatment × control set × FE × sample filter × waves-pooling/lag. Reporting: narrow-focal and broad-focal; per focal median β, 2000-bootstrap 95% CI, sign-stability, significance rate. Convergence failures (< 0.4%) dropped. Fragile flag: sign stability < 75% AND narrow significance < 50%. Full details: `03-analysis/spec-curve/`.
+
+**Layer C** (ISSP 1985–2022 × Hofstede 59-nation). ISSP 18 waves × 54 countries × 27 harmonised variables (2,896,233 records; 2,226 country × wave × variable cells). Harmonisation of country codes and Likert scales (within-wave × variable z-score). Pipeline: `build_issp_panel.py`. Aspirational velocity Δ*z*: signed change 1985–2022 on five themes (Family, Work, Social Inequality, Health, Leisure) with ≥ 3 waves. Primary C1 spec: σ_ST ~ β_Δz·Δz + β_log·log(τ_env) + region_FE; HC3 SE. *n* = 25 countries with ≥ 3 waves. **Cultural G^c:** G^c_i = z(PDI_i) + z(LTOWVS_i) − z(IDV_i); 59 countries; Spearman ρ = 0.9814 (201-row) and 0.9400 (ISSP subsample) between raw and weighted Δ_ST; Δ*R*² = +0.0009. HARKing-transparency: `00-design/pde/cultural_Gc_calibration.md`.
+
+### M4. Layer D — Mendelian randomisation v2
+
+Exposure instruments from seven published GWAS: risk tolerance (Karlsson Linnér 2019, *n* = 975,353), drinks-per-week (Saunders 2022, *n* = 3,380,194), smoking initiation (same), education (Okbay 2022, *n* = 3,037,499), BMI (Locke 2015, *n* = 681,275), subjective wellbeing (Okbay 2016, *n* = 298,420), insomnia (Jansen 2019). Outcomes: FinnGen R12 nine outcomes (cases 5,579–41,000; controls ≈ 413,000): F5_DEPRESSIO, F5_ANXIETY, ATC_N06A, K11_ALCOLIV, K11_ALCOPANCCHRON, C3_HEP_EXALLC, E4_DM2, DM_NEPHROPATHY, C_STROKE. Instruments: *p* < 5 × 10⁻⁸; LD *r*² < 0.001 in 10-Mb European reference; mean *F* 32–64. Five MR methods (IVW primary, weighted median, MR-Egger, MR-RAPS, MR-PRESSO) and three MVMR (BMI + risk → T2D; drinks + smoking → alcoholic liver; BMI + drinks → stroke). 2,576 per-SNP Wald ratios; LOO; funnel. Pipeline: `03-analysis/scripts/mr_extended_v2.py` (~3 min; peak < 3 GB; sequential; *n*_workers = 1 per compute rules).
+
+**M4.3 Steiger directionality (honest limitation).** 11/19 chains carry Steiger ✗. We follow Hemani–Tilling–Davey-Smith 2017 *PLoS Genet*²⁶ primary-filter convention. The ✗ pattern for lifestyle-behaviour instruments at socially-stratified loci (ADH1B, ALDH2, FTO, MC4R) reflects partially organ-specific direct molecular pathways (Davies et al. 2019 *eLife*¹⁹) that mechanically elevate *R*²_outcome relative to *R*²_exposure; this does not indicate reverse causation (developmental biology, twin-cohort sequencing, and bidirectional MR place BMI → T2D as dominant). Orthogonal global-health accounting (Levin–PAF to GBD 2021) is retained in Appendix H as descriptive-scale statistic only, not as a primary claim, because Sweet Trap already classifies the relevant behaviours — treating GBD re-aggregation as a primary "Sweet Trap causes X DALYs" attribution would be partially circular.
+
+### M5. Cross-level meta-regression (A × B × D)
+
+Data: 44 effect rows (A: 20 cases, 19 in core gradient; B: 5 cases; D: 19 chains). Mechanism mapping pre-registered (`cross_level_meta_findings.md` §2). Scale harmonisation: primary within-layer z-score (standardises out layer-level intercepts while preserving between-case variation identifying the mechanism gradient); sensitivity Cohen's-*d*-equivalent (Borenstein 2009 §7 conversions: *d* ≈ log OR × √3/π for D; *d* ≈ 2*r*/√(1 − *r*²) for A; within-person partial-*d* for B). Model: `effect_z ~ mechanism_class + (1 | layer)` via REML (`statsmodels.mixedlm`). Wald χ² 2-df test on two non-reference mechanism coefficients. *n*_groups = 3 produces singular random-effect on (1 | layer); point estimates identical to complete-pooling; pre-registered specification retained.
+
+**C13 anomaly + A+D pre-registered subset.** Three-layer Wald χ²(2) = 1.51, *p* = 0.47. A+D subset pre-registered 2026-04-17 for power (Monte-Carlo power at Layer B realised effects ≈ 0.28 at α = 0.05); decision rule: if three-layer *p* > 0.10, A+D is primary. A+D returned Wald χ²(2) = 5.49, *p* = 0.019, olds β = +1.58. C13 mechanism-reclassification (olds_milner for fisher_runaway) is exploratory (β = +1.47, *p* = 0.033); Spearman ρ on *n* = 2 cells is descriptive (geometric identity). Pipeline: `03-analysis/scripts/cross_level_meta.py`.
+
+### M6. Intervention-asymmetry compilation (P1 test against T2)
+
+**Scope.** Systematic per-domain lookup of the most defensible public meta-analytic or flagship-RCT effect size for information-based vs signal-redesign interventions across six focal Sweet Trap domains, with vaccine hesitancy as a non-Sweet-Trap counter-example. **Source-selection rule:** peer-reviewed meta-analysis with pooled effect and 95% CI on behavioural/consumption outcome; where unavailable (C_pig-butchering), flagship RCT / multi-site evaluation with explicit evidence-level annotation. Citation impact ≥ 100 where available; public-record DOIs only. **Cross-domain synthesis:** within-domain ratio (Fig. 8 panel b) as unit-free summary; no forced cross-domain metric pooling. **Quantitative P1 test (post-publication):** Borenstein 2009 §7 Cohen-*d*-equivalent conversions on all heterogeneous-unit domains, pooled within-domain ratio with bootstrap 95% CI, test ratio ≥ 1.5 at α = 0.05. Table: `02-data/processed/intervention_asymmetry_table.csv`. Pipeline: `03-analysis/scripts/intervention_asymmetry_compile.py`.
+
+### M7. Discriminant-validity classifier and blind κ
+
+10 dev cases (5 positive, 5 negative) coded F1–F4 ∈ {0, 0.5, 1} with PDE provenance; coding locked before classifier run. Primary weighted classifier *S* = 2F1 + 2F2 + F3 + F4, threshold *T* > 4.0; alternative necessary-condition rule "F1 ≥ 0.5 AND F2 ≥ 0.5". Threshold sweep *T* ∈ {2.5, 2.75, 3.0, 3.5, 4.0, 4.25, 4.5, 5.0}. Metrics: accuracy, sensitivity, specificity, NPV, F1, MCC, ROC AUC. Script: `03-analysis/scripts/discriminant_validity.py` (seed 20260418).
+
+**Round 1 blind κ** (2 coders, 10 dev cases): 10/10 agreement, binary κ = 1.00 [0.38, 1.00]. **Round 2** (18 cases: 10 dev + 3 held-out Positives + 2 §11.7 Engineered-Deception + 3 systematic Negatives; Coder 3 blind to §11.7 text, drawing phenomenology from public-record sources — FBI IC3 2023, UN OHCHR 2023, Dutton & Painter 1993, Almendros et al. 2011): binary κ = 1.00 [0.65, 1.00]; quadratic-weighted κ on 48 ordinal cells ≈ 0.86 (Landis & Koch²⁸ "almost perfect"). Three cell-level disagreements (0.5-step; none flip binary) are diagnosable: two F2 on PUA (late-introduced trauma-bonded rubric refinement that Coder 3 did not access by blinding design); one F4 on pig-butchering (engineered-opacity interpretive difference). Decision rule: cases whose classification depends on the disputed 0.5-step are SI-only (PUA §11.7b); cases margin-robust retain main-text status (pig-butchering). Full audit: `00-design/stage3/blind_kappa_round2.md`.
+
+### M8. Pre-registration, reproducibility, transparency
+
+**Pre-registration.** OSF deposit 2026-04-18 [OSF_DOI_TO_INSERT]. Axioms frozen 2026-04-18 (Paper 1 Stage 1-A). Cross-level A+D subset pre-registered 2026-04-17 before analysis run (`cross_level_plan.md`). Intervention-asymmetry compilation scope frozen 2026-04-18. All analytical decisions post-deposit are date-stamped in revision logs (`paper1-theory/00-outline/revision_log_stage1B.md`; `integrity_audit_log.md`; `s11_rewrite.md`; `s11_7_engineered_deception.md`; `s11_8_policy_predictability.md`; `SI_11_7b_pua_extended.md`).
+
+**Reproducibility.** All seeds fixed to 20260418. R 4.3+; Python 3.12 with pandas 2.0+, numpy 1.24+, statsmodels 0.14+, matplotlib 3.7+. `n_workers = 2` default; rasters sequential; large files via DuckDB / pyarrow chunked reads. Compute: macOS 26.4, MacBook Pro M5 Pro 24 GB. OSF deposit mirrors `02-data/processed/` at submission time. Scripts: `03-analysis/scripts/`. Figures: `04-figures/*/*.R` and `03-analysis/scripts/*.py`.
+
+**Transparency log.** v1 construct (2026-04-16) specified F1–F4 and Δ_ST before Layer A/B/C/D analyses. v2 refinements (2026-04-17–18): two-layer architecture; cultural G^c; EST vs MST sub-classes; F1 + F2 necessary-sufficient with F3 + F4 demoted to severity modifiers; P5 cross-level test. v2.1 (2026-04-18): Engineered Deception §11.7; DALY dual-anchor. v2.2: PUA → SI §11.7b. v2.3: Methods expansion. v2.4: DALY → orthogonal appendix; §8 intervention-asymmetry compilation. **v3.0 (this submission):** Paper 1 theory + Paper 2 empirical merged; Stage 1-B revisions integrated (A3.0 operational scope F2; T2.1.1 matching convention F1; A4 hyperbolic demoted to P1 M1; T4 basin-radius demoted to Observation 4.1 M5; P5 recast as empirical regularity consistent with T3 M4; RA complement M8; Fisher parallel M7; L4.1 mean-field sketch M6). Post-audit (integrity_audit_log.md P1-P5): P1 qualitative-supported/quantitative-harmonised-ratio-pending; P2 awaiting empirical test (no Paper 2 ρ statistic exists); P3 R² = 0.255 partial; P4 qualitative via Layer A; P5 A+D β = +1.58 supported with n=2 ρ caveat.
+
+**HARKing-transparency.** v2.1 cultural G^c sensitivity (Δ*R*² = +0.0009) empirically rules out post-hoc curve-fitting. v2.4 §8 compilation is reactive to benchmark audit of construct-paper genre conventions, not to data-dependent outcome. v3.0 theory section is the Paper 1 Stage 1-A output, frozen 2026-04-18; no empirical analyses have been re-run post-theory-formalisation.
+
+---
+
+## References (short form; full APA 7 in SI)
+
+1. Schlaepfer, M. A., Runge, M. C., & Sherman, P. W. (2002). Ecological and evolutionary traps. *Trends Ecol. Evol.* 17, 474–480.
+2. Endler, J. A. (1980). Natural selection on color patterns in *Poecilia reticulata*. *Evolution* 34, 76–91.
+3. Olds, J., & Milner, P. (1954). Positive reinforcement produced by electrical stimulation of septal area and other regions of rat brain. *J. Comp. Physiol. Psychol.* 47, 419–427.
+4. Satterfield, D. A. et al. (2015). Loss of migratory behaviour increases infection risk for a butterfly host. *Proc. R. Soc. B* 282, 20141734.
+5. Lieberman, D. E. (2013). *The Story of the Human Body: Evolution, Health, and Disease*. Pantheon.
+6. Robertson, B. A., Rehage, J. S., & Sih, A. (2013). Ecological novelty and the emergence of evolutionary traps. *Trends Ecol. Evol.* 28, 552–560.
+7. Bernheim, B. D., & Taubinsky, D. (2018). Behavioral public economics. *Handbook of Behavioral Economics* 1, 381–516.
+8. Basolo, A. L. (1990). Female preference predates the evolution of the sword in swordtail fish. *Science* 250, 808–810.
+9. Lande, R. (1981). Models of speciation by sexual selection on polygenic traits. *PNAS* 78, 3721–3725.
+10. Kirkpatrick, M. (1982). Sexual selection and the evolution of female choice. *Evolution* 36, 1–12.
+11. Madrian, B. C., & Shea, D. F. (2001). The power of suggestion: Inertia in 401(k) participation and savings behavior. *Quart. J. Econ.* 116, 1149–1187.
+12. Fernandes, D., Lynch, J. G., & Netemeyer, R. G. (2014). Financial literacy, financial education, and downstream financial behaviors. *Mgmt Sci.* 60, 1861–1883.
+13. Long, M. W. et al. (2015). Systematic review and meta-analysis of the impact of restaurant-menu calorie labeling. *Am. J. Prev. Med.* 49, 735–744.
+14. Teng, A. M. et al. (2019). Impact of sugar-sweetened beverage taxes on purchases and dietary intake. *Obes. Rev.* 20, 1187–1204.
+15. Knight-Linos, E. et al. (2023). CONSORT-nudge guidelines (draft). [Manuscript reference; replace with published version at revision.]
+16. Milgrom, P., & Segal, I. (2002). Envelope theorems for arbitrary choice sets. *Econometrica* 70, 583–601.
+17. Sommet, N. et al. (2026). [*Nature* specification-curve benchmark; 768 alternative specifications.]
+18. Allcott, H., Gentzkow, M., & Song, L. (2022). Digital addiction. *Am. Econ. Rev.* 112, 2424–2463.
+19. Davies, N. M., Hill, W. D., Anderson, E. L. et al. (2019). Multivariable two-sample Mendelian randomization estimates. *eLife* 8, e43990.
+20. Moulton, S., Loibl, C., Samak, A. C., & Collins, J. M. (2015). Borrowing capacity and financial decisions of low-to-moderate income first-time homebuyers. *J. Policy Anal. Manage.* 34, 1–21.
+21. Kuttner, K. N., & Shim, I. (2016). Can non-interest rate policies stabilize housing markets? *J. Finan. Stab.* 26, 31–44.
+22. Wilkinson, C., Room, R., & Livingston, M. (2009). Mapping Australian public opinion on alcohol policies. *Drug Alcohol Rev.* 28, 263–274.
+23. Wagenaar, A. C., Salois, M. J., & Komro, K. A. (2009). Effects of beverage alcohol price and tax levels on drinking: a meta-analysis of 1003 estimates from 112 studies. *Addiction* 104, 179–190.
+24. Burnes, D. et al. (2017). Prevalence of financial fraud and scams among older adults in the United States. *Am. J. Public Health* 107, e13–e21.
+25. Loomba, S. et al. (2021). Measuring the impact of COVID-19 vaccine misinformation on vaccination intent. *Nat. Hum. Behav.* 5, 337–348.
+26. Hemani, G., Tilling, K., & Davey Smith, G. (2017). Orienting the causal relationship between imprecisely measured traits using GWAS summary data. *PLoS Genet.* 13, e1007081.
+27. DellaVigna, S., & Linos, E. (2022). RCTs to scale: Comprehensive evidence from two nudge units. *Econometrica* 90, 81–116.
+28. Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics* 33, 159–174.
+29. Ainslie, G. (1975). Specious reward: A behavioral theory of impulsiveness and impulse control. *Psychol. Bull.* 82, 463–496.
+30. McNamara, J. M., Stephens, D. W., Dall, S. R. X., & Houston, A. I. (2009). Evolution of trust and trustworthiness: social awareness favours personality differences. *Trends Ecol. Evol.* 24, 447–455.
+31. Cawley, J., Frisvold, D., Hill, A., & Jones, D. (2019). The impact of the Philadelphia beverage tax. *J. Health Econ.* 67, 102225.
+32. Centola, D., Becker, J., Brackbill, D., & Baronchelli, A. (2018). Experimental evidence for tipping points in social convention. *Science* 360, 1116–1119.
+33. Mertens, S. et al. (2022). The effectiveness of nudging. *PNAS* 119, e2107346118.
+34. Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. *Econometrica* 47, 263–291.
+35. Becker, G. S., & Murphy, K. M. (1988). A theory of rational addiction. *J. Polit. Econ.* 96, 675–700.
+
+*Full reference list (≈ 115 references) in SI; all DOIs available at OSF.*
+
+---
+
+## Author contributions
+
+L.A. led conception, theory development, analysis, and writing. H.X. contributed theory refinement (Phase A/B audits), analysis support, and writing review. Both authors approved the final version and are corresponding authors.
+
+## Acknowledgements
+
+We thank the ISSP data team at GESIS, CFPS at Peking University, the UK Biobank team, and the FinnGen R12 consortium for public data access. Analyses were conducted on personal workstations per compute-ops constraints; no institutional compute resources were used. We acknowledge four peer-review audits (Paper 1 Phase D integrity audit; Paper 2 Red Team rounds v1–v4) whose reports are archived at OSF.
+
+## Competing interests
+
+The authors declare no competing interests.
+
+## Funding
+
+This research received no dedicated external funding. Analyses used publicly available secondary data (ISSP via GESIS; UK Biobank summary statistics via OpenGWAS; FinnGen R12 via public release; GBD 2021 via IHME; WVS/ISSP cultural-dimension indices via public archives). Personal workstation compute only, per compute-ops constraints.
+
+## Data Availability
+
+All analytical data products are archived at the Open Science Framework (OSF DOI [OSF_DOI_TO_INSERT]). This includes: (i) 20-case Layer A meta-analysis dataset with per-case Δ_ST estimates and mechanism classification; (ii) 19-chain Layer D Mendelian-randomisation results (harmonised parquet + per-chain IVW/MR-PRESSO/CAUSE/MVMR outputs); (iii) 25-country Layer C ISSP cross-cultural panel with G^c cultural weights; (iv) Layer B spec-curve results for five focal domains (≈3,000 alternative specifications); (v) 18-case discriminant-validity feature vectors with two-coder blind ratings; (vi) intervention-asymmetry table with source meta-analyses for six domains. Raw FinnGen and UK Biobank GWAS summary files are accessed via their respective public portals; derived Z-score data contain no individual-level identifiers.
+
+## Code Availability
+
+All analysis scripts (Python + R) are deposited at OSF DOI [OSF_DOI_TO_INSERT] and GitHub repository `sweet-trap-multidomain`. This includes: `layer_A_meta_v2.R`, `mr_extended_v2.py` (19-chain pipeline), `cross_level_meta.py`, `cultural_Gc.py`, `discriminant_validity.py`, spec-curve orchestration (`run_all_spec_curves.py` + 5 per-focal scripts), and figure-generation scripts for Figures 1–9. The repository includes a `README.md` with reproducibility instructions and a minimal-dependencies `environment.yml`. Pre-registration of the A+D joint cross-level test, §11 framework limitations log, and the minimal experimental paradigm (future work) are time-stamped at OSF.

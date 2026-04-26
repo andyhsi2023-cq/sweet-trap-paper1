@@ -1,0 +1,19 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+XP_062528340.1       -            449 Gr_sweet             -            414     2e-80  271.1  14.0   1   1   1.5e-83   7.1e-80  269.2  14.0    10   400    27   424    13   438 0.94 candidate olfactory receptor isoform X1 [Bombyx mori]
+XP_062528712.1       -            477 Gr_sweet             -            414   1.3e-72  245.3  19.2   1   1   8.4e-76     4e-72  243.7  19.1    10   400    74   476    53   477 0.92 gustatory receptor for sugar taste 64e-like [Bombyx mori]
+XP_062528797.1       -            423 Gr_sweet             -            414   1.1e-61  209.3  31.8   1   1     3e-65   1.4e-61  209.0  31.8     9   403    15   408     7   417 0.95 gustatory receptor for sugar taste 64f [Bombyx mori]
+XP_062528713.1       -            395 Gr_sweet             -            414   2.4e-57  195.0  10.8   1   1   9.2e-61   4.3e-57  194.2  10.8    25   397    13   393     4   395 0.87 gustatory receptor for sugar taste 64a [Bombyx mori]
+NP_001091788.1       -            241 Gr_sweet             -            414   6.6e-53  180.4   6.0   1   1   6.4e-56     3e-52  178.2   6.0   203   400     2   216     1   230 0.92 candidate olfactory receptor [Bombyx mori]
+NP_001124344.1       -            417 Gr_sweet             -            414   9.2e-35  120.6  22.5   1   1   2.8e-38   1.3e-34  120.1  22.5     6   396    13   416     8   417 0.90 gustatory receptor 8 [Bombyx mori]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm
+# Target file:     /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/bmori.fa
+# Option settings: hmmsearch --tblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_bmori.tbl --domtblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_bmori.domtbl -E 1e-5 --cpu 2 /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/bmori.fa 
+# Current dir:     /Users/andy/Desktop/Research/sweet-trap-multidomain/00-design
+# Date:            Fri Apr 24 13:35:32 2026
+# [ok]

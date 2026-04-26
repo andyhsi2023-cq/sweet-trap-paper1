@@ -1,0 +1,16 @@
+taxon	inside_DRD_clade	sister_size	sister_composition	sister_top_example	parent_support_ufb	nearest_ref_taxon	nearest_ref_class	nearest_ref_distance
+Adig_XP_015780793.1|Adig|	False	2	CAND_CNID:2	Nvec_XP_032223364.1|Nvec|	100	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.1871
+Nvec_XP_032223364.1|Nvec|	False	1	CAND_CNID:1	Nvec_XP_032223363.1|Nvec|	100	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.4767
+Nvec_XP_032223363.1|Nvec|	False	1	CAND_CNID:1	Nvec_XP_032223364.1|Nvec|	100	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.4767
+Hvul_XP_012562393.2|Hvul|	False	3	CAND_CNID:3	Adig_XP_015780793.1|Adig|	90	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	6.6504
+Adig_XP_015752479.1|Adig|	False	2	CAND_CNID:2	Nvec_XP_032231005.1|Nvec|	98	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.4030
+Nvec_XP_032231005.1|Nvec|	False	1	CAND_CNID:1	Nvec_XP_032231004.1|Nvec|	100	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.3083
+Nvec_XP_032231004.1|Nvec|	False	1	CAND_CNID:1	Nvec_XP_032231005.1|Nvec|	100	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.3083
+Nvec_XP_032231228.1|Nvec|	False	2	CAND_CNID:2	Nvec_XP_032238106.1|Nvec|	98	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.2718
+Nvec_XP_032238106.1|Nvec|	False	1	CAND_CNID:1	Nvec_XP_001620703.1|Nvec|	100	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.3288
+Nvec_XP_001620703.1|Nvec|	False	1	CAND_CNID:1	Nvec_XP_032238106.1|Nvec|	100	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.3245
+Nvec_XP_032220261.1|Nvec|	False	1	CAND_CNID:1	Nvec_XP_032220259.1|Nvec|	NA	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.7107
+Nvec_XP_032220259.1|Nvec|	False	1	CAND_CNID:1	Nvec_XP_032220261.1|Nvec|	NA	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.7107
+Nvec_XP_032220260.1|Nvec|	False	2	CAND_CNID:2	Nvec_XP_032220261.1|Nvec|	100	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	5.7107
+Hvul_XP_047135732.1|Hvul|	False	9	CAND_CNID:9	Adig_XP_015752479.1|Adig|	50	HUMAN_HTR4|Q13639|5-hydroxytryptamine	OUT_HTR	7.6829
+Hvul_XP_012562068.2|Hvul|	False	1	OUT_HRH:1	HUMAN_HRH1|P35367|histamine_H1_receptor	56	HUMAN_HRH1|P35367|histamine_H1_receptor	OUT_HRH	6.7114

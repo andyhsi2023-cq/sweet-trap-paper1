@@ -1,0 +1,5 @@
+clade,omega_start,lnL_alt,omega_2a,p2a_p2b,status,wall_seconds
+Gr_sweet__amellifera_clade,1.0,-52163.159208,36.18706,0.12021,ok,3354
+Gr_sweet__amellifera_clade,0.1,-52163.159208,36.18182,0.12021,ok,3604
+Gr_sweet__amellifera_clade,5.0,-52169.361385,1.63397,0.0,ok,3345
+Gr_sweet__amellifera_clade,2.0,-52163.159208,36.17706,0.12021,ok,3686

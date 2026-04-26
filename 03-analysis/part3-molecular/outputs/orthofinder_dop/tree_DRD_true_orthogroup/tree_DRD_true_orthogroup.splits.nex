@@ -1,0 +1,121 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=25;
+TAXLABELS
+[1] 'DRD1|Homo_sapiens|ENST00000393752.3'
+[2] 'DRD1|Mus_musculus|ENSMUST00000021932.6'
+[3] 'DRD1|Rattus_norvegicus|ENSRNOT00000030893.5'
+[4] 'DRD1|Gallus_gallus|ENSGALT00010029037.1'
+[5] 'DRD1|Xenopus_tropicalis|ENSXETT00000030438.3'
+[6] 'DRD2|Homo_sapiens|ENST00000362072.8'
+[7] 'DRD2|Mus_musculus|ENSMUST00000075764.8'
+[8] 'DRD2|Rattus_norvegicus|ENSRNOT00000045944.7'
+[9] 'DRD2|Gallus_gallus|ENSGALT00010060881.1'
+[10] 'DRD2|Xenopus_tropicalis|ENSXETT00000025512.5'
+[11] 'DopR1|Drosophila_melanogaster|NM_001316525.1'
+[12] 'DopR2|Drosophila_melanogaster|NM_001031909.2'
+[13] 'DopR1|Apis_mellifera|XM_026445263.1'
+[14] 'DopR2|Apis_mellifera|XM_006561507.3'
+[15] 'DopR1|Tribolium_castaneum|XM_015983151.2'
+[16] 'DopR2|Tribolium_castaneum|XM_015978814.2'
+[17] 'DopR1|Aedes_aegypti|NM_001358923.1'
+[18] 'DopR2|Aedes_aegypti|NM_001358925.1'
+[19] 'DopR1|Manduca_sexta|XM_030168745.2'
+[20] 'DopR2|Manduca_sexta|XM_037445812.1'
+[21] 'DopR1|Bombyx_mori|NM_001114987.1'
+[22] 'DopR2|Bombyx_mori|XM_062669252.1'
+[23] 'DopR_2|Aplysia_californica|XM_005099942.3'
+[24] 'DopR_3|Crassostrea_gigas|XM_011436579.4'
+[25] 'DopR_1|Octopus_bimaculoides|XM_014919809.2'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=25 nsplits=81;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 2 3,
+	100	 4,
+	100	 5,
+	100	 6,
+	100	 7,
+	100	 8,
+	100	 7 8,
+	99	 6 7 8,
+	100	 9,
+	9	 6 7 8 9,
+	100	 10,
+	100	 6 7 8 9 10,
+	100	 12,
+	100	 18,
+	60	 12 18,
+	100	 16,
+	35	 12 16 18,
+	100	 14,
+	100	 12 14 16 18,
+	99	 6 7 8 9 10 12 14 16 18,
+	100	 20,
+	100	 22,
+	100	 20 22,
+	100	 23,
+	100	 20 22 23,
+	61	 6 7 8 9 10 12 14 16 18 20 22 23,
+	100	 11,
+	100	 17,
+	100	 11 17,
+	100	 15,
+	100	 19,
+	100	 21,
+	100	 19 21,
+	11	 15 19 21,
+	39	 11 15 17 19 21,
+	100	 13,
+	100	 11 13 15 17 19 21,
+	100	 25,
+	88	 11 13 15 17 19 21 25,
+	100	 24,
+	100	 11 13 15 17 19 21 24 25,
+	100	 1 2 3 4 5,
+	25	 1 2 3 4,
+	99	 1 2 3,
+	100	 1,
+	85	 6 7 8 10,
+	56	 14 16,
+	7	 11 17 19 21,
+	11	 24 25,
+	39	 1 2 3 5,
+	9	 12 14 18,
+	59	 11 13 17,
+	53	 11 13 15 17,
+	38	 1 2 3 4 5 20 22 23,
+	37	 4 5,
+	38	 12 14 16,
+	0	 11 13,
+	0	 2 3 4 5,
+	23	 11 15 17,
+	2	 14 16 18,
+	6	 9 10,
+	1	 7 8 9 10,
+	1	 12 14 16 18 20 22 23,
+	0	 1 4 5,
+	0	 6 8,
+	7	 11 13 17 19 21,
+	1	 11 13 15 17 19 20 21 22 23 24 25,
+	1	 13 15,
+	1	 11 13 15 17 19 21 24,
+	0	 1 2 3 4 5 11 13 15 17 19 21 25,
+	1	 6 9 10,
+	1	 11 13 15 17 21,
+	0	 6 7,
+	0	 16 18,
+	0	 13 15 19 21,
+	0	 13 17,
+	0	 12 16,
+	0	 1 2 3 4 5 20 22 23 24,
+	0	 13 19 21,
+;
+END; [Splits]
+

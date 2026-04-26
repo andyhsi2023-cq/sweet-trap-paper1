@@ -1,0 +1,19 @@
+id.exposure,id.outcome,outcome,exposure,method,nsnp,b,se,pval,pair_id,ancestry,n_kept
+ieu-b-73,ebi-a-GCST006701,all_cause_mortality_EUR,alcohol_drinks_per_week,Inverse variance weighted,33,0.108499519983889,0.0332565860091157,0.0011043524915809,alc-mort,EUR,33
+ieu-b-73,ebi-a-GCST006701,all_cause_mortality_EUR,alcohol_drinks_per_week,MR Egger,33,0.155307504986131,0.0547409765494407,0.00795428287580778,alc-mort,EUR,33
+ieu-b-73,ebi-a-GCST006701,all_cause_mortality_EUR,alcohol_drinks_per_week,Weighted median,33,0.130764731469507,0.0340929534057445,0.000125291030800756,alc-mort,EUR,33
+ieu-b-40,ebi-a-GCST006701,all_cause_mortality_EUR,bmi,Inverse variance weighted,465,0.118761709461855,0.00923687041718037,7.8208610645714e-38,bmi-mort,EUR,465
+ieu-b-40,ebi-a-GCST006701,all_cause_mortality_EUR,bmi,MR Egger,465,0.115059891419408,0.0236739869830697,1.60843457902437e-06,bmi-mort,EUR,465
+ieu-b-40,ebi-a-GCST006701,all_cause_mortality_EUR,bmi,Weighted median,465,0.105803364757451,0.0122295537661237,5.08494675005527e-18,bmi-mort,EUR,465
+ukb-b-5192,ebi-a-GCST006701,all_cause_mortality_EUR,leisure_screen_tv_time,Inverse variance weighted,108,0.190870905783993,0.0274318636114917,3.45137325024414e-12,scr-mort,EUR,108
+ukb-b-5192,ebi-a-GCST006701,all_cause_mortality_EUR,leisure_screen_tv_time,MR Egger,108,0.135482401430502,0.122712632514586,0.272066073877725,scr-mort,EUR,108
+ukb-b-5192,ebi-a-GCST006701,all_cause_mortality_EUR,leisure_screen_tv_time,Weighted median,108,0.182586932894762,0.0328896768764714,2.83234051248868e-08,scr-mort,EUR,108
+ukb-b-5237,bbj-a-159,cardiovascular_mortality_EAS,sugar_intake_total,Inverse variance weighted,33,0.451002028958466,0.204625053424643,0.0275214533925194,sug-cvdm,EAS,33
+ukb-b-5237,bbj-a-159,cardiovascular_mortality_EAS,sugar_intake_total,MR Egger,33,1.04598849481662,0.411888912591229,0.0163340139174585,sug-cvdm,EAS,33
+ukb-b-5237,bbj-a-159,cardiovascular_mortality_EAS,sugar_intake_total,Weighted median,33,0.328387727242702,0.233885214884626,0.160302444456061,sug-cvdm,EAS,33
+ukb-b-5237,ebi-a-GCST005194,cardiovascular_mortality_EUR,sugar_intake_total,Inverse variance weighted,38,0.313441738240666,0.114757132135195,0.00630757043490987,sug-cvdm,EUR,38
+ukb-b-5237,ebi-a-GCST005194,cardiovascular_mortality_EUR,sugar_intake_total,MR Egger,38,0.290435872384539,0.234201136478765,0.22295604012144,sug-cvdm,EUR,38
+ukb-b-5237,ebi-a-GCST005194,cardiovascular_mortality_EUR,sugar_intake_total,Weighted median,38,0.331780110822358,0.123627119349503,0.00728088684975158,sug-cvdm,EUR,38
+ukb-b-6324,ebi-a-GCST006701,all_cause_mortality_EUR,processed_meat_intake,Inverse variance weighted,23,-0.0990730567256507,0.0534130665345616,0.0636181036142525,upf-mort,EUR,23
+ukb-b-6324,ebi-a-GCST006701,all_cause_mortality_EUR,processed_meat_intake,MR Egger,23,-0.496637930084848,0.245496536204123,0.0559898290086,upf-mort,EUR,23
+ukb-b-6324,ebi-a-GCST006701,all_cause_mortality_EUR,processed_meat_intake,Weighted median,23,-0.108804449377896,0.0537574567137544,0.0429713824821238,upf-mort,EUR,23

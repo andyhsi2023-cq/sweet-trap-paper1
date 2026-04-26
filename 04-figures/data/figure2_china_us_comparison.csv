@@ -1,0 +1,13 @@
+domain,country,source,metric,value,ci_lo,ci_hi
+Investment,China,CFPS/CHFS,delta_st,0.06,0.024,0.098
+Investment,China,CFPS/CHFS,beta_stock_lifesat,-0.107,-0.13,-0.083
+Investment,China,CFPS/CHFS,p_continue_loss,0.718,,
+Investment,US,HRS,delta_st,0.0917244444807067,0.0679071794698526,0.1160340223327543
+Investment,US,HRS,beta_stock_lifesat,0.0748874861664985,0.0211811948343524,0.1285937774986445
+Investment,US,HRS,p_continue_loss,0.5454413613071643,,
+Housing,China,CFPS,delta_st,0.068,0.051,0.085
+Housing,China,CFPS,beta_mortburden_lifesat,0.195,0.107,0.283
+Housing,China,CFPS,debt_crowd_in_coef,0.93,,
+Housing,US,HRS,delta_st,0.012480313000775862,-0.013773288463644123,0.03676591776259246
+Housing,US,HRS,beta_mortburden_lifesat,0.013107071172779776,-0.002644026759465944,0.028858169105025498
+Housing,US,HRS,debt_crowd_in_coef,0.28010128766090764,0.2062972701756345,0.3539053051461808

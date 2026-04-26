@@ -1,0 +1,28 @@
+2026-04-24 15:10:16 : Started OrthoFinder version 3.1.4
+Command Line: /Users/andy/Desktop/Research/sweet-trap-multidomain/tools/mamba-root/envs/sweet-trap/bin/orthofinder -f /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/orthofinder_input/ -o /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/orthofinder_dop -t 2 -a 2 -S diamond
+
+Search program: diamond
+MSA program: famsa
+Tree program: fasttree
+Scoring matrix: BLOSUM62
+Gap extend: 1
+Gap open: 11
+
+WorkingDirectory_Base: /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/orthofinder_dop/Results_Apr24/WorkingDirectory/
+
+Species used: 
+0: Acropora_digitifera.fa
+1: Aplysia_californica.fa
+2: Crassostrea_gigas.fa
+3: Danio_rerio.fa
+4: Drosophila_melanogaster.fa
+5: Gallus_gallus.fa
+6: Homo_sapiens.fa
+7: Hydra_vulgaris.fa
+8: Mus_musculus.fa
+9: Nematostella_vectensis.fa
+10: Octopus_bimaculoides.fa
+11: Rattus_norvegicus.fa
+12: Xenopus_tropicalis.fa
+
+FN_Orthogroups: /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/orthofinder_dop/Results_Apr24/WorkingDirectory/clusters_OrthoFinder_I1.2.txt_id_pairs.txt

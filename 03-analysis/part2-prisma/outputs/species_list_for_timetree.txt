@@ -1,0 +1,76 @@
+# Species list for TimeTree 5 API — Sweet Trap Part 2
+# Format: one Latin binomial per line
+# Generated: 2026-04-24
+# Use with TimeTree 5 API: https://timetree.org/api
+# Purpose: Blomberg K + Pagel lambda phylogenetic signal analysis
+
+Lepidoptera
+Caretta caretta
+Chelonia mydas
+Drosophila melanogaster
+Rattus norvegicus
+Euplectes progne
+Physalaemus pustulosus
+Danaus plexippus
+Haematopus ostralegus
+Xiphophorus hellerii
+Julodimorpha bakewelli
+Apis mellifera
+Bombus terrestris
+Odonata
+Ephemeroptera
+Bufo bufo
+Rana temporaria
+Hyla arborea
+Gasterosteus aculeatus
+Ficedula hypoleuca
+Calidris canutus
+Caenorhabditis elegans
+Crassostrea gigas
+Acropora millepora
+Taeniopygia guttata
+Cyrtodiopsis dalmanni
+Oncopeltus fasciatus
+Paro cristatus
+Scarabaeus satyrus
+Alces alces
+Antilocapra americana
+Chiroptera
+Anolis cristatellus
+Oncorhynchus tshawytscha
+Parus major
+Dermochelys coriacea
+Argiope bruennichi
+Aplysia californica
+Hydra vulgaris
+Steinernema carpocapsae
+Ambystoma maculatum
+Sialia sialis
+Phasianus colchicus
+Oenanthe oenanthe
+Certhia americana
+Chrysemys picta
+Trachemys scripta
+Spheniscus demersus
+Larus argentatus
+Pavo cristatus
+Alligator mississippiensis
+Phoebastria immutabilis
+Ursus arctos horribilis
+Dendroctonus ponderosae
+Perciformes
+Tripedalia cystophora
+Tubifex tubifex
+Capitella capitata
+Pygoscelis adeliae
+Odocoileus virginianus
+Photinus pyralis
+Dytiscus marginalis
+Ixodes scapularis
+Leuctra digitata
+Oncorhynchus gorbuscha
+Oncorhynchus mykiss
+Sturnella magna
+Dolichonyx oryzivorus
+Aedes aegypti
+Pagurus bernhardus

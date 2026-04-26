@@ -1,0 +1,213 @@
+IQ-TREE 3.1.1 built Apr  8 2026
+
+Input file name: true_DRD_orthogroup.aln.fa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 982224
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 25 sequences with 1200 amino-acid sites
+Number of constant sites: 451 (= 37.5833% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 451 (= 37.5833% of all sites)
+Number of parsimony informative sites: 503
+Number of distinct site patterns: 897
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.6653
+
+ Category  Relative_rate  Proportion
+  1         0.0668         0.2500
+  2         0.3467         0.2500
+  3         0.9113         0.2500
+  4         2.6752         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -16041.9491 (s.e. 408.7168)
+Unconstrained log-likelihood (without tree): -7826.3406
+Number of free parameters (#branches + #model parameters): 48
+Akaike information criterion (AIC) score: 32179.8983
+Corrected Akaike information criterion (AICc) score: 32183.9851
+Bayesian information criterion (BIC) score: 32424.2220
+
+Total tree length (sum of branch lengths): 21.9324
+Sum of internal branch lengths: 14.0103 (63.8795% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'DRD1|Homo_sapiens|ENST00000393752.3' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--DRD1|Homo_sapiens|ENST00000393752.3
+|
+|  +--DRD1|Mus_musculus|ENSMUST00000021932.6
++--| (100)
+|  +--DRD1|Rattus_norvegicus|ENSRNOT00000030893.5
+|
+|     +--DRD1|Gallus_gallus|ENSGALT00010029037.1
+|  +**| (37)
+|  |  +--DRD1|Xenopus_tropicalis|ENSXETT00000030438.3
++--| (99)
+   |                                             +--DRD2|Homo_sapiens|ENST00000362072.8
+   |                                          +--| (99)
+   |                                          |  |  +--DRD2|Mus_musculus|ENSMUST00000075764.8
+   |                                          |  +--| (100)
+   |                                          |     +**DRD2|Rattus_norvegicus|ENSRNOT00000045944.7
+   |                                       +--| (85)
+   |                                       |  +--DRD2|Xenopus_tropicalis|ENSXETT00000025512.5
+   |                           +-----------| (100)
+   |                           |           +--DRD2|Gallus_gallus|ENSGALT00010060881.1
+   |                  +--------| (99)
+   |                  |        |                  +--DopR2|Drosophila_melanogaster|NM_001031909.2
+   |                  |        |               +--| (60)
+   |                  |        |               |  +--DopR2|Aedes_aegypti|NM_001358925.1
+   |                  |        +---------------| (100)
+   |                  |                        |  +---------DopR2|Apis_mellifera|XM_006561507.3
+   |                  |                        +--| (56)
+   |                  |                           +--DopR2|Tribolium_castaneum|XM_015978814.2
+   |               +--| (61)
+   |               |  |                     +--DopR2|Manduca_sexta|XM_037445812.1
+   |               |  |          +----------| (100)
+   |               |  |          |          +--DopR2|Bombyx_mori|XM_062669252.1
+   |               |  +----------| (100)
+   |               |             +--------DopR_2|Aplysia_californica|XM_005099942.3
+   +---------------| (100)
+                   |                           +--DopR1|Drosophila_melanogaster|NM_001316525.1
+                   |                        +--| (100)
+                   |                        |  +--DopR1|Aedes_aegypti|NM_001358923.1
+                   |                     +--| (59)
+                   |                     |  +----DopR1|Apis_mellifera|XM_026445263.1
+                   |                  +--| (53)
+                   |                  |  +--DopR1|Tribolium_castaneum|XM_015983151.2
+                   |         +--------| (100)
+                   |         |        |  +--DopR1|Manduca_sexta|XM_030168745.2
+                   |         |        +--| (100)
+                   |         |           +--DopR1|Bombyx_mori|NM_001114987.1
+                   |      +--| (88)
+                   |      |  +-------DopR_1|Octopus_bimaculoides|XM_014919809.2
+                   +------| (100)
+                          +-------DopR_3|Crassostrea_gigas|XM_011436579.4
+
+Tree in newick format:
+
+(DRD1|Homo_sapiens|ENST00000393752.3:0.0541000710,(DRD1|Mus_musculus|ENSMUST00000021932.6:0.0064280003,DRD1|Rattus_norvegicus|ENSRNOT00000030893.5:0.0182052039)100:0.0824722329,((DRD1|Gallus_gallus|ENSGALT00010029037.1:0.0984663105,DRD1|Xenopus_tropicalis|ENSXETT00000030438.3:0.1149589081)37:0.0000022527,((((((DRD2|Homo_sapiens|ENST00000362072.8:0.0292389556,(DRD2|Mus_musculus|ENSMUST00000075764.8:0.0035123377,DRD2|Rattus_norvegicus|ENSRNOT00000045944.7:0.0000010000)100:0.0368107949)99:0.2071085912,DRD2|Xenopus_tropicalis|ENSXETT00000025512.5:0.2773264155)85:0.1271219708,DRD2|Gallus_gallus|ENSGALT00010060881.1:0.0613073614)100:1.5758046140,((DopR2|Drosophila_melanogaster|NM_001031909.2:0.3621741929,DopR2|Aedes_aegypti|NM_001358925.1:0.3097800902)60:0.1808147308,(DopR2|Apis_mellifera|XM_006561507.3:1.3412608611,DopR2|Tribolium_castaneum|XM_015978814.2:0.3139451654)56:0.0737200032)100:2.0599296830)99:1.2013277800,((DopR2|Manduca_sexta|XM_037445812.1:0.0136771961,DopR2|Bombyx_mori|XM_062669252.1:0.0418488760)100:1.4051822210,DopR_2|Aplysia_californica|XM_005099942.3:1.1115644838)100:1.3476024370)61:0.4648441153,((((((DopR1|Drosophila_melanogaster|NM_001316525.1:0.2452689679,DopR1|Aedes_aegypti|NM_001358923.1:0.3697960987)100:0.2082654876,DopR1|Apis_mellifera|XM_026445263.1:0.7062805119)59:0.1044936004,DopR1|Tribolium_castaneum|XM_015983151.2:0.3584940607)53:0.1177864359,(DopR1|Manduca_sexta|XM_030168745.2:0.0175213449,DopR1|Bombyx_mori|NM_001114987.1:0.0452958361)100:0.2664228292)100:1.1737815640,DopR_1|Octopus_bimaculoides|XM_014919809.2:1.0202024416)88:0.2562567289,DopR_3|Crassostrea_gigas|XM_011436579.4:1.0014179128)100:0.9194665127)100:2.0334131610)99:0.1676550140);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -16041.950900
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--DRD1|Homo_sapiens|ENST00000393752.3
+|
+|  +--DRD1|Mus_musculus|ENSMUST00000021932.6
++--| (100)
+|  +--DRD1|Rattus_norvegicus|ENSRNOT00000030893.5
+|
+|     +--DRD1|Gallus_gallus|ENSGALT00010029037.1
+|  +--| (39)
+|  |  |                                             +--DRD2|Homo_sapiens|ENST00000362072.8
+|  |  |                                          +--| (99)
+|  |  |                                          |  |  +--DRD2|Mus_musculus|ENSMUST00000075764.8
+|  |  |                                          |  +--| (100)
+|  |  |                                          |     +--DRD2|Rattus_norvegicus|ENSRNOT00000045944.7
+|  |  |                                       +--| (85)
+|  |  |                                       |  +--DRD2|Xenopus_tropicalis|ENSXETT00000025512.5
+|  |  |                           +-----------| (100)
+|  |  |                           |           +--DRD2|Gallus_gallus|ENSGALT00010060881.1
+|  |  |                  +--------| (99)
+|  |  |                  |        |                  +--DopR2|Drosophila_melanogaster|NM_001031909.2
+|  |  |                  |        |               +--| (60)
+|  |  |                  |        |               |  +--DopR2|Aedes_aegypti|NM_001358925.1
+|  |  |                  |        +---------------| (100)
+|  |  |                  |                        |  +---------DopR2|Apis_mellifera|XM_006561507.3
+|  |  |                  |                        +--| (56)
+|  |  |                  |                           +--DopR2|Tribolium_castaneum|XM_015978814.2
+|  |  |               +--| (61)
+|  |  |               |  |                     +--DopR2|Manduca_sexta|XM_037445812.1
+|  |  |               |  |          +----------| (100)
+|  |  |               |  |          |          +--DopR2|Bombyx_mori|XM_062669252.1
+|  |  |               |  +----------| (100)
+|  |  |               |             +--------DopR_2|Aplysia_californica|XM_005099942.3
+|  |  +---------------| (100)
+|  |                  |                           +--DopR1|Drosophila_melanogaster|NM_001316525.1
+|  |                  |                        +--| (100)
+|  |                  |                        |  +--DopR1|Aedes_aegypti|NM_001358923.1
+|  |                  |                     +--| (59)
+|  |                  |                     |  +----DopR1|Apis_mellifera|XM_026445263.1
+|  |                  |                  +--| (53)
+|  |                  |                  |  +--DopR1|Tribolium_castaneum|XM_015983151.2
+|  |                  |         +--------| (100)
+|  |                  |         |        |  +--DopR1|Manduca_sexta|XM_030168745.2
+|  |                  |         |        +--| (100)
+|  |                  |         |           +--DopR1|Bombyx_mori|NM_001114987.1
+|  |                  |      +--| (88)
+|  |                  |      |  +-------DopR_1|Octopus_bimaculoides|XM_014919809.2
+|  |                  +------| (100)
+|  |                         +-------DopR_3|Crassostrea_gigas|XM_011436579.4
++--| (99)
+   +--DRD1|Xenopus_tropicalis|ENSXETT00000030438.3
+
+
+Consensus tree in newick format: 
+
+(DRD1|Homo_sapiens|ENST00000393752.3:0.0540758122,(DRD1|Mus_musculus|ENSMUST00000021932.6:0.0064257843,DRD1|Rattus_norvegicus|ENSRNOT00000030893.5:0.0181971573)100:0.0824374310,((DRD1|Gallus_gallus|ENSGALT00010029037.1:0.0984165543,((((((DRD2|Homo_sapiens|ENST00000362072.8:0.0292312694,(DRD2|Mus_musculus|ENSMUST00000075764.8:0.0035096829,DRD2|Rattus_norvegicus|ENSRNOT00000045944.7:0.0000026275)100:0.0367836206)99:0.2069785185,DRD2|Xenopus_tropicalis|ENSXETT00000025512.5:0.2771354692)85:0.1260700659,DRD2|Gallus_gallus|ENSGALT00010060881.1:0.0624084406)100:1.5746340469,((DopR2|Drosophila_melanogaster|NM_001031909.2:0.3620716900,DopR2|Aedes_aegypti|NM_001358925.1:0.3095718492)60:0.1803552687,(DopR2|Apis_mellifera|XM_006561507.3:1.3404026326,DopR2|Tribolium_castaneum|XM_015978814.2:0.3137316463)56:0.0740416258)100:2.0573624655)99:1.2008353607,((DopR2|Manduca_sexta|XM_037445812.1:0.0123255586,DopR2|Bombyx_mori|XM_062669252.1:0.0433618146)100:1.4040890262,DopR_2|Aplysia_californica|XM_005099942.3:1.1111616385)100:1.3463603912)61:0.4649898039,((((((DopR1|Drosophila_melanogaster|NM_001316525.1:0.2452203538,DopR1|Aedes_aegypti|NM_001358923.1:0.3696134212)100:0.2081396468,DopR1|Apis_mellifera|XM_026445263.1:0.7059009825)59:0.1045033813,DopR1|Tribolium_castaneum|XM_015983151.2:0.3583049065)53:0.1178367726,(DopR1|Manduca_sexta|XM_030168745.2:0.0174961819,DopR1|Bombyx_mori|NM_001114987.1:0.0452979131)100:0.2662461430)100:1.1730653738,DopR_1|Octopus_bimaculoides|XM_014919809.2:1.0196864248)88:0.2561191798,DopR_3|Crassostrea_gigas|XM_011436579.4:1.0010213879)100:0.9188749496)100:2.0318250875)39:0.0000024281,DRD1|Xenopus_tropicalis|ENSXETT00000030438.3:0.1149090375)99:0.1675759608);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t tree_DRD_true_orthogroup.treefile -m "LG+G4{0.665334}" --length 1200
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s true_DRD_orthogroup.aln.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s true_DRD_orthogroup.aln.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Apr 24 15:58:08 2026
+Total CPU time used: 76.208905 seconds (0h:1m:16s)
+Total wall-clock time used: 50.83663797 seconds (0h:0m:50s)
+

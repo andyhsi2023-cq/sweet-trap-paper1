@@ -1,0 +1,309 @@
+{
+  "n_cases": {
+    "layer_A": 19,
+    "layer_B": 5,
+    "layer_D": 15,
+    "total_core": 39,
+    "all_rows_stacked": 44
+  },
+  "rank_by_layer_mean_effect": {
+    "A": {
+      "olds_milner": 0.78,
+      "sensory_exploit": 0.646,
+      "fisher_runaway": 0.546
+    },
+    "B": {
+      "olds_milner": 0.0710936949057773,
+      "sensory_exploit": 0.0239581574087447,
+      "fisher_runaway": 0.2432783603485419
+    },
+    "D": {
+      "olds_milner": 0.5531468850161222,
+      "sensory_exploit": 0.3536765655062854
+    }
+  },
+  "spearman_rho_pairwise": {
+    "A_vs_D": [
+      0.9999999999999999,
+      NaN
+    ],
+    "A_vs_B": [
+      -0.5,
+      0.6666666666666667
+    ],
+    "B_vs_D": [
+      0.9999999999999999,
+      NaN
+    ]
+  },
+  "main_model_z": {
+    "params": {
+      "intercept": -0.45585873676235467,
+      "olds_milner": 0.7018017231518702,
+      "sensory_exploit": 0.31744699944897314
+    },
+    "se": {
+      "intercept": 0.46458664385475756,
+      "olds_milner": 0.5811960258419221,
+      "sensory_exploit": 0.47911815673527985
+    },
+    "re_var_layer": 1.189032136395979e-10,
+    "resid_var": 0.9259910124877755,
+    "layer_share": 1.2840644457755972e-10,
+    "wald_mech_stat": 1.5047049256231446,
+    "wald_mech_p": 0.4712566340253771,
+    "loglik": -53.38538158336685,
+    "aic": NaN,
+    "bic": NaN,
+    "n": 39
+  },
+  "main_model_cohen_d": {
+    "params": {
+      "intercept": 0.1021615993085408,
+      "olds_milner": 1.1614345191087894,
+      "sensory_exploit": 0.4181070296359107
+    },
+    "se": {
+      "intercept": 0.8668477515795378,
+      "olds_milner": 0.5524327825514733,
+      "sensory_exploit": 0.5072816339660071
+    },
+    "re_var_layer": 1.6060699927166195,
+    "resid_var": 1.0512473529290896,
+    "layer_share": 0.604395254239518,
+    "wald_mech_stat": 5.20104433597608,
+    "wald_mech_p": 0.07423480505336588,
+    "loglik": -58.32005167627791,
+    "aic": NaN,
+    "bic": NaN,
+    "n": 39
+  },
+  "loo_primary": {
+    "A": {
+      "params": {
+        "intercept": 1.5243260714044602,
+        "olds_milner": -1.5073260443895455,
+        "sensory_exploit": -1.9691663201274472
+      },
+      "se": {
+        "intercept": 0.3513644506819177,
+        "olds_milner": NaN,
+        "sensory_exploit": NaN
+      },
+      "re_var_layer": 2.6727670561865446e-06,
+      "resid_var": 0.8753277312543866,
+      "layer_share": 3.053437929160599e-06,
+      "wald_mech_stat": -1.162085191067793,
+      "wald_mech_p": 1.0,
+      "loglik": -25.03730320551707,
+      "aic": NaN,
+      "bic": NaN,
+      "n": 20
+    },
+    "B": {
+      "params": {
+        "intercept": -1.107611883430753,
+        "olds_milner": 1.5760961808458418,
+        "sensory_exploit": 0.8783382800114834
+      },
+      "se": {
+        "intercept": 0.5460770184472709,
+        "olds_milner": 0.5624764491345636,
+        "sensory_exploit": 0.4783433233750521
+      },
+      "re_var_layer": 0.18369016909826194,
+      "resid_var": 0.7889016085600783,
+      "layer_share": 0.18886666874824237,
+      "wald_mech_stat": 7.901608982121948,
+      "wald_mech_p": 0.019239217769134287,
+      "loglik": -44.40764533493692,
+      "aic": NaN,
+      "bic": NaN,
+      "n": 34
+    },
+    "D": {
+      "params": {
+        "intercept": -0.4613806614412946,
+        "olds_milner": 0.9803099994137606,
+        "sensory_exploit": 0.3722732231345509
+      },
+      "se": {
+        "intercept": 0.32731737990491855,
+        "olds_milner": 0.49844091125910817,
+        "sensory_exploit": 0.477327560865473
+      },
+      "re_var_layer": 0.007671948547018931,
+      "resid_var": 0.8937163257447688,
+      "layer_share": 0.00851125842861303,
+      "wald_mech_stat": 4.345347019888598,
+      "wald_mech_p": 0.11387276960434034,
+      "loglik": -31.714465929885606,
+      "aic": NaN,
+      "bic": NaN,
+      "n": 24
+    }
+  },
+  "mech_sensitivity_reclassify_C13": {
+    "params": {
+      "intercept": -1.0973149328581908,
+      "olds_milner": 1.4692687749158289,
+      "sensory_exploit": 0.8233089131606892
+    },
+    "se": {
+      "intercept": 0.5237196715253379,
+      "olds_milner": 0.5656979211272137,
+      "sensory_exploit": 0.4799873537545293
+    },
+    "re_var_layer": 0.0935632325093146,
+    "resid_var": 0.791388009895777,
+    "layer_share": 0.10572699152897,
+    "wald_mech_stat": 6.850220594612761,
+    "wald_mech_p": 0.03254569108906746,
+    "loglik": -51.18600139626908,
+    "aic": NaN,
+    "bic": NaN,
+    "n": 39
+  },
+  "A_plus_D_only": {
+    "params": {
+      "intercept": -1.107611883430753,
+      "olds_milner": 1.5760961808458418,
+      "sensory_exploit": 0.8783382800114834
+    },
+    "se": {
+      "intercept": 0.5460770184472709,
+      "olds_milner": 0.5624764491345636,
+      "sensory_exploit": 0.4783433233750521
+    },
+    "re_var_layer": 0.18369016909826194,
+    "resid_var": 0.7889016085600783,
+    "layer_share": 0.18886666874824237,
+    "wald_mech_stat": 7.901608982121948,
+    "wald_mech_p": 0.019239217769134287,
+    "loglik": -44.40764533493692,
+    "aic": NaN,
+    "bic": NaN,
+    "n": 34
+  },
+  "layer_mean_table_raw": [
+    {
+      "layer": "A",
+      "mechanism": "fisher_runaway",
+      "mean": 0.546,
+      "std": 0.024083189157584596,
+      "count": 5
+    },
+    {
+      "layer": "A",
+      "mechanism": "olds_milner",
+      "mean": 0.78,
+      "std": 0.1270170592217177,
+      "count": 4
+    },
+    {
+      "layer": "A",
+      "mechanism": "sensory_exploit",
+      "mean": 0.646,
+      "std": 0.09720539536923292,
+      "count": 10
+    },
+    {
+      "layer": "B",
+      "mechanism": "fisher_runaway",
+      "mean": 0.2432783603485419,
+      "std": NaN,
+      "count": 1
+    },
+    {
+      "layer": "B",
+      "mechanism": "olds_milner",
+      "mean": 0.0710936949057773,
+      "std": 0.06537011724078838,
+      "count": 3
+    },
+    {
+      "layer": "B",
+      "mechanism": "sensory_exploit",
+      "mean": 0.0239581574087447,
+      "std": NaN,
+      "count": 1
+    },
+    {
+      "layer": "D",
+      "mechanism": "olds_milner",
+      "mean": 0.5531468850161222,
+      "std": 0.496063052525693,
+      "count": 12
+    },
+    {
+      "layer": "D",
+      "mechanism": "sensory_exploit",
+      "mean": 0.3536765655062854,
+      "std": 0.32367952722942683,
+      "count": 3
+    }
+  ],
+  "layer_mean_table_z": [
+    {
+      "layer": "A",
+      "mechanism": "fisher_runaway",
+      "mean": -0.8518950076900469,
+      "std": 0.20134846262367037,
+      "count": 5
+    },
+    {
+      "layer": "A",
+      "mechanism": "olds_milner",
+      "mean": 1.1044713167882314,
+      "std": 1.061931185024067,
+      "count": 4
+    },
+    {
+      "layer": "A",
+      "mechanism": "sensory_exploit",
+      "mean": -0.015841022870269804,
+      "std": 0.8126895814442909,
+      "count": 10
+    },
+    {
+      "layer": "B",
+      "mechanism": "fisher_runaway",
+      "mean": 1.5243226195780877,
+      "std": NaN,
+      "count": 1
+    },
+    {
+      "layer": "B",
+      "mechanism": "olds_milner",
+      "mean": -0.2590323379672528,
+      "std": 0.677052874348044,
+      "count": 3
+    },
+    {
+      "layer": "B",
+      "mechanism": "sensory_exploit",
+      "mean": -0.7472256056763295,
+      "std": NaN,
+      "count": 1
+    },
+    {
+      "layer": "D",
+      "mechanism": "olds_milner",
+      "mean": 0.08601070713023888,
+      "std": 1.069500816807373,
+      "count": 12
+    },
+    {
+      "layer": "D",
+      "mechanism": "sensory_exploit",
+      "mean": -0.3440428285209551,
+      "std": 0.6978458020470425,
+      "count": 3
+    }
+  ],
+  "harmonization": {
+    "primary": "within-layer z-score of |effect|",
+    "secondary": "Cohen's d equivalence (r\u2192d, log_OR\u2192d)"
+  },
+  "seed": 20260418
+}

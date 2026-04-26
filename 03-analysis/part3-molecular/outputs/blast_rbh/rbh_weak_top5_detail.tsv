@@ -1,0 +1,76 @@
+cand_id	species	accession	ncbi_desc	call	rank	hit_label	hit_family	bitscore	evalue	pident
+Adig_XP_015780793.1	Adig	XP_015780793.1	XP_015780793.1 PREDICTED: octopamine receptor-like [Acropora digitifer...	RBH_DRD_weak	1	DMEL_DOP1R1	inv_DRD	179	4.75e-55	36.086
+Adig_XP_015780793.1	Adig	XP_015780793.1	XP_015780793.1 PREDICTED: octopamine receptor-like [Acropora digitifer...	RBH_DRD_weak	2	DMEL_OCTB2R	inv_OA	176	8.30e-54	34.049
+Adig_XP_015780793.1	Adig	XP_015780793.1	XP_015780793.1 PREDICTED: octopamine receptor-like [Acropora digitifer...	RBH_DRD_weak	3	HUMAN_HTR4	HTR	165	7.23e-51	32.424
+Adig_XP_015780793.1	Adig	XP_015780793.1	XP_015780793.1 PREDICTED: octopamine receptor-like [Acropora digitifer...	RBH_DRD_weak	4	HUMAN_ADRA1A	ADRA	164	1.07e-49	29.661
+Adig_XP_015780793.1	Adig	XP_015780793.1	XP_015780793.1 PREDICTED: octopamine receptor-like [Acropora digitifer...	RBH_DRD_weak	5	HUMAN_DRD1	DRD	155	1.21e-46	35.048
+Adig_XP_015752479.1	Adig	XP_015752479.1	XP_015752479.1 PREDICTED: 5-hydroxytryptamine receptor 1A-beta-like [A...	RBH_DRD_weak	1	DMEL_DOP1R1	inv_DRD	150	2.98e-44	33.134
+Adig_XP_015752479.1	Adig	XP_015752479.1	XP_015752479.1 PREDICTED: 5-hydroxytryptamine receptor 1A-beta-like [A...	RBH_DRD_weak	2	HUMAN_DRD1	DRD	145	6.51e-43	33.861
+Adig_XP_015752479.1	Adig	XP_015752479.1	XP_015752479.1 PREDICTED: 5-hydroxytryptamine receptor 1A-beta-like [A...	RBH_DRD_weak	3	HUMAN_ADRA1A	ADRA	145	1.36e-42	30.685
+Adig_XP_015752479.1	Adig	XP_015752479.1	XP_015752479.1 PREDICTED: 5-hydroxytryptamine receptor 1A-beta-like [A...	RBH_DRD_weak	4	HUMAN_HTR1B	HTR	141	7.48e-42	31.594
+Adig_XP_015752479.1	Adig	XP_015752479.1	XP_015752479.1 PREDICTED: 5-hydroxytryptamine receptor 1A-beta-like [A...	RBH_DRD_weak	5	HUMAN_HTR4	HTR	135	1.07e-39	33.438
+Hvul_XP_012562393.2	Hvul	XP_012562393.2	XP_012562393.2 octopamine receptor beta-2R [Hydra vulgaris]	RBH_DRD_weak	1	DMEL_DOP1R1	inv_DRD	120	2.91e-33	25.155
+Hvul_XP_012562393.2	Hvul	XP_012562393.2	XP_012562393.2 octopamine receptor beta-2R [Hydra vulgaris]	RBH_DRD_weak	2	HUMAN_ADRA1A	ADRA	115	2.01e-31	23.380
+Hvul_XP_012562393.2	Hvul	XP_012562393.2	XP_012562393.2 octopamine receptor beta-2R [Hydra vulgaris]	RBH_DRD_weak	3	HUMAN_DRD1	DRD	108	3.06e-29	25.220
+Hvul_XP_012562393.2	Hvul	XP_012562393.2	XP_012562393.2 octopamine receptor beta-2R [Hydra vulgaris]	RBH_DRD_weak	4	DMEL_OCTB2R	inv_OA	105	7.50e-28	23.193
+Hvul_XP_012562393.2	Hvul	XP_012562393.2	XP_012562393.2 octopamine receptor beta-2R [Hydra vulgaris]	RBH_DRD_weak	5	HUMAN_ADRB2	ADRB	104	5.15e-28	24.490
+Hvul_XP_012562068.2	Hvul	XP_012562068.2	XP_012562068.2 muscarinic acetylcholine receptor M1-like [Hydra vulgar...	RBH_DRD_weak	1	DMEL_DOP1R1	inv_DRD	115	1.72e-31	25.132
+Hvul_XP_012562068.2	Hvul	XP_012562068.2	XP_012562068.2 muscarinic acetylcholine receptor M1-like [Hydra vulgar...	RBH_DRD_weak	2	HUMAN_HTR2A	HTR	109	2.11e-29	25.970
+Hvul_XP_012562068.2	Hvul	XP_012562068.2	XP_012562068.2 muscarinic acetylcholine receptor M1-like [Hydra vulgar...	RBH_DRD_weak	3	HUMAN_HTR7	HTR	108	5.56e-29	24.776
+Hvul_XP_012562068.2	Hvul	XP_012562068.2	XP_012562068.2 muscarinic acetylcholine receptor M1-like [Hydra vulgar...	RBH_DRD_weak	4	HUMAN_HTR1A	HTR	107	5.35e-29	23.256
+Hvul_XP_012562068.2	Hvul	XP_012562068.2	XP_012562068.2 muscarinic acetylcholine receptor M1-like [Hydra vulgar...	RBH_DRD_weak	5	HUMAN_ADRB1	ADRB	107	7.16e-29	25.602
+Hvul_XP_047135732.1	Hvul	XP_047135732.1	XP_047135732.1 octopamine receptor beta-2R-like [Hydra vulgaris]	RBH_DRD_weak	1	HUMAN_DRD3	DRD	102	1.58e-27	24.370
+Hvul_XP_047135732.1	Hvul	XP_047135732.1	XP_047135732.1 octopamine receptor beta-2R-like [Hydra vulgaris]	RBH_DRD_weak	2	DMEL_OCTB2R	inv_OA	99.8	4.63e-26	24.438
+Hvul_XP_047135732.1	Hvul	XP_047135732.1	XP_047135732.1 octopamine receptor beta-2R-like [Hydra vulgaris]	RBH_DRD_weak	3	HUMAN_HTR1A	HTR	97.8	1.11e-25	22.826
+Hvul_XP_047135732.1	Hvul	XP_047135732.1	XP_047135732.1 octopamine receptor beta-2R-like [Hydra vulgaris]	RBH_DRD_weak	4	HUMAN_DRD1	DRD	95.5	7.44e-25	23.580
+Hvul_XP_047135732.1	Hvul	XP_047135732.1	XP_047135732.1 octopamine receptor beta-2R-like [Hydra vulgaris]	RBH_DRD_weak	5	HUMAN_HTR4	HTR	93.2	2.94e-24	23.684
+Nvec_XP_032231228.1	Nvec	XP_032231228.1	XP_032231228.1 octopamine receptor [Nematostella vectensis]	RBH_DRD_weak	1	HUMAN_DRD1	DRD	183	2.70e-56	35.417
+Nvec_XP_032231228.1	Nvec	XP_032231228.1	XP_032231228.1 octopamine receptor [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_ADRA1A	ADRA	180	6.75e-55	35.347
+Nvec_XP_032231228.1	Nvec	XP_032231228.1	XP_032231228.1 octopamine receptor [Nematostella vectensis]	RBH_DRD_weak	3	HUMAN_DRD5	DRD	166	1.61e-49	32.641
+Nvec_XP_032231228.1	Nvec	XP_032231228.1	XP_032231228.1 octopamine receptor [Nematostella vectensis]	RBH_DRD_weak	4	DMEL_OCTB2R	inv_OA	165	8.56e-49	29.679
+Nvec_XP_032231228.1	Nvec	XP_032231228.1	XP_032231228.1 octopamine receptor [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_ADRB2	ADRB	162	1.02e-48	33.832
+Nvec_XP_032238106.1	Nvec	XP_032238106.1	XP_032238106.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	1	HUMAN_DRD1	DRD	170	3.59e-52	36.677
+Nvec_XP_032238106.1	Nvec	XP_032238106.1	XP_032238106.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_ADRB2	ADRB	169	2.87e-52	32.479
+Nvec_XP_032238106.1	Nvec	XP_032238106.1	XP_032238106.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	3	DMEL_DOP1R1	inv_DRD	160	3.58e-48	32.591
+Nvec_XP_032238106.1	Nvec	XP_032238106.1	XP_032238106.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	4	HUMAN_ADRA1A	ADRA	150	1.21e-44	33.239
+Nvec_XP_032238106.1	Nvec	XP_032238106.1	XP_032238106.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	5	DMEL_OCTB2R	inv_OA	146	1.32e-42	29.118
+Nvec_XP_001620703.1	Nvec	XP_001620703.1	XP_001620703.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	1	HUMAN_DRD1	DRD	170	3.78e-52	36.677
+Nvec_XP_001620703.1	Nvec	XP_001620703.1	XP_001620703.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_ADRB2	ADRB	169	3.12e-52	32.479
+Nvec_XP_001620703.1	Nvec	XP_001620703.1	XP_001620703.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	3	DMEL_DOP1R1	inv_DRD	160	4.63e-48	32.591
+Nvec_XP_001620703.1	Nvec	XP_001620703.1	XP_001620703.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	4	HUMAN_ADRA1A	ADRA	150	1.99e-44	33.239
+Nvec_XP_001620703.1	Nvec	XP_001620703.1	XP_001620703.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_HTR1B	HTR	146	1.43e-43	30.423
+Nvec_XP_032223364.1	Nvec	XP_032223364.1	XP_032223364.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	1	HUMAN_DRD1	DRD	164	3.76e-50	33.654
+Nvec_XP_032223364.1	Nvec	XP_032223364.1	XP_032223364.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_HTR4	HTR	163	2.82e-50	34.437
+Nvec_XP_032223364.1	Nvec	XP_032223364.1	XP_032223364.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	3	DMEL_OCTB2R	inv_OA	163	4.64e-49	31.790
+Nvec_XP_032223364.1	Nvec	XP_032223364.1	XP_032223364.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	4	HUMAN_ADRA1A	ADRA	155	1.55e-46	28.448
+Nvec_XP_032223364.1	Nvec	XP_032223364.1	XP_032223364.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_HTR7	HTR	155	3.00e-46	30.110
+Nvec_XP_032223363.1	Nvec	XP_032223363.1	XP_032223363.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	1	HUMAN_DRD1	DRD	164	3.76e-50	33.654
+Nvec_XP_032223363.1	Nvec	XP_032223363.1	XP_032223363.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_HTR4	HTR	163	2.82e-50	34.437
+Nvec_XP_032223363.1	Nvec	XP_032223363.1	XP_032223363.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	3	DMEL_OCTB2R	inv_OA	163	4.64e-49	31.790
+Nvec_XP_032223363.1	Nvec	XP_032223363.1	XP_032223363.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	4	HUMAN_ADRA1A	ADRA	155	1.55e-46	28.448
+Nvec_XP_032223363.1	Nvec	XP_032223363.1	XP_032223363.1 octopamine receptor beta-3R [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_HTR7	HTR	155	3.00e-46	30.110
+Nvec_XP_032231005.1	Nvec	XP_032231005.1	XP_032231005.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	1	DMEL_DOP1R1	inv_DRD	155	4.32e-46	30.663
+Nvec_XP_032231005.1	Nvec	XP_032231005.1	XP_032231005.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_ADRB2	ADRB	154	2.03e-46	30.278
+Nvec_XP_032231005.1	Nvec	XP_032231005.1	XP_032231005.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	3	HUMAN_DRD1	DRD	152	1.64e-45	34.682
+Nvec_XP_032231005.1	Nvec	XP_032231005.1	XP_032231005.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	4	DMEL_OCTB2R	inv_OA	151	2.48e-44	29.609
+Nvec_XP_032231005.1	Nvec	XP_032231005.1	XP_032231005.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_ADRA1A	ADRA	144	5.33e-42	28.045
+Nvec_XP_032231004.1	Nvec	XP_032231004.1	XP_032231004.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	1	DMEL_DOP1R1	inv_DRD	155	4.32e-46	30.663
+Nvec_XP_032231004.1	Nvec	XP_032231004.1	XP_032231004.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_ADRB2	ADRB	154	2.03e-46	30.278
+Nvec_XP_032231004.1	Nvec	XP_032231004.1	XP_032231004.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	3	HUMAN_DRD1	DRD	152	1.64e-45	34.682
+Nvec_XP_032231004.1	Nvec	XP_032231004.1	XP_032231004.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	4	DMEL_OCTB2R	inv_OA	151	2.48e-44	29.609
+Nvec_XP_032231004.1	Nvec	XP_032231004.1	XP_032231004.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_ADRA1A	ADRA	144	5.33e-42	28.045
+Nvec_XP_032220261.1	Nvec	XP_032220261.1	XP_032220261.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	1	HUMAN_DRD1	DRD	150	3.65e-44	32.967
+Nvec_XP_032220261.1	Nvec	XP_032220261.1	XP_032220261.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_HTR1A	HTR	149	6.85e-44	27.078
+Nvec_XP_032220261.1	Nvec	XP_032220261.1	XP_032220261.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	3	HUMAN_ADRA2A	ADRA	147	7.86e-43	29.002
+Nvec_XP_032220261.1	Nvec	XP_032220261.1	XP_032220261.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	4	DMEL_DOP1R1	inv_DRD	147	1.47e-42	31.522
+Nvec_XP_032220261.1	Nvec	XP_032220261.1	XP_032220261.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_HTR2B	HTR	145	4.73e-42	32.869
+Nvec_XP_032220260.1	Nvec	XP_032220260.1	XP_032220260.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	1	HUMAN_DRD1	DRD	150	3.65e-44	32.967
+Nvec_XP_032220260.1	Nvec	XP_032220260.1	XP_032220260.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_HTR1A	HTR	149	6.85e-44	27.078
+Nvec_XP_032220260.1	Nvec	XP_032220260.1	XP_032220260.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	3	HUMAN_ADRA2A	ADRA	147	7.86e-43	29.002
+Nvec_XP_032220260.1	Nvec	XP_032220260.1	XP_032220260.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	4	DMEL_DOP1R1	inv_DRD	147	1.47e-42	31.522
+Nvec_XP_032220260.1	Nvec	XP_032220260.1	XP_032220260.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_HTR2B	HTR	145	4.73e-42	32.869
+Nvec_XP_032220259.1	Nvec	XP_032220259.1	XP_032220259.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	1	HUMAN_DRD1	DRD	150	3.65e-44	32.967
+Nvec_XP_032220259.1	Nvec	XP_032220259.1	XP_032220259.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	2	HUMAN_HTR1A	HTR	149	6.85e-44	27.078
+Nvec_XP_032220259.1	Nvec	XP_032220259.1	XP_032220259.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	3	HUMAN_ADRA2A	ADRA	147	7.86e-43	29.002
+Nvec_XP_032220259.1	Nvec	XP_032220259.1	XP_032220259.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	4	DMEL_DOP1R1	inv_DRD	147	1.47e-42	31.522
+Nvec_XP_032220259.1	Nvec	XP_032220259.1	XP_032220259.1 tyramine receptor 1 [Nematostella vectensis]	RBH_DRD_weak	5	HUMAN_HTR2B	HTR	145	4.73e-42	32.869

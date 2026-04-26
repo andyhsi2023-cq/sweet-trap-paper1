@@ -1,0 +1,18 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+XP_006567793.3       -          Gr_sweet             -           9.9e-104  347.6  20.7  1.2e-103  347.2  20.7   1.0   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64f isoform X2 [Apis mellifera]
+XP_016767961.2       -          Gr_sweet             -           2.2e-100  336.6  21.7  2.7e-100  336.2  21.7   1.0   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64f isoform X1 [Apis mellifera]
+XP_016767964.1       -          Gr_sweet             -           4.3e-100  335.6  23.0  5.4e-100  335.2  23.0   1.0   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64f isoform X3 [Apis mellifera]
+XP_397125.5          -          Gr_sweet             -            1.4e-79  268.0  16.9   1.7e-79  267.7  16.9   1.0   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64f [Apis mellifera]
+XP_016768876.1       -          Gr_sweet             -            7.5e-06   25.1   0.6   7.5e-06   25.1   0.6   2.7   3   1   0   3   3   3   1 gustatory receptor for sugar taste 43a [Apis mellifera]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm
+# Target file:     /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/amellifera.fa
+# Option settings: hmmsearch --tblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_amellifera.tbl --domtblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_amellifera.domtbl -E 1e-5 --cpu 2 /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/amellifera.fa 
+# Current dir:     /Users/andy/Desktop/Research/sweet-trap-multidomain/00-design
+# Date:            Fri Apr 24 13:35:32 2026
+# [ok]

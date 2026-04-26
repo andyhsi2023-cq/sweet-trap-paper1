@@ -1,0 +1,343 @@
+{
+  "design": {
+    "tau_env_definition": "internet_pct 5->60 years; gdp_ppp doubling time (years) within 1990-2020",
+    "tau_adapt_definition": "Gelfand2011 tightness score (primary); Hofstede UAI, LTOWVS (backup)",
+    "sigma_st_components": [
+      "neg_happiness_z (cantril residual | log GDP, gini, life-exp)",
+      "suicide_z (WHO age-std)",
+      "credit_z (domestic credit %GDP)",
+      "consumption_gap_z (hh cons residual | log GDP)"
+    ],
+    "focal_year_range": [
+      2015,
+      2022
+    ],
+    "sigma_st_model_n": 133,
+    "sigma_st_model_r2": 0.7195199185546798
+  },
+  "p3_regressions": [
+    {
+      "label": "PRIMARY_internet_composite",
+      "tau_env": "tau_env_internet",
+      "tau_adapt": "tau_adapt_composite_positive",
+      "n_countries": 52,
+      "beta_log_ratio": -0.2953051565070331,
+      "se_HC3": 0.14598338195894695,
+      "p_two_sided": 0.043086727021277596,
+      "beta_ci95_boot": [
+        -0.6106677972286746,
+        -0.046013051897318025
+      ],
+      "r_squared": 0.10584785479770498,
+      "pearson_r": -0.32534267288154045,
+      "pearson_p": 0.018599004978160145,
+      "spearman_r": -0.2818236147869888,
+      "spearman_p": 0.04296110911624231,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "gdp_doubling_composite",
+      "tau_env": "tau_env_gdp_doubling",
+      "tau_adapt": "tau_adapt_composite_positive",
+      "n_countries": 56,
+      "beta_log_ratio": 0.03252810603576069,
+      "se_HC3": 0.08757133236422363,
+      "p_two_sided": 0.7103046470982314,
+      "beta_ci95_boot": [
+        -0.09372142230582627,
+        0.22739574291419032
+      ],
+      "r_squared": 0.003319633956279322,
+      "pearson_r": 0.0576162646852364,
+      "pearson_p": 0.6731806600942333,
+      "spearman_r": 0.13246753246753248,
+      "spearman_p": 0.3304360926033235,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "primary_internet_gelfand",
+      "tau_env": "tau_env_internet",
+      "tau_adapt": "gelfand_tightness",
+      "n_countries": 28,
+      "beta_log_ratio": -0.3669194228010486,
+      "se_HC3": 0.19701411003423,
+      "p_two_sided": 0.06254648302657567,
+      "beta_ci95_boot": [
+        -0.7678072854618518,
+        -0.030947890148997063
+      ],
+      "r_squared": 0.1613004785860781,
+      "pearson_r": -0.40162230837701,
+      "pearson_p": 0.03414018185905391,
+      "spearman_r": -0.3375308092524299,
+      "spearman_p": 0.0789891397244991,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "gdp_doubling_gelfand",
+      "tau_env": "tau_env_gdp_doubling",
+      "tau_adapt": "gelfand_tightness",
+      "n_countries": 28,
+      "beta_log_ratio": 0.007743079213356971,
+      "se_HC3": 0.10436586903538093,
+      "p_two_sided": 0.9408578655860802,
+      "beta_ci95_boot": [
+        -0.20314743001481736,
+        0.20845766705083196
+      ],
+      "r_squared": 0.0001789574801960292,
+      "pearson_r": 0.013377499026205393,
+      "pearson_p": 0.9461338452892616,
+      "spearman_r": -0.054187192118226604,
+      "spearman_p": 0.7841921785462468,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "internet_hofstede_uai",
+      "tau_env": "tau_env_internet",
+      "tau_adapt": "hofstede_uai",
+      "n_countries": 33,
+      "beta_log_ratio": -0.39302514173533726,
+      "se_HC3": 0.22658673568063195,
+      "p_two_sided": 0.08282123118165745,
+      "beta_ci95_boot": [
+        -0.9649170099891384,
+        -0.06465170635696743
+      ],
+      "r_squared": 0.15228646579566785,
+      "pearson_r": -0.3902389854892357,
+      "pearson_p": 0.02475713288652589,
+      "spearman_r": -0.3646999883800803,
+      "spearman_p": 0.036911429190475235,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "gdp_doubling_hofstede_uai",
+      "tau_env": "tau_env_gdp_doubling",
+      "tau_adapt": "hofstede_uai",
+      "n_countries": 35,
+      "beta_log_ratio": 0.02256709248533438,
+      "se_HC3": 0.12632060188480818,
+      "p_two_sided": 0.8582130478753589,
+      "beta_ci95_boot": [
+        -0.12489769398884971,
+        0.3279767586349947
+      ],
+      "r_squared": 0.0014086486862724401,
+      "pearson_r": 0.037531968856864745,
+      "pearson_p": 0.8305054133201961,
+      "spearman_r": 0.14397759103641455,
+      "spearman_p": 0.4092804420456047,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "internet_hofstede_lto",
+      "tau_env": "tau_env_internet",
+      "tau_adapt": "hofstede_ltowvs",
+      "n_countries": 41,
+      "beta_log_ratio": -0.2080653156783145,
+      "se_HC3": 0.09458805721185724,
+      "p_two_sided": 0.027828212155496253,
+      "beta_ci95_boot": [
+        -0.3989372428169776,
+        -0.04408513062617804
+      ],
+      "r_squared": 0.12498513600819416,
+      "pearson_r": -0.3535323691095257,
+      "pearson_p": 0.0233607221194052,
+      "spearman_r": -0.4050180807331575,
+      "spearman_p": 0.008618993958324285,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "gdp_doubling_hofstede_lto",
+      "tau_env": "tau_env_gdp_doubling",
+      "tau_adapt": "hofstede_ltowvs",
+      "n_countries": 44,
+      "beta_log_ratio": -0.0578510689636545,
+      "se_HC3": 0.08672064580254961,
+      "p_two_sided": 0.5047102771108434,
+      "beta_ci95_boot": [
+        -0.19848808138538107,
+        0.12243340093202801
+      ],
+      "r_squared": 0.009260351916640652,
+      "pearson_r": -0.09623072231174695,
+      "pearson_p": 0.5343424406002244,
+      "spearman_r": -0.08766737138830162,
+      "spearman_p": 0.5714822152261266,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "sensitivity_fullsample_gelfand",
+      "tau_env": "tau_env_internet",
+      "tau_adapt": "gelfand_tightness",
+      "n_countries": 31,
+      "beta_log_ratio": -0.29386162645853986,
+      "se_HC3": 0.2028579188247464,
+      "p_two_sided": 0.1474470549654687,
+      "beta_ci95_boot": [
+        -0.6594738210980858,
+        0.07674762374822292
+      ],
+      "r_squared": 0.09290076363059618,
+      "pearson_r": -0.3047962657753477,
+      "pearson_p": 0.09546779506677196,
+      "spearman_r": -0.27070099256451013,
+      "spearman_p": 0.14077169291874042,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "sensitivity_fullsample_lto",
+      "tau_env": "tau_env_internet",
+      "tau_adapt": "hofstede_ltowvs",
+      "n_countries": 46,
+      "beta_log_ratio": -0.2178673701938975,
+      "se_HC3": 0.09634748868209574,
+      "p_two_sided": 0.023742745435777306,
+      "beta_ci95_boot": [
+        -0.41409906709152633,
+        -0.05055230018357431
+      ],
+      "r_squared": 0.10879781723065074,
+      "pearson_r": -0.3298451412870146,
+      "pearson_p": 0.025181143381399075,
+      "spearman_r": -0.4276066259395059,
+      "spearman_p": 0.003035163660091527,
+      "expected_sign": "negative (smaller ratio = more trap)",
+      "n_bootstrap": 2000
+    },
+    {
+      "label": "multivariate_internet_composite",
+      "n_countries": 52,
+      "beta_log_tau_env": -0.48891671743504045,
+      "se_log_tau_env_HC3": 0.19727740805070237,
+      "p_log_tau_env": 0.013200237531391828,
+      "beta_tau_adapt_z": 0.04842983416259111,
+      "p_tau_adapt_z": 0.5621509053363551,
+      "r_squared": 0.14267482751165894
+    }
+  ],
+  "domain_heterogeneity": {
+    "luxury": {
+      "proxy_variable": "consumption_gap_z",
+      "n_countries": 137,
+      "pearson_r": 0.46784792739261977,
+      "pearson_p": 8.19565961642596e-09,
+      "partial_r_on_log_gdp": 0.46895452262564474,
+      "partial_p": 7.476316792655886e-09,
+      "cfps_china_delta_st": 0.098,
+      "direction_match_china": true
+    },
+    "housing": {
+      "proxy_variable": "credit_z",
+      "n_countries": 56,
+      "pearson_r": 0.6215331233427163,
+      "pearson_p": 3.1874488935727406e-07,
+      "partial_r_on_log_gdp": 0.6450781751734352,
+      "partial_p": 8.025037694869435e-08,
+      "cfps_china_delta_st": 0.068,
+      "direction_match_china": true
+    },
+    "investment": {
+      "proxy_variable": "credit_z",
+      "n_countries": 56,
+      "pearson_r": 0.6215331233427163,
+      "pearson_p": 3.1874488935727406e-07,
+      "partial_r_on_log_gdp": 0.6450781751734352,
+      "partial_p": 8.025037694869435e-08,
+      "cfps_china_delta_st": 0.06,
+      "direction_match_china": true
+    },
+    "shortvideo": {
+      "proxy_variable": "internet_growth_2010_2020",
+      "n_countries": 137,
+      "pearson_r": -0.20814248724133635,
+      "pearson_p": 0.01465816206501585,
+      "partial_r_on_log_gdp": -0.20818296729968627,
+      "partial_p": 0.014638475260824423,
+      "cfps_china_delta_st": 0.12,
+      "direction_match_china": false
+    }
+  },
+  "china_position": {
+    "china_row": {
+      "iso3": "CHN",
+      "cantril": 5.3526125,
+      "log_gdp_ppp": 9.808989060099465,
+      "gini": 37.7125,
+      "life_exp": 77.67637500000001,
+      "suicide": 7.046745994714286,
+      "log_hh_cons": 8.281128276443518,
+      "credit_gdp": null,
+      "cantril_residual": -0.41937071339496956,
+      "consumption_gap": -0.20211944802370319,
+      "neg_happiness_z": 0.7165383137351377,
+      "suicide_z": -0.37542751640788496,
+      "credit_z": null,
+      "consumption_gap_z": -0.49113675895515113,
+      "sigma_st": -0.05000865387596615,
+      "n_components": 3,
+      "tau_env_internet": 15.0,
+      "tau_env_gdp_doubling": 8.505857879171964,
+      "gelfand_tightness": 7.9,
+      "hofstede_uai": null,
+      "hofstede_ltowvs": null,
+      "hofstede_pdi": null,
+      "internet_latest": 92.0,
+      "country": "China",
+      "internet_growth_2010_2020": 36.351298499502995,
+      "gelfand_tightness_z": 0.5097108314410926,
+      "hofstede_ltowvs_z": null,
+      "hofstede_uai_z": null,
+      "tau_adapt_composite_z": 0.5097108314410926,
+      "tau_adapt_composite_positive": 3.6955065239458142
+    },
+    "ranks": {
+      "tau_env_internet": {
+        "value": 15.0,
+        "percentile": 0.7,
+        "n_countries_ranked": 150
+      },
+      "tau_env_gdp_doubling": {
+        "value": 8.505857879171964,
+        "percentile": 0.005494505494505495,
+        "n_countries_ranked": 182
+      },
+      "gelfand_tightness": {
+        "value": 7.9,
+        "percentile": 0.71875,
+        "n_countries_ranked": 32
+      },
+      "sigma_st": {
+        "value": -0.05000865387596615,
+        "percentile": 0.5323383084577115,
+        "n_countries_ranked": 201
+      },
+      "cantril_residual": {
+        "value": -0.41937071339496956,
+        "percentile": 0.21052631578947367,
+        "n_countries_ranked": 133
+      },
+      "suicide": {
+        "value": 7.046745994714286,
+        "percentile": 0.38421052631578945,
+        "n_countries_ranked": 190
+      },
+      "consumption_gap_z": {
+        "value": -0.49113675895515113,
+        "percentile": 0.30409356725146197,
+        "n_countries_ranked": 171
+      }
+    }
+  }
+}

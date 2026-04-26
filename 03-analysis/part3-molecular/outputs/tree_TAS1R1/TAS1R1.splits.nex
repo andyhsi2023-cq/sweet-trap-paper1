@@ -1,0 +1,28 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=5;
+TAXLABELS
+[1] 'TAS1R1|Danio_rerio|ENSDART00000104214.4'
+[2] 'TAS1R1|Gallus_gallus|ENSGALT00010045937.1'
+[3] 'TAS1R1|Homo_sapiens|ENST00000333172.11'
+[4] 'TAS1R1|Mus_musculus|ENSMUST00000030792.2'
+[5] 'TAS1R1|Rattus_norvegicus|ENSRNOT00000013385.7'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=5 nsplits=8;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 4,
+	100	 5,
+	100	 4 5,
+	100	 1 2,
+	100	 1,
+	0	 3 5,
+;
+END; [Splits]
+

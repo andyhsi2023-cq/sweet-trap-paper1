@@ -1,0 +1,357 @@
+2026-04-18 07:54:26,262 === Layer D MR v2 — extended ===
+2026-04-18 07:54:26,263 19 chains | 3 MVMR specs
+2026-04-18 07:54:26,276 IV mr_iv_risk_tolerance_GCST006810.csv: n=25 meanF=39.5
+2026-04-18 07:54:26,278 IV mr_iv_drinks_per_week_GCST007461.csv: n=96 meanF=64.2
+2026-04-18 07:54:26,279 IV mr_iv_bmi_locke2015_GCST002783.csv: n=92 meanF=62.8
+2026-04-18 07:54:26,283 IV mr_iv_years_of_schooling_GCST006572.csv: n=210 meanF=42.1
+2026-04-18 07:54:26,285 IV mr_iv_subjective_wellbeing_GCST003766.csv: n=5 meanF=32.4
+2026-04-18 07:54:26,287 IV mr_iv_smoking_initiation_GCST007474.csv: n=374 meanF=45.1
+2026-04-18 07:54:26,287 
+=== OUTCOME F5_DEPRESSIO — 3 chain(s), 240 rsids ===
+2026-04-18 07:54:26,287 parsing finngen_R12_F5_DEPRESSIO.gz (781.7 MB) for 240 rsids
+2026-04-18 07:54:38,864   done: scanned 21,326,973 lines, kept 234
+2026-04-18 07:54:38,868 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:54:38,879   chain 1a: kept=25 / harmonised=26 (palindromic=0)
+2026-04-18 07:54:38,952     [IVW]   OR=1.382 95%CI (1.182-1.616) p=4.93e-05 F=40 Steig=True
+2026-04-18 07:54:38,953     [WMed]  OR=1.236 p=0.0124
+2026-04-18 07:54:38,953     [Egger] intercept=0.0137 p_int=0.16
+2026-04-18 07:54:38,953     [RAPS]  OR=1.382 p=0.00735
+2026-04-18 07:54:38,953     [PRESSO] global_p=0 outliers=6/25 corr_OR=1.232
+2026-04-18 07:54:38,967   chain 5: kept=203 / harmonised=204 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:54:39,547     [IVW]   OR=0.885 95%CI (0.811-0.966) p=0.00623 F=42 Steig=True
+2026-04-18 07:54:39,547     [WMed]  OR=0.903 p=0.0203
+2026-04-18 07:54:39,547     [Egger] intercept=-0.0032 p_int=0.436
+2026-04-18 07:54:39,547     [RAPS]  OR=0.885 p=0.135
+2026-04-18 07:54:39,547     [PRESSO] global_p=0 outliers=59/203 corr_OR=0.881
+2026-04-18 07:54:39,549   chain 6: kept=4 / harmonised=4 (palindromic=0)
+2026-04-18 07:54:39,567     [IVW]   OR=0.464 95%CI (0.313-0.688) p=0.000134 F=33 Steig=True
+2026-04-18 07:54:39,567     [WMed]  OR=0.463 p=0.00186
+2026-04-18 07:54:39,567     [Egger] intercept=-0.0735 p_int=0.217
+2026-04-18 07:54:39,567     [RAPS]  OR=0.463 p=2.03e-08
+2026-04-18 07:54:39,567     [PRESSO] global_p=0.628 outliers=0/4 corr_OR=nan
+2026-04-18 07:54:39,568 
+=== OUTCOME ANTIDEPRESSANTS — 1 chain(s), 25 rsids ===
+2026-04-18 07:54:39,568 parsing finngen_R12_ANTIDEPRESSANTS.gz (780.2 MB) for 25 rsids
+2026-04-18 07:54:52,207   done: scanned 21,320,566 lines, kept 26
+2026-04-18 07:54:52,210 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:54:52,214   chain 1b: kept=25 / harmonised=26 (palindromic=0)
+2026-04-18 07:54:52,294     [IVW]   OR=1.397 95%CI (1.180-1.652) p=9.83e-05 F=40 Steig=True
+2026-04-18 07:54:52,294     [WMed]  OR=1.204 p=0.0258
+2026-04-18 07:54:52,294     [Egger] intercept=0.0124 p_int=0.243
+2026-04-18 07:54:52,294     [RAPS]  OR=1.396 p=0.0223
+2026-04-18 07:54:52,294     [PRESSO] global_p=0 outliers=5/25 corr_OR=1.314
+2026-04-18 07:54:52,296 
+=== OUTCOME K11_ALCOLIV — 2 chain(s), 466 rsids ===
+2026-04-18 07:54:52,296 parsing finngen_R12_K11_ALCOLIV.gz (773.9 MB) for 466 rsids
+2026-04-18 07:55:04,894   done: scanned 21,326,899 lines, kept 446
+2026-04-18 07:55:04,896 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:55:04,928   chain 2b: kept=90 / harmonised=90 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:55:05,173     [IVW]   OR=5.405 95%CI (2.763-10.572) p=8.23e-07 F=64 Steig=False
+2026-04-18 07:55:05,173     [WMed]  OR=5.687 p=1.25e-05
+2026-04-18 07:55:05,173     [Egger] intercept=-0.0124 p_int=0.241
+2026-04-18 07:55:05,173     [RAPS]  OR=5.418 p=0.000259
+2026-04-18 07:55:05,173     [PRESSO] global_p=0 outliers=12/90 corr_OR=4.800
+2026-04-18 07:55:05,197   chain 7: kept=358 / harmonised=359 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:55:06,296     [IVW]   OR=1.957 95%CI (1.676-2.285) p=0 F=45 Steig=False
+2026-04-18 07:55:06,296     [WMed]  OR=1.938 p=2.01e-09
+2026-04-18 07:55:06,296     [Egger] intercept=-0.0168 p_int=0.00855
+2026-04-18 07:55:06,296     [RAPS]  OR=1.957 p=2.89e-15
+2026-04-18 07:55:06,296     [PRESSO] global_p=0.008 outliers=23/358 corr_OR=1.934
+2026-04-18 07:55:06,297 
+=== OUTCOME T2D — 1 chain(s), 92 rsids ===
+2026-04-18 07:55:06,297 parsing finngen_R12_T2D.gz (782.7 MB) for 92 rsids
+2026-04-18 07:55:19,067   done: scanned 21,326,905 lines, kept 90
+2026-04-18 07:55:19,073 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:55:19,082   chain 3c: kept=90 / harmonised=90 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:55:19,321     [IVW]   OR=2.064 95%CI (1.605-2.654) p=1.64e-08 F=63 Steig=False
+2026-04-18 07:55:19,321     [WMed]  OR=2.472 p=0
+2026-04-18 07:55:19,321     [Egger] intercept=-0.0150 p_int=0.0899
+2026-04-18 07:55:19,321     [RAPS]  OR=2.064 p=0.291
+2026-04-18 07:55:19,321     [PRESSO] global_p=0 outliers=31/90 corr_OR=2.245
+2026-04-18 07:55:19,321 
+=== OUTCOME F5_ANXIETY — 3 chain(s), 240 rsids ===
+2026-04-18 07:55:19,322 parsing finngen_R12_F5_ANXIETY.gz (778.6 MB) for 240 rsids
+2026-04-18 07:55:31,897   done: scanned 21,326,680 lines, kept 234
+2026-04-18 07:55:31,899 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:55:31,905   chain 1c: kept=25 / harmonised=26 (palindromic=0)
+2026-04-18 07:55:31,976     [IVW]   OR=1.627 95%CI (1.356-1.954) p=1.72e-07 F=40 Steig=True
+2026-04-18 07:55:31,976     [WMed]  OR=1.515 p=0.000606
+2026-04-18 07:55:31,976     [Egger] intercept=0.0099 p_int=0.399
+2026-04-18 07:55:31,976     [RAPS]  OR=1.627 p=5.72e-05
+2026-04-18 07:55:31,976     [PRESSO] global_p=0.064 outliers=2/25 corr_OR=1.699
+2026-04-18 07:55:31,991   chain 5b: kept=203 / harmonised=204 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:55:32,576     [IVW]   OR=0.900 95%CI (0.810-0.999) p=0.0483 F=42 Steig=True
+2026-04-18 07:55:32,576     [WMed]  OR=0.949 p=0.4
+2026-04-18 07:55:32,576     [Egger] intercept=-0.0014 p_int=0.776
+2026-04-18 07:55:32,576     [RAPS]  OR=0.900 p=0.178
+2026-04-18 07:55:32,576     [PRESSO] global_p=0 outliers=39/203 corr_OR=0.901
+2026-04-18 07:55:32,579   chain 6b: kept=4 / harmonised=4 (palindromic=0)
+2026-04-18 07:55:32,597     [IVW]   OR=0.355 95%CI (0.196-0.643) p=0.000631 F=33 Steig=False
+2026-04-18 07:55:32,597     [WMed]  OR=0.382 p=0.0109
+2026-04-18 07:55:32,597     [Egger] intercept=-0.1431 p_int=0.107
+2026-04-18 07:55:32,597     [RAPS]  OR=0.354 p=2.54e-05
+2026-04-18 07:55:32,597     [PRESSO] global_p=0.482 outliers=0/4 corr_OR=nan
+2026-04-18 07:55:32,598 
+=== OUTCOME ALCOPANCCHRON — 2 chain(s), 466 rsids ===
+2026-04-18 07:55:32,598 parsing finngen_R12_ALCOPANCCHRON.gz (769.6 MB) for 466 rsids
+2026-04-18 07:55:45,263   done: scanned 21,327,062 lines, kept 446
+2026-04-18 07:55:45,265 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:55:45,272   chain 2a: kept=90 / harmonised=90 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:55:45,502     [IVW]   OR=3.801 95%CI (1.893-7.633) p=0.000174 F=64 Steig=False
+2026-04-18 07:55:45,502     [WMed]  OR=8.108 p=2.34e-05
+2026-04-18 07:55:45,502     [Egger] intercept=-0.0103 p_int=0.334
+2026-04-18 07:55:45,502     [RAPS]  OR=3.801 p=0.0021
+2026-04-18 07:55:45,502     [PRESSO] global_p=0.02 outliers=8/90 corr_OR=3.247
+2026-04-18 07:55:45,522   chain 7b: kept=358 / harmonised=359 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:55:46,566     [IVW]   OR=2.025 95%CI (1.681-2.440) p=1.13e-13 F=45 Steig=False
+2026-04-18 07:55:46,566     [WMed]  OR=2.055 p=1.14e-07
+2026-04-18 07:55:46,566     [Egger] intercept=-0.0015 p_int=0.843
+2026-04-18 07:55:46,566     [RAPS]  OR=2.025 p=1.09e-11
+2026-04-18 07:55:46,566     [PRESSO] global_p=0.074 outliers=21/358 corr_OR=2.175
+2026-04-18 07:55:46,567 
+=== OUTCOME C3_HEPATOCELLU_CARC_EXALLC — 2 chain(s), 466 rsids ===
+2026-04-18 07:55:46,567 parsing finngen_R12_C3_HEPATOCELLU_CARC_EXALLC.gz (762.4 MB) for 466 rsids
+2026-04-18 07:55:58,704   done: scanned 21,325,048 lines, kept 446
+2026-04-18 07:55:58,705 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:55:58,711   chain 2c: kept=90 / harmonised=90 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:55:58,941     [IVW]   OR=0.798 95%CI (0.288-2.213) p=0.665 F=64 Steig=False
+2026-04-18 07:55:58,941     [WMed]  OR=0.400 p=0.223
+2026-04-18 07:55:58,941     [Egger] intercept=0.0078 p_int=0.617
+2026-04-18 07:55:58,941     [RAPS]  OR=0.798 p=0.718
+2026-04-18 07:55:58,941     [PRESSO] global_p=0.116 outliers=5/90 corr_OR=0.938
+2026-04-18 07:55:58,962   chain 7c: kept=358 / harmonised=359 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:56:00,005     [IVW]   OR=1.604 95%CI (1.194-2.154) p=0.00169 F=45 Steig=False
+2026-04-18 07:56:00,005     [WMed]  OR=1.296 p=0.247
+2026-04-18 07:56:00,005     [Egger] intercept=0.0080 p_int=0.512
+2026-04-18 07:56:00,005     [RAPS]  OR=1.604 p=0.00225
+2026-04-18 07:56:00,005     [PRESSO] global_p=0.106 outliers=19/358 corr_OR=1.475
+2026-04-18 07:56:00,005 
+=== OUTCOME DM_NEPHROPATHY — 2 chain(s), 117 rsids ===
+2026-04-18 07:56:00,005 parsing finngen_R12_DM_NEPHROPATHY.gz (772.8 MB) for 117 rsids
+2026-04-18 07:56:12,402   done: scanned 21,267,523 lines, kept 116
+2026-04-18 07:56:12,403 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:56:12,410   chain 3a: kept=90 / harmonised=90 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:56:12,645     [IVW]   OR=1.232 95%CI (1.034-1.467) p=0.0198 F=63 Steig=False
+2026-04-18 07:56:12,645     [WMed]  OR=1.187 p=0.236
+2026-04-18 07:56:12,645     [Egger] intercept=-0.0038 p_int=0.543
+2026-04-18 07:56:12,645     [RAPS]  OR=1.232 p=0.013
+2026-04-18 07:56:12,645     [PRESSO] global_p=0.404 outliers=6/90 corr_OR=1.249
+2026-04-18 07:56:12,649   chain 3a2: kept=25 / harmonised=26 (palindromic=0)
+2026-04-18 07:56:12,719     [IVW]   OR=0.929 95%CI (0.576-1.498) p=0.764 F=40 Steig=False
+2026-04-18 07:56:12,719     [WMed]  OR=1.248 p=0.396
+2026-04-18 07:56:12,719     [Egger] intercept=-0.0357 p_int=0.237
+2026-04-18 07:56:12,719     [RAPS]  OR=0.929 p=0.832
+2026-04-18 07:56:12,719     [PRESSO] global_p=0.002 outliers=4/25 corr_OR=1.145
+2026-04-18 07:56:12,720 
+=== OUTCOME C_STROKE — 3 chain(s), 557 rsids ===
+2026-04-18 07:56:12,720 parsing finngen_R12_C_STROKE.gz (780.4 MB) for 557 rsids
+2026-04-18 07:56:25,312   done: scanned 21,325,813 lines, kept 535
+2026-04-18 07:56:25,318 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2026-04-18 07:56:25,327   chain 3b: kept=90 / harmonised=90 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:56:25,566     [IVW]   OR=1.137 95%CI (1.035-1.248) p=0.00721 F=63 Steig=True
+2026-04-18 07:56:25,566     [WMed]  OR=1.096 p=0.113
+2026-04-18 07:56:25,566     [Egger] intercept=0.0047 p_int=0.15
+2026-04-18 07:56:25,566     [RAPS]  OR=1.137 p=0.05
+2026-04-18 07:56:25,566     [PRESSO] global_p=0 outliers=12/90 corr_OR=1.103
+2026-04-18 07:56:25,573   chain 3b2: kept=90 / harmonised=90 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:56:25,811     [IVW]   OR=1.078 95%CI (0.904-1.286) p=0.404 F=64 Steig=True
+2026-04-18 07:56:25,811     [WMed]  OR=1.050 p=0.684
+2026-04-18 07:56:25,811     [Egger] intercept=0.0029 p_int=0.282
+2026-04-18 07:56:25,811     [RAPS]  OR=1.078 p=0.49
+2026-04-18 07:56:25,811     [PRESSO] global_p=0.014 outliers=8/90 corr_OR=1.111
+2026-04-18 07:56:25,834   chain 3b3: kept=358 / harmonised=359 (palindromic=0)
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: divide by zero encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: overflow encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:182: RuntimeWarning: invalid value encountered in matmul
+  W = np.diag(w); XtWX = X.T@W@X; XtWy = X.T@W@by_o
+2026-04-18 07:56:26,897     [IVW]   OR=1.281 95%CI (1.208-1.358) p=0 F=45 Steig=True
+2026-04-18 07:56:26,897     [WMed]  OR=1.232 p=1.31e-08
+2026-04-18 07:56:26,897     [Egger] intercept=-0.0015 p_int=0.527
+2026-04-18 07:56:26,897     [RAPS]  OR=1.281 p=7.12e-10
+2026-04-18 07:56:26,897     [PRESSO] global_p=0 outliers=40/358 corr_OR=1.261
+2026-04-18 07:56:26,902 wrote mr_results_all_chains_v2.csv rows=95
+2026-04-18 07:56:26,903 wrote mr_presso_global_v2.csv rows=19
+2026-04-18 07:56:26,913 wrote mr_loo_all_v2.csv rows=2576
+2026-04-18 07:56:26,924 wrote mr_single_snp_v2.csv rows=2576
+2026-04-18 07:56:26,930 wrote mr_funnel_data_v2.csv rows=2576
+2026-04-18 07:56:26,931 
+=== MVMR ===
+2026-04-18 07:56:26,931 parsing finngen_R12_T2D.gz (782.7 MB) for 117 rsids
+2026-04-18 07:56:39,427   done: scanned 21,326,905 lines, kept 116
+2026-04-18 07:56:39,432 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: divide by zero encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: overflow encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: invalid value encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: divide by zero encountered in matmul
+  XtWy = G_x.T@W@by
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: overflow encountered in matmul
+  XtWy = G_x.T@W@by
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: invalid value encountered in matmul
+  XtWy = G_x.T@W@by
+2026-04-18 07:56:39,459 MVMR BMI+RiskTol_on_T2D: n=115 df=113 phi=20.67
+2026-04-18 07:56:39,459    bmi_locke2015: b=0.7246 se=0.1161 OR=2.064 (1.644-2.591) p=4.3e-10
+2026-04-18 07:56:39,459    risk_tolerance: b=-0.0537 se=0.2162 OR=0.948 (0.620-1.448) p=0.804
+2026-04-18 07:56:39,459 parsing finngen_R12_K11_ALCOLIV.gz (773.9 MB) for 466 rsids
+2026-04-18 07:56:52,554   done: scanned 21,326,899 lines, kept 446
+2026-04-18 07:56:52,559 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: divide by zero encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: overflow encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: invalid value encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: divide by zero encountered in matmul
+  XtWy = G_x.T@W@by
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: overflow encountered in matmul
+  XtWy = G_x.T@W@by
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: invalid value encountered in matmul
+  XtWy = G_x.T@W@by
+2026-04-18 07:56:52,658 MVMR Drinks+Smoking_on_AlcLiver: n=445 df=443 phi=1.34
+2026-04-18 07:56:52,658    drinks_per_week: b=1.6374 se=0.2871 OR=5.142 (2.929-9.026) p=1.18e-08
+2026-04-18 07:56:52,658    smoking_initiation: b=0.6607 se=0.0842 OR=1.936 (1.642-2.283) p=4.22e-15
+2026-04-18 07:56:52,658 parsing finngen_R12_C_STROKE.gz (780.4 MB) for 187 rsids
+2026-04-18 07:57:05,242   done: scanned 21,325,813 lines, kept 179
+2026-04-18 07:57:05,245 cache write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: divide by zero encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: overflow encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:342: RuntimeWarning: invalid value encountered in matmul
+  XtWX = G_x.T@W@G_x
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: divide by zero encountered in matmul
+  XtWy = G_x.T@W@by
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: overflow encountered in matmul
+  XtWy = G_x.T@W@by
+/Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/scripts/mr_extended_v2.py:343: RuntimeWarning: invalid value encountered in matmul
+  XtWy = G_x.T@W@by
+2026-04-18 07:57:05,282 MVMR BMI+Drinks_on_Stroke: n=179 df=177 phi=1.81
+2026-04-18 07:57:05,282    bmi_locke2015: b=0.1283 se=0.0430 OR=1.137 (1.045-1.237) p=0.00284
+2026-04-18 07:57:05,282    drinks_per_week: b=0.0760 se=0.1034 OR=1.079 (0.881-1.321) p=0.462
+2026-04-18 07:57:05,284 wrote mr_mvmr_v2.csv rows=6
+2026-04-18 07:57:08,190 supp forest plot failed: Image size of 1980x102009 pixels is too large. It must be less than 2^16 in each direction.
+2026-04-18 07:57:08,191 === v2 done ===

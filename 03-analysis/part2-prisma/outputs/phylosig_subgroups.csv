@@ -1,0 +1,4 @@
+"subset","n_species","K","K_p","lambda","lambda_p"
+"Chordata only",37,0.1222,0.505050505050439,1e-04,1
+"Chordata + Arthropoda",50,0.1046,0.406240624062364,1e-04,1
+"Arthropoda only",13,1.4458,0.00650065006500651,1.1624,0.0203172580646051

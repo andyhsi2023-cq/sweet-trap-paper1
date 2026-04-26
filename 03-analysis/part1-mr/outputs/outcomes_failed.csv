@@ -1,0 +1,3 @@
+pair_id,ancestry,outcome,outcome_id,reason
+bmi-mort,SAS,all_cause_mortality,,no public SAS mortality/parental-lifespan GWAS — logged gap
+bmi-mort,AMR,all_cause_mortality,,no public AMR mortality GWAS — logged gap (All of Us pending registration)

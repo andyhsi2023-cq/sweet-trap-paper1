@@ -1,0 +1,30 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+XP_064212664.1       -          Gr_sweet             -           6.2e-180  598.5  40.0   1.6e-91  307.3  13.4   2.9   2   1   0   2   2   2   2 uncharacterized protein LOC107398029 [Tribolium castaneum]
+XP_008194199.3       -          Gr_sweet             -           4.5e-164  546.2  52.1   3.2e-82  276.6  20.6   2.0   1   1   1   2   2   2   2 gustatory receptor for sugar taste 64a [Tribolium castaneum]
+XP_015835226.2       -          Gr_sweet             -            2.4e-91  306.7  24.0     3e-91  306.4  24.0   1.0   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64f [Tribolium castaneum]
+XP_064212686.1       -          Gr_sweet             -            2.3e-80  270.5  22.4   2.5e-80  270.4  22.4   1.0   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64f-like [Tribolium castaneum]
+XP_064212815.1       -          Gr_sweet             -            7.2e-80  268.9  23.3     2e-43  148.8   6.0   2.0   2   0   0   2   2   2   2 gustatory receptor for sugar taste 64a-like isoform X2 [Tribolium castaneum]
+XP_064212814.1       -          Gr_sweet             -            1.9e-74  251.0  27.1   2.2e-43  148.7   6.0   2.7   2   1   0   2   2   2   2 gustatory receptor for sugar taste 64e-like isoform X1 [Tribolium castaneum]
+XP_064212969.1       -          Gr_sweet             -            1.3e-57  195.5  28.1   1.7e-57  195.1  28.1   1.1   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64e [Tribolium castaneum]
+XP_064212646.1       -          Gr_sweet             -            7.3e-47  160.2   6.3   8.3e-47  160.0   6.3   1.0   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64f [Tribolium castaneum]
+XP_015835713.2       -          Gr_sweet             -            7.4e-46  156.8  16.2   9.1e-46  156.5  16.2   1.1   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64e isoform X1 [Tribolium castaneum]
+XP_064212786.1       -          Gr_sweet             -            7.4e-46  156.8  16.2   9.1e-46  156.5  16.2   1.1   1   0   0   1   1   1   1 gustatory receptor for sugar taste 64e isoform X1 [Tribolium castaneum]
+XP_015835714.2       -          Gr_sweet             -              6e-45  153.8  15.8   3.7e-44  151.3  15.8   1.8   1   1   0   1   1   1   1 gustatory receptor for sugar taste 64e isoform X2 [Tribolium castaneum]
+XP_064212547.1       -          Gr_sweet             -            3.9e-10   39.2   8.0   3.9e-10   39.2   8.0   2.8   1   1   2   3   3   3   1 LOW QUALITY PROTEIN: gustatory receptor for bitter taste 66a [Tribolium castaneum]
+XP_064213643.1       -          Gr_sweet             -            1.2e-09   37.6   9.1     5e-05   22.4   0.3   2.4   2   1   0   2   2   2   2 uncharacterized protein LOC107397508 isoform X2 [Tribolium castaneum]
+XP_064213641.1       -          Gr_sweet             -            1.5e-08   33.9  10.2   0.00032   19.7   0.5   2.4   2   1   0   2   2   2   2 uncharacterized protein LOC107397508 isoform X1 [Tribolium castaneum]
+XP_975520.4          -          Gr_sweet             -            7.2e-08   31.7  12.8   7.2e-08   31.7  12.8   2.1   1   1   1   2   2   2   1 putative gustatory receptor 28b [Tribolium castaneum]
+NP_001161916.1       -          Gr_sweet             -            7.2e-07   28.4   8.9   0.00045   19.2   0.5   3.2   2   1   1   3   3   3   2 gustatory receptor 2 [Tribolium castaneum]
+NP_001137600.1       -          Gr_sweet             -            4.5e-06   25.8   0.9   4.5e-06   25.8   0.9   1.7   2   1   0   2   2   2   1 gustatory receptor [Tribolium castaneum]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm
+# Target file:     /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/tcastaneum.fa
+# Option settings: hmmsearch --tblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_tcastaneum.tbl --domtblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_tcastaneum.domtbl -E 1e-5 --cpu 2 /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/tcastaneum.fa 
+# Current dir:     /Users/andy/Desktop/Research/sweet-trap-multidomain/00-design
+# Date:            Fri Apr 24 13:35:32 2026
+# [ok]

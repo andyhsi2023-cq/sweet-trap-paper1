@@ -1,0 +1,24 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+XP_001647874.3       -            458 Gr_sweet             -            414  3.5e-117  392.1  17.7   1   1  1.7e-120  4.4e-117  391.8  17.7    10   409    60   454    37   457 0.97 gustatory receptor for sugar taste 64f [Aedes aegypti]
+XP_021709330.1       -            434 Gr_sweet             -            414  3.5e-111  372.4   7.4   1   1  1.8e-114  4.6e-111  372.0   7.4     8   405    15   418     9   424 0.96 gustatory receptor for sugar taste 64a [Aedes aegypti]
+XP_021706393.1       -            455 Gr_sweet             -            414   3.1e-99  333.0  17.7   1   1  1.5e-102   3.8e-99  332.7  17.7     8   408    47   452    38   455 0.96 gustatory receptor for sugar taste 64b [Aedes aegypti]
+XP_001647877.2       -            434 Gr_sweet             -            414   5.1e-96  322.4  21.0   1   1   2.4e-99   6.3e-96  322.1  21.0    11   411    32   430    13   432 0.97 gustatory receptor for sugar taste 64b [Aedes aegypti]
+XP_001647875.1       -            434 Gr_sweet             -            414   1.5e-93  314.3  14.9   1   1   6.7e-97   1.7e-93  314.1  14.9    10   404    38   427    21   434 0.95 gustatory receptor for sugar taste 64e [Aedes aegypti]
+XP_001661473.2       -            471 Gr_sweet             -            414   5.8e-92  309.0  18.1   1   1     3e-95   7.8e-92  308.6  18.1    11   403    71   464    53   470 0.95 gustatory receptor for sugar taste 64a [Aedes aegypti]
+XP_001647881.2       -            441 Gr_sweet             -            414   4.1e-88  296.4  13.7   1   1     2e-91   5.2e-88  296.0  13.7     8   408    31   435    19   438 0.93 gustatory receptor for sugar taste 61a [Aedes aegypti]
+XP_001647879.2       -            355 Gr_sweet             -            414     1e-63  216.0  24.5   1   1   5.1e-67   1.3e-63  215.7  24.5    72   398     6   334     2   350 0.94 gustatory receptor for sugar taste 64a [Aedes aegypti]
+XP_021707116.1       -            322 Gr_sweet             -            414   2.4e-58  198.3  11.2   1   1   1.1e-61   2.9e-58  198.1  11.2   102   402     5   306     1   318 0.94 gustatory receptor for sugar taste 64a-like isoform X1 [Aedes aegypti]
+XP_021707117.1       -            267 Gr_sweet             -            414   1.8e-54  185.6   8.4   1   1     8e-58   2.1e-54  185.4   8.4   161   402     7   251     1   263 0.94 gustatory receptor for sugar taste 64a-like isoform X2 [Aedes aegypti]
+XP_001663374.3       -             99 Gr_sweet             -            414   5.5e-06   25.9   0.2   1   1   2.6e-09   6.6e-06   25.6   0.2   315   398     5    92     3    97 0.94 gustatory receptor for bitter taste 66a [Aedes aegypti]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm
+# Target file:     /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/aaegypti.fa
+# Option settings: hmmsearch --tblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_aaegypti.tbl --domtblout /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/outputs/gr_hmmsearch_aaegypti.domtbl -E 1e-5 --cpu 2 /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/hmm/Gr_sweet.hmm /Users/andy/Desktop/Research/sweet-trap-multidomain/03-analysis/part3-molecular/data/insect_proteomes/aaegypti.fa 
+# Current dir:     /Users/andy/Desktop/Research/sweet-trap-multidomain/00-design
+# Date:            Fri Apr 24 13:35:32 2026
+# [ok]

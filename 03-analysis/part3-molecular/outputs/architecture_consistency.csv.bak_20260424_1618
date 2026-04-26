@@ -1,0 +1,7 @@
+family,n,frac_7tm_1_ClassA,frac_7tm_3_ClassC,frac_ANF_VenusFlytrap,frac_NCD3G,frac_Insect7TM6_Gr,dominant_pfam_architecture,dominant_fraction
+TAS1R (Chordata sweet/umami Class-C),13,0.00,1.00,1.00,1.00,0.00,PF00003+PF01094+PF07562,1.00
+DRD (Chordata dopamine Class-A),10,1.00,0.00,0.00,0.00,0.00,PF00001,1.00
+Gr (Arthropoda gustatory 7TM_6),38,0.00,0.00,0.00,0.00,0.97,PF06151,0.95
+DopR (Arthropoda dopamine Class-A),12,1.00,0.00,0.00,0.00,0.00,PF00001,1.00
+Dop (Mollusca + Cnidaria) — true DRD orthologues (tree-verified),3,1.00,0.00,0.00,0.00,0.00,7tm_1(PF00001),1.00
+"Mollusca + Cnidaria non-DRD Class-A amine receptors (HTR/ADR/OA-like, tree-reclassified)",14,1.00,0.00,0.00,0.00,0.00,7tm_1(PF00001),0.71

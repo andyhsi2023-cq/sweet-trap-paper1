@@ -1,0 +1,2 @@
+"subset","n_species","K","K_p","K_CI_low","K_CI_high","lambda","lambda_p","lambda_CI_low","lambda_CI_high","MoranI","MoranI_p"
+"All phyla",56,0.1172,0.251325132513252,0.0556,0.1689,1e-04,1,1e-04,0.413,-0.0319,0.625554478257543

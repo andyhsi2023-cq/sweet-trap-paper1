@@ -1,0 +1,132 @@
+column,role,recoding_rule,description,domains
+pid,key,none,个人 ID (financial respondent),D1_urban|D2_education|D3_work|D5_diet|D8_housing
+year,key,none,survey wave (2010-2022 biennial),D1_urban|D2_education|D3_work|D5_diet|D8_housing
+fid10,key,none,2010 household ID (for linkage),
+age,covariate,missing_codes_to_nan,age in years,D5_diet|D8_housing
+gender,covariate,recode_1male_0female,"gender (0=female,1=male)",
+gen,covariate,duplicate_of_gender,"alt gender (1=male,0=female)",
+eduy,covariate,missing_codes_to_nan,years of schooling,D2_education
+educ,covariate,missing_codes_to_nan,completed education category,
+edu,covariate,missing_codes_to_nan,education level code,D2_education
+marrige,covariate,recode_1married_0other,marital status,
+mar,covariate,duplicate_of_marrige,alt marital status,
+hukou,lambda_proxy,recode_1rural_0urban,hukou rural=1,D1_urban
+rural,lambda_proxy,duplicate_of_hukou,rural hukou dummy,D1_urban
+res,lambda_proxy,duplicate_of_hukou,hukou legacy field,
+communist,lambda_proxy,recode_binary,CCP member,
+minzu,covariate,recode_1han_0other,Han ethnicity,
+familysize,covariate,missing_codes_to_nan,household size,D3_work
+fml,covariate,duplicate_familysize,alt household size,
+size,covariate,duplicate_familysize,alt household size,
+child_num,covariate,missing_codes_to_nan,# minors in household,D2_education|D3_work|D8_housing
+child_p,covariate,missing_codes_to_nan,child dependency ratio,D2_education
+elder_num,covariate,missing_codes_to_nan,# elders in household,
+child_gender,lambda_proxy,recode_binary,first-child gender (1=male),D2_education
+medsure_dum,covariate,recode_binary,has medical insurance,D5_diet
+provcd,covariate,keep_raw,province code,D1_urban
+city,covariate,keep_raw,city admin code,D1_urban
+code,covariate,keep_raw,county admin code,
+provname,covariate,keep_raw,province name,
+cityname,covariate,keep_raw,city name,D1_urban
+urban,lambda_proxy,recode_binary,NBS urban classification,D1_urban
+lnincome,covariate,missing_codes_to_nan,log total family income,
+lnconsume,covariate,missing_codes_to_nan,log total family expense,
+fincome1,covariate,missing_codes_to_nan,total net family income,D2_education|D8_housing
+fincome1_per,covariate,missing_codes_to_nan,per capita family income,
+income_p,covariate,missing_codes_to_nan,per capita family income (alt),
+expense,covariate,missing_codes_to_nan,total family expense,D2_education|D5_diet
+expense_p,covariate,missing_codes_to_nan,per capita family expense,
+pce,covariate,missing_codes_to_nan,household consumption aggregate,
+qn12012,sweet_DV,likert_1to5,life satisfaction (primary sweet DV),D1_urban|D2_education|D5_diet|D8_housing
+qn12016,sweet_DV,likert_1to5,confidence in future,D1_urban|D8_housing
+qn1101,covariate,likert_1to5_cap79,county govt evaluation,
+eexp,treatment,missing_codes_to_nan,education expenditure (family),D2_education
+school,treatment,missing_codes_to_nan,tutoring/training expenditure,D2_education
+eec,treatment,missing_codes_to_nan,culture/education/entertainment expense,D2_education
+qn10021,covariate,range_0to10,trust in parents (intergenerational),D2_education
+workhour,treatment,missing_codes_to_nan,weekly work hours,D3_work
+gongzi,sweet_DV,missing_codes_to_nan,monthly after-tax wage,D3_work
+fwage,covariate,missing_codes_to_nan,family wage income,D3_work
+wage,lambda_proxy,missing_codes_to_nan,individual wage,D3_work
+jobclass,covariate,missing_codes_to_nan,job class code,D3_work
+worknature,covariate,recode_binary,job nature,D3_work
+workplace,lambda_proxy,missing_codes_to_nan,work location (migrant proxy),D3_work
+industry,covariate,missing_codes_to_nan,industry code,D3_work
+bianzhi,covariate,recode_binary,编制 (state-sector employment),D3_work
+job,covariate,recode_binary,currently working,D3_work
+agri,covariate,recode_binary,agri employment,
+qg401,sweet_DV,likert_1to5,job-income satisfaction,D3_work
+qg402,sweet_DV,likert_1to5,job-safety satisfaction,D3_work
+qg403,sweet_DV,likert_1to5,job-environment satisfaction,D3_work
+qg404,sweet_DV,likert_1to5,job-time satisfaction,D3_work
+qg405,sweet_DV,likert_1to5_cap79,job-promotion satisfaction,D3_work
+qg406,sweet_DV,likert_1to5,overall job satisfaction (primary D3 DV),D3_work
+qq4010,bitter_outcome,hours_range,sleep hours per day,D3_work
+food,treatment,missing_codes_to_nan,food expenditure,D5_diet
+dress,covariate,missing_codes_to_nan,clothing expenditure,
+daily,covariate,missing_codes_to_nan,household-goods expenditure,
+mexp,bitter_outcome,missing_codes_to_nan,medical expenditure,D5_diet
+med,covariate,missing_codes_to_nan,medical expenditure (alt),D5_diet
+health,bitter_outcome,likert_1to5,self-rated health (1=worst),D3_work|D5_diet
+unhealth,bitter_outcome,recode_binary,poor health 0/1,D3_work|D5_diet
+weak,bitter_outcome,missing_codes_to_nan,# unhealthy in family,D5_diet
+qp401,bitter_outcome,recode_binary,chronic disease past 6 months,D3_work|D5_diet
+qq201,covariate,recode_binary,smoked past month,D5_diet
+dw,sweet_DV,likert_1to5,self-rated social status (primary D8 DV),D8_housing
+resivalue,treatment,missing_codes_to_nan,current home value (wan yuan),D8_housing
+house,covariate,missing_codes_to_nan,housing expenditure,D8_housing
+mortage,treatment,missing_codes_to_nan,mortgage payment (typo preserved from CFPS),D8_housing
+mor,treatment,missing_codes_to_nan,"mortgage (alt label, 2020-2022)",D8_housing
+h_loan,lambda_proxy,recode_binary,has housing debt 0/1,D8_housing
+house_debts,bitter_outcome,missing_codes_to_nan,total housing debt,D8_housing
+total_asset,wealth,missing_codes_to_nan,family net asset,D8_housing
+Asset,wealth,missing_codes_to_nan,family net asset (yuan),D8_housing
+asset,wealth,missing_codes_to_nan,family net asset (log),D8_housing
+savings,bitter_outcome,missing_codes_to_nan,cash + deposits,D8_housing
+sav,wealth,duplicate_savings,alt cash+deposits,
+cas,wealth,missing_codes_to_nan,cash+deposits (log),D8_housing
+finance_asset,wealth,missing_codes_to_nan,financial assets,
+fin,wealth,missing_codes_to_nan,financial assets (log),
+Esta,wealth,missing_codes_to_nan,net real estate (yuan),
+esta,wealth,missing_codes_to_nan,net real estate (log),
+Est,wealth,missing_codes_to_nan,gross real estate (yuan),
+est,wealth,missing_codes_to_nan,gross real estate (log),
+Hast,wealth,missing_codes_to_nan,total real estate market value,
+hast,wealth,missing_codes_to_nan,total real estate value (log),
+Land,wealth,missing_codes_to_nan,land asset,
+land,wealth,missing_codes_to_nan,land asset (log),
+land_asset,wealth,missing_codes_to_nan,land asset (duplicate),
+houseasset_gross,wealth,missing_codes_to_nan,gross house asset,
+fixed_asset,wealth,missing_codes_to_nan,productive fixed asset,
+durables_asset,wealth,missing_codes_to_nan,durable goods value (car/appliance proxy),D8_housing
+fxzc,wealth,missing_codes_to_nan,risk assets,
+fd,lambda_proxy,missing_codes_to_nan,"housing loan (small N, 2020-2022)",
+company,wealth,missing_codes_to_nan,business asset,
+qtqk,lambda_proxy,recode_binary,has non-housing debt 0/1,D8_housing
+nonhousing_debts,bitter_outcome,missing_codes_to_nan,non-housing debt,D8_housing
+nhd,bitter_outcome,missing_codes_to_nan,non-housing debt (duplicate),
+Nhd,bitter_outcome,missing_codes_to_nan,non-housing debt (yuan),
+limit,lambda_proxy,recode_binary,credit constraint,D8_housing
+debt_p,bitter_outcome,missing_codes_to_nan,debt-income ratio (small N),
+internet,covariate,recode_binary,uses internet,
+mobile,covariate,recode_binary,mobile internet,
+computer,covariate,recode_binary,computer internet,
+onlineshopoping,covariate,recode_binary,online shopping,
+social,covariate,missing_codes_to_nan,social-gift expenditure,
+Soc,covariate,missing_codes_to_nan,social-gift expenditure (yuan),
+soc,covariate,missing_codes_to_nan,social-gift expenditure (log),
+qn10022,covariate,range_0to10,trust in neighbors,
+qn10023,covariate,range_0to10,trust in Americans,
+qn10024,covariate,range_0to10,trust in strangers,
+qn10025,covariate,range_0to10,trust in local officials,
+qn10026,covariate,range_0to10,trust in doctors,
+人均GDP,macro_context,keep_raw,per capita GDP,
+财政支出占GDP比重,macro_context,keep_raw,fiscal expenditure share,
+二产增加值亿,macro_context,keep_raw,secondary-sector value added,
+三产增加值亿,macro_context,keep_raw,tertiary-sector value added,
+产业结构指数,macro_context,keep_raw,industrial-structure index,
+城镇化水平,macro_context,keep_raw,urbanization level,
+社会消费额占GDP比重,macro_context,keep_raw,retail-sales share,
+高等学校在校生人数占比,macro_context,keep_raw,HE enrollment share,
+邮电业务占GDP比重,macro_context,keep_raw,postal-telecom share,
+工业总产值占GDP比重,macro_context,keep_raw,industrial-output share,

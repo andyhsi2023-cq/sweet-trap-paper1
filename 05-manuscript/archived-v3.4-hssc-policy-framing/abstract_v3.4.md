@@ -1,0 +1,13 @@
+# Abstract (v3.4) — Humanities and Social Sciences Communications
+
+**Target journal:** *Humanities and Social Sciences Communications* (Palgrave/Nature).
+**Target word count:** no hard limit; HSSC typical range 150–500 words. This abstract: ~220 words.
+**Diff vs v3.2 (149 words, NHB):** rewritten to lead with human social phenomena (household finance, short-video, housing, alcohol) per HSSC editorial preference for human-society anchoring; moths/turtles/bumblebees preserved as second-sentence cross-species evidence; umbrella-construct defensive language removed; "cross-disciplinary framework" and "policy predictability" added as HSSC-native framings; all empirical numbers (Δ_ST = +0.645; β = +1.58, *p* = 0.019; κ = 1.00; 11× median intervention-asymmetry ratio; BMI→T2D OR = 2.06) preserved verbatim.
+
+---
+
+Across household finance, short-video consumption, luxury housing, and harmful drinking, individuals persistently choose options that erode their own long-term welfare while publicly endorsing those choices as aspirational. Classical frameworks treat such behaviour as either market failure or cognitive bias — but a third class persists under neither label, visible across human societies and, strikingly, across other species: moths spiral into artificial lights; sea turtles ingest plastic; bumblebees forage on neonicotinoid-laced pollen. We propose **Sweet Trap**: a cross-disciplinary framework for reward–fitness decoupling under aspirational endorsement, bridging evolutionary behavioural science, behavioural economics, and public policy. Four axioms define a signed wedge Δ_ST between perceived and fitness utilities; a central theorem derives a structural bound |Δb_signal|/|Δb_info| ≥ 1.5 on intervention asymmetry under dose-matched comparison — a property we term *policy predictability*. A four-layer empirical programme combines a 20-case animal meta-analysis (pooled Δ_ST = +0.645), 19 Mendelian-randomisation chains (BMI→T2D OR = 2.06), ISSP trajectories across 25 countries (*n* = 2.9 M individuals), and 3,000 pre-registered specifications. A pre-registered cross-level test gives β = +1.58 (*p* = 0.019); median intervention-asymmetry ratio across six domains = 11×; an F1+F2 binary classifier validates at Cohen's κ = 1.00 on 18 blind-coded cases. The framework specifies *ex ante* which policy family — signal-redesign versus information — will succeed in a given domain, offering a unified architecture for behavioural policy currently scattered across food regulation, digital governance, financial consumer protection, and harm reduction.
+
+---
+
+**Word count verification** (split by whitespace): 220 words in the abstract body. HSSC has no hard upper limit; 220 is well within the typical 150–500 range for HSSC Articles.

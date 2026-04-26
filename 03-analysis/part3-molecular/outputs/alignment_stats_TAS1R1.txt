@@ -1,0 +1,6 @@
+Gene: TAS1R1
+Sequences in alignment: 5
+Alignment length (aa): 861
+Codon alignment length (nt): 2583
+Overall gap fraction (%): 3.14
+Conserved columns (>=80% identity): 418 / 861

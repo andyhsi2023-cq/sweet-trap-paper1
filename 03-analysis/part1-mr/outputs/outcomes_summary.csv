@@ -1,0 +1,10 @@
+pair_id,ancestry,outcome,outcome_id,n_exposure_snp,n_outcome_match,n_harmonised,n_mr_keep
+alc-mort,EUR,all_cause_mortality,ebi-a-GCST006701,35,34,34,34
+alc-mort,EAS,all_cause_mortality,ukb-e-4501_EAS,35,30,30,29
+bmi-mort,EUR,all_cause_mortality,ebi-a-GCST006701,501,480,480,466
+bmi-mort,EAS,all_cause_mortality,ukb-e-4501_EAS,501,489,489,470
+bmi-mort,AFR,all_cause_mortality,ukb-e-1807_AFR,501,496,496,476
+sug-cvdm,EUR,cardiovascular_mortality,ebi-a-GCST005194,40,40,40,38
+sug-cvdm,EAS,cardiovascular_mortality,bbj-a-159,40,35,34,33
+upf-mort,EUR,all_cause_mortality,ebi-a-GCST006701,23,23,23,23
+scr-mort,EUR,all_cause_mortality,ebi-a-GCST006701,113,111,111,108

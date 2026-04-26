@@ -1,0 +1,72 @@
+"tip_label","case_id","species_binomial","phylum","class","delta_st_proxy_case","delta_st_proxy_species_mean"
+"Acropora_millepora","C63","Acropora / Pocillopora spp.","Cnidaria","Anthozoa",0.55,0.575
+"Acropora_millepora","B07","Acropora / coral larvae","Cnidaria","Anthozoa",0.6,0.575
+"Aedes_aegypti","C54","Aedes aegypti","Arthropoda","Insecta",0.7,0.7
+"Alces_alces","B01","Alces alces","Chordata","Mammalia",0.65,0.65
+"Alligator_mississippiensis","C39","Alligator mississippiensis","Chordata","Reptilia",0.55,0.55
+"Ambystoma_maculatum","B21","Ambystoma / Rana spp.","Chordata","Amphibia",0.6,0.575
+"Ambystoma_maculatum","C12","Ambystoma maculatum","Chordata","Amphibia",0.55,0.575
+"Anax_ephippiger","B24","Anax / Sympetrum spp.","Arthropoda","Insecta",0.65,0.65
+"Anolis_cristatellus","C01","Anolis cristatellus","Chordata","Reptilia",0.55,0.55
+"Antilocapra_americana","B02","Antilocapra americana","Chordata","Mammalia",0.6,0.6
+"Apis_mellifera","C36","Apis mellifera","Arthropoda","Insecta",0.65,0.69
+"Apis_mellifera","A08","Apis mellifera / Bombus terrestris","Arthropoda","Insecta",0.8,0.69
+"Apis_mellifera","C61","Apis mellifera","Arthropoda","Insecta",0.65,0.69
+"Apis_mellifera","C27","Apis mellifera","Arthropoda","Insecta",0.7,0.69
+"Apis_mellifera","C44","Apis mellifera","Arthropoda","Insecta",0.65,0.69
+"Aplysia_californica","C06","Aplysia californica","Mollusca","Gastropoda",0.5,0.5
+"Argiope_bruennichi","C05","Argiope / Larinioides spp.","Arthropoda","Arachnida",0.55,0.55
+"Bombus_terrestris","A16","Bombus spp.","Arthropoda","Insecta",0.7,0.7
+"Bufo_bufo","B11","Bufo bufo","Chordata","Amphibia",0.65,0.65
+"Caenorhabditis_elegans","B09","Caenorhabditis elegans","Nematoda","Chromadorea",0.7,0.6625
+"Caenorhabditis_elegans","C42","Caenorhabditis elegans","Nematoda","Chromadorea",0.7,0.6625
+"Caenorhabditis_elegans","B08","Caenorhabditis elegans","Nematoda","Chromadorea",0.65,0.6625
+"Caenorhabditis_elegans","C41","Caenorhabditis elegans","Nematoda","Chromadorea",0.6,0.6625
+"Calidris_canutus","B30","Calidris canutus","Chordata","Aves",0.75,0.75
+"Calopteryx_amata","C35","Calopteryx / Libellula spp.","Arthropoda","Insecta",0.65,0.65
+"Capitella_capitata","C59","Capitella capitata","Annelida","Polychaeta",0.5,0.5
+"Caretta_caretta","A02","Caretta caretta / Chelonia mydas","Chordata","Reptilia",0.6,0.6
+"Caretta_caretta","C33","Caretta caretta","Chordata","Reptilia",0.6,0.6
+"Certhia_americana","C18","Certhia americana","Chordata","Aves",0.5,0.5
+"Chelonia_mydas","C19","Chelonia mydas","Chordata","Reptilia",0.65,0.625
+"Chelonia_mydas","C31","Chelonia mydas","Chordata","Reptilia",0.6,0.625
+"Chrysemys_picta","C25","Chrysemys picta / Trachemys scripta","Chordata","Reptilia",0.65,0.65
+"Crassostrea_gigas","B06","Crassostrea gigas","Mollusca","Bivalvia",0.75,0.75
+"Danaus_plexippus","B27","Danaus plexippus","Arthropoda","Insecta",0.65,0.675
+"Danaus_plexippus","A11","Danaus plexippus","Arthropoda","Insecta",0.7,0.675
+"Dendroctonus_ponderosae","C45","Dendroctonus ponderosae","Arthropoda","Insecta",0.5,0.5
+"Dermochelys_coriacea","C04","Dermochelys coriacea","Chordata","Reptilia",0.6,0.6
+"Dolichonyx_oryzivorus","C21","Dolichonyx oryzivorus","Chordata","Aves",0.6,0.6
+"Drosophila_melanogaster","A04","Drosophila melanogaster","Arthropoda","Insecta",0.75,0.75
+"Drosophila_melanogaster","B29","Drosophila melanogaster","Arthropoda","Insecta",0.75,0.75
+"Dytiscus_marginalis","C43","Dytiscus / Hydrophilus spp.","Arthropoda","Insecta",0.65,0.65
+"Euplectes_progne","A06","Euplectes progne","Chordata","Aves",0.7,0.7
+"Ficedula_hypoleuca","B23","Ficedula hypoleuca","Chordata","Aves",0.75,0.75
+"Ficedula_hypoleuca","B22","Ficedula hypoleuca","Chordata","Aves",0.75,0.75
+"Haematopus_ostralegus","B18","Haematopus ostralegus","Chordata","Aves",0.8,0.8
+"Hydra_vulgaris","C09","Hydra vulgaris","Cnidaria","Hydrozoa",0.5,0.5
+"Hyla_arborea","C24","Hyla arborea / Rana temporaria","Chordata","Amphibia",0.6,0.6
+"Ixodes_scapularis","C37","Ixodes scapularis","Arthropoda","Arachnida",0.5,0.5
+"Larus_argentatus","C28","Larus argentatus","Chordata","Aves",0.6,0.6
+"Leuctra_digitata","C50","Leuctra / Nemoura spp.","Arthropoda","Insecta",0.65,0.65
+"Odocoileus_virginianus","C38","Odocoileus virginianus","Chordata","Mammalia",0.6,0.6
+"Oenanthe_oenanthe","C17","Oenanthe oenanthe","Chordata","Aves",0.55,0.55
+"Oncorhynchus_gorbuscha","B31","Oncorhynchus gorbuscha","Chordata","Actinopterygii",0.7,0.7
+"Oncorhynchus_mykiss","C51","Oncorhynchus mykiss / O. kisutch","Chordata","Actinopterygii",0.6,0.575
+"Oncorhynchus_mykiss","C16","Oncorhynchus spp.","Chordata","Actinopterygii",0.55,0.575
+"Oncorhynchus_tshawytscha","C02","Oncorhynchus tshawytscha","Chordata","Actinopterygii",0.6,0.6
+"Pagurus_bernhardus","C56","Pagurus / Clibanarius spp.","Arthropoda","Crustacea",0.55,0.55
+"Parus_major","C03","Parus major","Chordata","Aves",0.7,0.7
+"Pavo_cristatus","C29","Pavo cristatus","Chordata","Aves",0.6,0.6
+"Perciformes","C46","Perciformes / Salmoniformes (multiple)","Chordata","Actinopterygii",0.65,0.65
+"Phasianus_colchicus","C15","Phasianus colchicus","Chordata","Aves",0.55,0.55
+"Phoebastria_immutabilis","C40","Phoebastria immutabilis","Chordata","Aves",0.65,0.65
+"Pygoscelis_adeliae","C60","Pygoscelis adeliae / P. papua","Chordata","Aves",0.55,0.55
+"Rana_temporaria","B12","Rana spp. / Hyla spp.","Chordata","Amphibia",0.65,0.65
+"Rattus_norvegicus","A05","Rattus norvegicus","Chordata","Mammalia",0.9,0.9
+"Sialia_sialis","C14","Sialia / Eremophila spp.","Chordata","Aves",0.55,0.55
+"Spheniscus_demersus","C26","Spheniscus demersus","Chordata","Aves",0.7,0.7
+"Sturnella_magna","C22","Sturnella magna","Chordata","Aves",0.55,0.55
+"Taeniopygia_guttata","A18","Taeniopygia guttata","Chordata","Aves",0.55,0.55
+"Ursus_arctos_horribilis","B26","Ursus arctos horribilis","Chordata","Mammalia",0.7,0.7
+"Xiphophorus_hellerii","A13","Xiphophorus hellerii","Chordata","Actinopterygii",0.55,0.55

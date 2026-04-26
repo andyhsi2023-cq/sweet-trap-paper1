@@ -1,0 +1,80 @@
+# ─── Sensitive: never commit ──────────────────────────────────────
+.Renviron
+.env
+.env.*
+*.pem
+*.key
+**/credentials.json
+**/secrets.yml
+
+# ─── Heavy environments (recreatable) ─────────────────────────────
+tools/
+venv*/
+**/venv/
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# R environments — keep lockfile + activator, drop installed library
+renv/library/
+renv/staging/
+renv/local/
+renv/python/
+.Rhistory
+.RData
+.Ruserdata
+
+# ─── Heavy intermediates (deposited on OSF, not GitHub) ───────────
+# Raw cohort data (license-restricted; access via OSF / cohort DUA)
+02-data/raw/
+02-data/processed/
+
+# Branch-site codeml run dirs (176 MB intermediate; final CSVs kept)
+03-analysis/part4-genetic/data/codeml_runs/
+03-analysis/part4-genetic/data/alignments/*.fasta
+03-analysis/part4-genetic/data/alignments/*.phy
+03-analysis/part4-genetic/data/positive_control/work/
+
+# Part 3 large proteomes + BLAST databases (deposit on OSF; reproducible from NCBI)
+03-analysis/part3-molecular/data/insect_proteomes/
+03-analysis/part3-molecular/data/proteomes_cnidarian/
+03-analysis/part3-molecular/data/blast_db/
+03-analysis/part3-molecular/data/raw_protein/
+03-analysis/part3-molecular/data/raw_cds/
+03-analysis/part3-molecular/outputs/orthofinder_*/Results_*/WorkingDirectory/
+
+# Part 2 PRISMA full PubMed harvest (raw hits TSV/CSV >100KB)
+03-analysis/part4-genetic/outputs/H6f_raw_hits_*.tsv
+03-analysis/part4-genetic/outputs/H6f_full_harvest.csv
+
+# Logs and run-time artefacts
+*.log
+**/logs/
+*.tmp
+*.bak
+*.swp
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Compile outputs (regenerable via `make`)
+05-manuscript/manuscript.docx
+05-manuscript/manuscript.pdf
+05-manuscript/manuscript.html
+
+# Playwright session
+.playwright-mcp/
+
+# Archives (generally don't version-control zips)
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# rst / rub files (PAML stale outputs at repo root)
+/rst
+/rst1
+/rub

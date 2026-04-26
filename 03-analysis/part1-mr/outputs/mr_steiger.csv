@@ -1,0 +1,7 @@
+id.exposure,id.outcome,exposure,outcome,snp_r2.exposure,snp_r2.outcome,correct_causal_direction,steiger_pval,pair_id,ancestry
+ieu-b-73,ebi-a-GCST006701,alcohol_drinks_per_week,all_cause_mortality_EUR,0.00500212676829857,0.000307866436871231,TRUE,2.18434131335836e-145,alc-mort,EUR
+ieu-b-40,ebi-a-GCST006701,bmi,all_cause_mortality_EUR,0.0464315461176261,0.00295536118949102,TRUE,0,bmi-mort,EUR
+ukb-b-5192,ebi-a-GCST006701,leisure_screen_tv_time,all_cause_mortality_EUR,0.0100549831926364,0.000667803200688232,TRUE,4.37754284027981e-261,scr-mort,EUR
+ukb-b-5237,bbj-a-159,sugar_intake_total,cardiovascular_mortality_EAS,0.00473598283266352,0.000439724745830169,TRUE,4.99719826562855e-73,sug-cvdm,EAS
+ukb-b-5237,ebi-a-GCST005194,sugar_intake_total,cardiovascular_mortality_EUR,0.00659916372916212,0.000466480553777855,TRUE,2.04416411639899e-138,sug-cvdm,EUR
+ukb-b-6324,ebi-a-GCST006701,processed_meat_intake,all_cause_mortality_EUR,0.0019180558498341,0.000145284647820099,TRUE,6.24591560680351e-50,upf-mort,EUR
